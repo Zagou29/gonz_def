@@ -3,7 +3,7 @@
  */
 export const VIDEO_CONFIG = {
   TEMPLATES: {
-    DEFAULT: "ytThumb",
+    THUMB: "ytThumb",
     FRAME: "ytFrame",
     FRAME_READ: "ytFrameR",
   },

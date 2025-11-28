@@ -56,16 +56,11 @@ export class Affvid {
    * @param {HTMLElement} container - Conteneur pour les vidéos
    * @param {string} [classe=''] - Classe CSS pour filtrer
    * @param {string} [an] - Année pour filtrer
-   * @param {string} [tempId=VIDEO_CONFIG.TEMPLATES.DEFAULT] - ID du template à utiliser
+   * @param {string} [tempId=VIDEO_CONFIG.TEMPLATES.THUMB] - ID du template à utiliser
    * @returns {Affvid} - Instance courante pour le chaînage
    * @throws {Error} Si le conteneur n'est pas valide
    */
-  affVideos(
-    container,
-    classe = "",
-    an,
-    tempId = VIDEO_CONFIG.TEMPLATES.DEFAULT
-  ) {
+  affVideos(container, classe = "", an, tempId = VIDEO_CONFIG.TEMPLATES.THUMB) {
     if (!container || !(container instanceof HTMLElement)) {
       throw new Error("Le conteneur doit être un élément HTML valide");
     }

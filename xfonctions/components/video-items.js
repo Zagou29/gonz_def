@@ -1,11 +1,11 @@
 import { cloneTemplate } from "../dom.js";
 import { VIDEO_CONFIG } from "../config/video-config.js";
- /**
+/**
  * @typedef {import("./config/video-config.js").VideoItem} VideoItem
  */
 /**
  * Crée un élément miniature ou iframe de vidéo
- */ 
+ */
 export class VidItem {
   /** @type {string} - ID du template à utiliser */
   #tempId;
@@ -23,10 +23,10 @@ export class VidItem {
   /**
    * Crée un élément vidéo
    * @param {VideoItem} video - Objet vidéo
-   * @param {string} [tempId=VIDEO_CONFIG.TEMPLATES.DEFAULT] - ID du template à utiliser
+   * @param {string} [tempId=VIDEO_CONFIG.TEMPLATES.THUMB] - ID du template à utiliser
    * @throws {Error} Si les paramètres ne sont pas valides
    */
-  constructor(video, tempId = VIDEO_CONFIG.TEMPLATES.DEFAULT) {
+  constructor(video, tempId = VIDEO_CONFIG.TEMPLATES.THUMB) {
     if (!video || typeof video !== "object") {
       throw new Error("L'objet vidéo est requis");
     }
@@ -51,10 +51,7 @@ export class VidItem {
    */
   #configurerTitre() {
     // Le titre n'est requis que pour les templates ytThumb et ytFrame
-    if (
-      this.#tempId !== VIDEO_CONFIG.TEMPLATES.DEFAULT &&
-      this.#tempId !== VIDEO_CONFIG.TEMPLATES.FRAME
-    ) {
+    if (this.#tempId === VIDEO_CONFIG.TEMPLATES.FRAME_READ) {
       return;
     }
 
@@ -88,7 +85,7 @@ export class VidItem {
 
     this.#video.setAttribute("data-id", this.#vidItem.id);
 
-    if (this.#tempId === VIDEO_CONFIG.TEMPLATES.DEFAULT) {
+    if (this.#tempId === VIDEO_CONFIG.TEMPLATES.THUMB) {
       // Pour les miniatures, on utilise l'image de prévisualisation
       this.#video.setAttribute(
         "src",
