@@ -82,14 +82,19 @@ const ferme_videos = (entries) => {
 
 /**
  * Remplacer l'image par la vidéo YouTube lors d'un clic.
+ * Gère différemment les vidéos (famille/voyages) et les playlists.
  * @param {Event} e
  */
 const click_img = (e) => {
   const { target } = e;
   if (target.classList.contains("vidImg")) {
     const divImg = target.parentElement;
+    const videoId = target.dataset.id;
+    
     target.remove();
-    state.vidClass.aff_ytFrameR(divImg, target.dataset.id);
+    
+      state.vidClass.aff_ytFrameR(divImg, videoId);
+    
   }
 };
 
@@ -137,8 +142,8 @@ const aff_Videos = (e) => {
   const videoType = `${spanChoisi.dataset.select}`;
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
-  const tempId =
-    mob().mob || videoType.includes(".pll") ? "ytFrame" : "ytThumb";
+  // Sur mobile : iframes directes, sur desktop : toujours thumbnails pour tous les types
+  const tempId = mob().mob ? "ytFrame" : "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     setHeight(

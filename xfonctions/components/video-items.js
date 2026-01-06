@@ -86,13 +86,23 @@ export class VidItem {
     this.#video.setAttribute("data-id", this.#vidItem.id);
 
     if (this.#tempId === VIDEO_CONFIG.TEMPLATES.THUMB) {
-      // Pour les miniatures, on utilise l'image de prévisualisation
-      this.#video.setAttribute(
-        "src",
-        `${VIDEO_CONFIG.YOUTUBE.THUMB_BASE_URL}${this.#vidItem.id}/${
-          VIDEO_CONFIG.YOUTUBE.THUMB_QUALITY
-        }`
-      );
+      // Pour les Thumbnails, on configure l'image
+      const isPlaylist =
+        this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
+      if (isPlaylist) {
+        // Pour les playlists, utiliser le thumbnail de la première vidéo
+        this.#loadPlaylistThumbnail();
+        this.#video.setAttribute("alt", `Playlist: ${this.#vidItem.text}`);
+      } else {
+        // Pour les vidéos, utiliser l'image de prévisualisation YouTube
+        this.#video.setAttribute(
+          "src",
+          `${VIDEO_CONFIG.YOUTUBE.THUMB_BASE_URL}${this.#vidItem.id}/${
+            VIDEO_CONFIG.YOUTUBE.THUMB_QUALITY
+          }`
+        );
+        this.#video.setAttribute("alt", this.#vidItem.text);
+      }
     } else {
       // Pour les iframes, on configure la source selon qu'il s'agisse d'une vidéo ou d'une playlist
       this.#video.setAttribute("title", this.#vidItem.text);
@@ -107,6 +117,38 @@ export class VidItem {
 
       this.#video.setAttribute("src", isPlaylist ? playlistUrl : videoUrl);
     }
+  }
+
+  /**
+   * Charge le thumbnail de la première vidéo d'une playlist
+   * @private
+   */
+  async #loadPlaylistThumbnail() {
+    try {
+      // Utiliser l'API oEmbed de YouTube pour récupérer des infos sur la playlist
+      const response = await fetch(
+        `${VIDEO_CONFIG.YOUTUBE.PLAYLIST_OEMBED_URL}${
+          this.#vidItem.id
+        }&format=json`
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.thumbnail_url) {
+          // Utiliser le thumbnail fourni par oEmbed
+          this.#video.setAttribute("src", data.thumbnail_url);
+          return;
+        }
+      }
+    } catch (error) {
+      console.warn(
+        "Impossible de récupérer le thumbnail de la playlist:",
+        error
+      );
+    }
+
+    // Fallback: utiliser une image générique
+    this.#video.setAttribute("src", "./box_img/Zag_icon.png");
   }
 
   /**

@@ -30,6 +30,8 @@ export const VIDEO_CONFIG = {
     EMBED_BASE_URL: "https://www.youtube-nocookie.com/embed/",
     THUMB_BASE_URL: "https://img.youtube.com/vi/",
     THUMB_QUALITY: "maxresdefault.jpg",
+    PLAYLIST_OEMBED_URL:
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=",
   },
 };
 /**
