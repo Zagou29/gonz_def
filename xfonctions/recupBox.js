@@ -1,5 +1,5 @@
 const relat = [...document.querySelectorAll(".relat")];
-const jsonObj ={};
+const jsonObj = {};
 const jsonFile = [];
 relat.forEach((box) => {
   jsonObj.href = box.querySelector("a")?.getAttribute("href")
@@ -15,7 +15,7 @@ relat.forEach((box) => {
     : "";
   jsonObj.menu = box?.dataset.ph ? "ph" : "bl";
   jsonFile.push({
-    menu:jsonObj.menu,
+    menu: jsonObj.menu,
     ph: jsonObj.ph,
     href: jsonObj.href,
     src: jsonObj.src,

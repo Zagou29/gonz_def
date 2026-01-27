@@ -48,7 +48,7 @@ export class MenuVid {
     this.#boxSelect = this.#videos.filter((objbox) =>
       objbox.clas
         .slice(4, 8)
-        .includes("." + this.#boxElement.className.slice(13))
+        .includes("." + this.#boxElement.className.slice(13)),
     );
     // this.#boxSelect filtre de videos(videos+menus) par la clas .fam/.voy/.pll
     // enlever le typevideo de la clas et le mettre dans tv
@@ -67,7 +67,7 @@ export class MenuVid {
     });
     /* enlever tous les doublons de listeatrier et trier : par detail puis groupe*/
     this.#liensSelect = Array.from(
-      new Map(this.#listatrier.map((item) => [item.clas, item])).values()
+      new Map(this.#listatrier.map((item) => [item.clas, item])).values(),
     ).sort((a, b) => {
       return (
         a.id_groupe.localeCompare(b.id_groupe) ||

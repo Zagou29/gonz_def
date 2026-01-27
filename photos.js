@@ -60,7 +60,7 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
     "beforebegin",
     `<button id="stopLiens" >
     <span class="material-icons-outlined">cancel</span>
-    </button>`
+    </button>`,
   );
 }
 /* Initialisation ----------------------------*/
@@ -78,13 +78,13 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
       domElements,
       stats,
       audioManager,
-      navigationManager
+      navigationManager,
     );
     const zoomManager = new ZoomManager(
       domElements,
       stats,
       diaporamaManager,
-      uiManager
+      uiManager,
     );
 
     const managers = {
@@ -130,7 +130,7 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
 
     /** titre de la page vient du tableau des titres*/
     domElements.val.textContent = stats.tab_titre.find(
-      (val) => val.ph === stats.val_trans
+      (val) => val.ph === stats.val_trans,
     ).spText;
 
     domElements.mute.classList.add("eff_fl");
@@ -145,7 +145,7 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
     };
     const guette = new IntersectionObserver(
       (entries) => navigationManager.afficheDate(entries),
-      options
+      options,
     );
     stats.list_img.forEach((img) => guette.observe(img));
 

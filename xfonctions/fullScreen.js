@@ -36,9 +36,9 @@ const fsAPI = (() => {
     isSupported: () =>
       Boolean(
         doc.fullscreenEnabled ||
-          doc.mozFullScreenEnabled ||
-          doc.webkitFullscreenEnabled ||
-          doc.msFullscreenEnabled
+        doc.mozFullScreenEnabled ||
+        doc.webkitFullscreenEnabled ||
+        doc.msFullscreenEnabled,
       ),
 
     // Événements de changement d'état
@@ -46,24 +46,24 @@ const fsAPI = (() => {
       "fullscreenchange" in doc
         ? "fullscreenchange"
         : "mozfullscreenchange" in doc
-        ? "mozfullscreenchange"
-        : "webkitfullscreenchange" in doc
-        ? "webkitfullscreenchange"
-        : "MSFullscreenChange" in doc
-        ? "MSFullscreenChange"
-        : null,
+          ? "mozfullscreenchange"
+          : "webkitfullscreenchange" in doc
+            ? "webkitfullscreenchange"
+            : "MSFullscreenChange" in doc
+              ? "MSFullscreenChange"
+              : null,
 
     // Événements d'erreur
     errorEvent:
       "fullscreenerror" in doc
         ? "fullscreenerror"
         : "mozfullscreenerror" in doc
-        ? "mozfullscreenerror"
-        : "webkitfullscreenerror" in doc
-        ? "webkitfullscreenerror"
-        : "MSFullscreenError" in doc
-        ? "MSFullscreenError"
-        : null,
+          ? "mozfullscreenerror"
+          : "webkitfullscreenerror" in doc
+            ? "webkitfullscreenerror"
+            : "MSFullscreenError" in doc
+              ? "MSFullscreenError"
+              : null,
   };
 })();
 

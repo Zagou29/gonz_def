@@ -99,7 +99,7 @@ export class VidItem {
           "src",
           `${VIDEO_CONFIG.YOUTUBE.THUMB_BASE_URL}${this.#vidItem.id}/${
             VIDEO_CONFIG.YOUTUBE.THUMB_QUALITY
-          }`
+          }`,
         );
         this.#video.setAttribute("alt", this.#vidItem.text);
       }
@@ -129,7 +129,7 @@ export class VidItem {
       const response = await fetch(
         `${VIDEO_CONFIG.YOUTUBE.PLAYLIST_OEMBED_URL}${
           this.#vidItem.id
-        }&format=json`
+        }&format=json`,
       );
 
       if (response.ok) {
@@ -143,7 +143,7 @@ export class VidItem {
     } catch (error) {
       console.warn(
         "Impossible de récupérer le thumbnail de la playlist:",
-        error
+        error,
       );
     }
 

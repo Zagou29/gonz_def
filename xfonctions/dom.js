@@ -4,7 +4,7 @@
  * @param {object} attributes
  * @return {HTMLelement}
  */
- const createElement = (tagName, attributes = {}) => {
+const createElement = (tagName, attributes = {}) => {
   const element = document.createElement(tagName);
   for (const [attribute, value] of Object.entries(attributes)) {
     if (value !== null) {
@@ -14,11 +14,11 @@
   return element;
 };
 /**
- * 
- * @param {string} id 
+ *
+ * @param {string} id
  * @returns {documentFragment} clone du template
  */
- const cloneTemplate = (id) => {
+const cloneTemplate = (id) => {
   return document.getElementById(id).content.cloneNode(true);
 };
-export {createElement,cloneTemplate}
+export { createElement, cloneTemplate };

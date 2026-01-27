@@ -114,7 +114,7 @@ class BaseItem {
       templateContent.firstElementChild;
     if (!this._element) {
       throw new Error(
-        `Template "${templateId}" ne contient pas l'élément attendu "${tagName}".`
+        `Template "${templateId}" ne contient pas l'élément attendu "${tagName}".`,
       );
     }
 

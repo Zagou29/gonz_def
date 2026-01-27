@@ -90,11 +90,10 @@ const click_img = (e) => {
   if (target.classList.contains("vidImg")) {
     const divImg = target.parentElement;
     const videoId = target.dataset.id;
-    
+
     target.remove();
-    
-      state.vidClass.aff_ytFrameR(divImg, videoId);
-    
+
+    state.vidClass.aff_ytFrameR(divImg, videoId);
   }
 };
 
@@ -148,7 +147,7 @@ const aff_Videos = (e) => {
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     setHeight(
       activeMenu.parentElement.querySelector(SELECTORS.blocLinks),
-      "0px"
+      "0px",
     );
   }
   const nbVideos = afficheLiens(videoType, year, tempId);
@@ -247,7 +246,7 @@ const setupObserver = () => {
     /* afficher les boites menus fam, voy, pll */
     state.vidMenu = new MenuVid(list_menus);
     ["menu_fam", "menu_voy", "menu_pll"].forEach((selector) =>
-      state.vidMenu.affBoxes(document.querySelector(`.${selector}`))
+      state.vidMenu.affBoxes(document.querySelector(`.${selector}`)),
     );
     /* afficher les boites menus années */
     state.vidClass.aff_ans(dom.years);
@@ -268,7 +267,7 @@ const setupObserver = () => {
       if (spanChoisi.classList.contains("titMenu")) {
         fermerBlockLinks();
         const dropCour = spanChoisi.parentElement.querySelector(
-          SELECTORS.blocLinks
+          SELECTORS.blocLinks,
         );
         setHeight(dropCour, dropCour.scrollHeight + "px");
         state.blockLinks_open = true;

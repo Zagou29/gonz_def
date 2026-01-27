@@ -86,7 +86,7 @@ export class EventManager {
           this.navigationManager.depHor(image, -1);
           break;
         case KEY_CODES.droite:
-          e.preventDefault(); 
+          e.preventDefault();
           this.diaporamaManager.clearMusic();
           this.navigationManager.depHor(image, 1);
           break;
@@ -113,19 +113,19 @@ export class EventManager {
         case KEY_CODES.plus:
           this.stats.delai = this.diaporamaManager.delaiChange(
             this.stats.delai,
-            +1
+            +1,
           );
           break;
         case KEY_CODES.moins:
           this.stats.delai = this.diaporamaManager.delaiChange(
             this.stats.delai,
-            -1
+            -1,
           );
           break;
         case KEY_CODES.son:
           if (this.stats.nId)
             this.stats.sensSon = this.audioManager.toggleSon(
-              this.stats.sensSon
+              this.stats.sensSon,
             );
       }
     });
@@ -184,13 +184,13 @@ export class EventManager {
     });
 
     this.domElements.menu.addEventListener("click", (e) =>
-      this.handleMenuClick(e)
+      this.handleMenuClick(e),
     );
     this.domElements.boiteImg.addEventListener("click", (e) =>
-      this.zoomManager.zoom(e)
+      this.zoomManager.zoom(e),
     );
     this.domElements.cont.addEventListener("click", (e) =>
-      this.navigationManager.scrollImg(e)
+      this.navigationManager.scrollImg(e),
     );
 
     this.setupMenuActions(this.domElements.boiteImg);

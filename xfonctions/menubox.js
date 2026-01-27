@@ -56,7 +56,7 @@ export class Menubox {
     this.#boxElement = element;
     this.#dataMenu = datamenu;
     this.#boxSelect = this.#boxes.filter(
-      (objbox) => objbox.menu === this.#dataMenu
+      (objbox) => objbox.menu === this.#dataMenu,
     );
 
     this.#listElement = new DocumentFragment();
@@ -118,22 +118,26 @@ class BoxItem {
     const titleElement = this.#boxElement.querySelector(".ti_blog");
     const textElement = this.#boxElement.querySelector(".texte");
 
-    if (imgElement) { // Check if the element exists before using it
+    if (imgElement) {
+      // Check if the element exists before using it
       imgElement.setAttribute("src", src);
       imgElement.setAttribute("alt", spText);
     }
 
-    if (titleElement) { // Check if the element exists
+    if (titleElement) {
+      // Check if the element exists
       titleElement.textContent = spText;
     }
 
-    if (textElement) { // Check if the element exists
+    if (textElement) {
+      // Check if the element exists
       textElement.classList.add("ph_bl");
       textElement.textContent = divText;
     }
 
     if (menu === "ph") {
-      if (titleElement) { // Check if the element exists
+      if (titleElement) {
+        // Check if the element exists
         titleElement.dataset.ph = ph;
       }
     } else {
@@ -144,7 +148,6 @@ class BoxItem {
     return this.#boxElement;
   }
 }
-
 
 /** créer un lien_menu pour photo.html */
 class Lien_menu_item {

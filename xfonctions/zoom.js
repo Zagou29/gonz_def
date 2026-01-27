@@ -56,14 +56,14 @@ export class ZoomManager {
     this.domElements.full.classList.add("showfl");
     setTimeout(() => this.uiManager.alert(), 4000);
     this.domElements.boiteImg.addEventListener("wheel", () =>
-      this.diaporamaManager.clearMusic()
+      this.diaporamaManager.clearMusic(),
     );
   }
 
   handleZoomOut(e) {
     this.domElements.full.classList.remove("showfl");
     this.domElements.boiteImg.removeEventListener("wheel", () =>
-      this.diaporamaManager.clearMusic()
+      this.diaporamaManager.clearMusic(),
     );
     window.scrollTo({
       top: e.target.offsetTop - this.stats.yimg,

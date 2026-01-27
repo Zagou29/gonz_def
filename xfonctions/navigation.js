@@ -66,14 +66,14 @@ export class NavigationManager {
     this.toggleStop(
       this.domElements.boiteImg.scrollLeft === 0,
       this.domElements.stop_debut,
-      this.domElements.left
+      this.domElements.left,
     );
     this.toggleStop(
       this.domElements.boiteImg.scrollLeft ===
         this.domElements.boiteImg.scrollWidth -
           this.domElements.boiteImg.offsetWidth,
       this.domElements.stop_fin,
-      this.domElements.right
+      this.domElements.right,
     );
   }
 
@@ -82,7 +82,7 @@ export class NavigationManager {
     entries.forEach((ent) => {
       const dataNum = ent.target.dataset.num;
       const dateElement = this.domElements.cont.querySelector(
-        `[data-num="${dataNum}"]`
+        `[data-num="${dataNum}"]`,
       );
       if (!dateElement) return;
 

@@ -98,7 +98,7 @@ export class Affvid {
         .filter((obj) => obj.id.length < VIDEO_CONFIG.MAX_ID_LENGTH);
     } else {
       this.#vidSelect = this.#vidlist.filter((obj) =>
-        obj.clas.includes(this.#classe)
+        obj.clas.includes(this.#classe),
       );
     }
     // Trier les vidéos et diaporamas
@@ -122,7 +122,7 @@ export class Affvid {
       // Configurer les dimensions
       const [largeur, hauteur] = DimensionCalculator.calculateDimensions(
         this.#container,
-        obj
+        obj,
       );
       vidImg.setAttribute("width", largeur);
       vidImg.setAttribute("height", hauteur);
@@ -163,7 +163,7 @@ export class Affvid {
     // Configurer les dimensions
     const [largeur, hauteur] = DimensionCalculator.calculateDimensions(
       this.#container.parentElement,
-      videoItem
+      videoItem,
     );
     iframe.setAttribute("width", largeur);
     iframe.setAttribute("height", hauteur);
@@ -231,7 +231,7 @@ export class Affvid {
     this.#an_Select = new Set(
       this.#vidlist
         .filter((obj) => obj.id.length < VIDEO_CONFIG.MAX_ID_LENGTH)
-        .map((it) => it.annee)
+        .map((it) => it.annee),
     );
 
     // Créer les éléments d'année
