@@ -22,8 +22,6 @@ html {
 
 /* Body Styles */
 :root {
-  font-family: "Arial Narrow", Arial, sans-serif;
-  font-size: var(--fs-body);
   --col_an: blue;
   --col_shad: hsla(0, 0%, 40%, 0.7);
   --col-bout: rgb(53, 52, 52);
@@ -37,6 +35,10 @@ html {
   --bar_height: calc(var(--hamb) / 6);
   --esphamb: calc(var(--hamb) / 2 - var(--bar_height) / 2);
   --largBout: 3rem;
+}
+body {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: var(--fs-body);
 }
 
 /* Stop Links Button */
