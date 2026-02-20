@@ -49,7 +49,7 @@ export class EventManager {
             break;
           case MENU_ACTIONS.RETURN:
             localStorage.clear();
-            window.location = "./index.html";
+            window.location.href = "./index.html";
             break;
           case MENU_ACTIONS.INVERT:
             this.uiManager.setLocalStorageAndRedirect({
@@ -101,7 +101,7 @@ export class EventManager {
             this.zoomManager.zoom(e);
           } else {
             localStorage.clear();
-            window.location = "./index.html";
+            window.location.href = "./index.html";
           }
           break;
         case KEY_CODES.fs:

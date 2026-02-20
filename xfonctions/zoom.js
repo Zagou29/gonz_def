@@ -7,6 +7,8 @@ export class ZoomManager {
     this.stats = stats;
     this.diaporamaManager = diaporamaManager;
     this.uiManager = uiManager;
+    // Référence stable pour pouvoir retirer l'écouteur wheel correctement
+    this._wheelHandler = () => this.diaporamaManager.clearMusic();
   }
 
   /* Zoom quand on clicke sur une image */
@@ -55,16 +57,12 @@ export class ZoomManager {
     this.domElements.diap.classList.remove("diapo_on");
     this.domElements.full.classList.add("showfl");
     setTimeout(() => this.uiManager.alert(), 4000);
-    this.domElements.boiteImg.addEventListener("wheel", () =>
-      this.diaporamaManager.clearMusic(),
-    );
+    this.domElements.boiteImg.addEventListener("wheel", this._wheelHandler);
   }
 
   handleZoomOut(e) {
     this.domElements.full.classList.remove("showfl");
-    this.domElements.boiteImg.removeEventListener("wheel", () =>
-      this.diaporamaManager.clearMusic(),
-    );
+    this.domElements.boiteImg.removeEventListener("wheel", this._wheelHandler);
     window.scrollTo({
       top: e.target.offsetTop - this.stats.yimg,
       behavior: "instant",

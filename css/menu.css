@@ -16,8 +16,13 @@
 .btn-top {
   height: fit-content;
   border: none;
-  outline: none;
   align-items: center;
+}
+.btn-top:focus {
+  outline: none;
+} 
+.btn-top:focus-visible {
+  outline: 2px solid var(--color-primary);
 }
 
 .titMenu {

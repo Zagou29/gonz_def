@@ -3,13 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noimageindex">
   <meta name="googlebot" content="noindex">
   <meta name="description" content="Toutes les vidéos de Zagou">
   <link rel="preconnect" href="https://www.youtube.com">
-  <link rel="shortcut icon" href="./box_img/Zag_icon.png" type="image/x-icon">
+  <link rel="icon" href="./box_img/Zag_icon.png" type="image/x-icon">
 
   <!-- CSS critique - chargement immédiat -->
   <link rel="preload" href="./css/variables.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -31,7 +30,7 @@
   </noscript>
 
   <!-- Préchargement du script -->
-  <link rel="preload" href="./vidScript.js" as="script" crossorigin>
+  <link rel="modulepreload" href="./vidScript.js">
   <!-- Chargement du script principal en tant que module -->
   <script type="module" src="./vidScript.js"></script>
   <title>Vidéos & Diapos - Famille Zag</title>

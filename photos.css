@@ -21,7 +21,7 @@ html {
 } */
 
 /* Body Styles */
-body {
+:root {
   font-family: "Arial Narrow", Arial, sans-serif;
   font-size: var(--fs-body);
   --col_an: blue;
