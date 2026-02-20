@@ -1,6 +1,8 @@
 import { mob } from "./xfonctions/nav_os.js";
-import { fetchJSON } from "./xfonctions/api.js";
 import { createElement } from "./xfonctions/dom.js";
+import boxJson from "./xjson/box.json" with { type: "json" };
+import vidListJson from "./xjson/indexVid.json" with { type: "json" };
+import menuListJson from "./xjson/menusVideos.json" with { type: "json" };
 import { Menubox } from "./xfonctions/menubox.js";
 import { MenuVid } from "./xfonctions/menuVid.js";
 import { Affvid } from "./xfonctions/affvid_refact.js";
@@ -223,12 +225,10 @@ const setupObserver = () => {
 (async function init() {
   // Charger les menuboxes
   try {
-    // Charger tous les fichiers JSON en parallèle
-    const [menuBoxesData, vidList, menuList] = await Promise.all([
-      fetchJSON("./xjson/box.json"),
-      fetchJSON("./xjson/indexVid.json"),
-      fetchJSON("./xjson/menusVideos.json"),
-    ]);
+    // Données JSON disponibles via imports statiques (mise en cache navigateur)
+    const menuBoxesData = boxJson;
+    const vidList = [...vidListJson]; // spread pour protéger le module en cache du sort()
+    const menuList = menuListJson;
     const boxes = new Menubox(menuBoxesData);
     // afficher les menus boxes de Photos puis Blogs
     boxes.apBox_Ph(dom.ePhotos, "ph", "-1");

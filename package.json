@@ -1,0 +1,11 @@
+{
+    "name": "gonz_def",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "resize": "node scripts/resize-images.js"
+    },
+    "devDependencies": {
+        "sharp": "^0.33.0"
+    }
+}

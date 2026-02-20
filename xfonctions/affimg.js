@@ -154,8 +154,18 @@ class AffItem extends BaseItem {
    */
   constructor(imgData, aspectClass) {
     super(imgData, "photos", "img"); // Utilise le template "photos" et attend une balise <img>
-    this._element.setAttribute("src", this._data.src);
-    this._element.setAttribute("alt", this._data.an); // Utiliser une description plus utile si possible
+    const src = this._data.src;
+    const base = src.replace(".webp", ""); // ex: "./images/a0813-001-2008"
+    this._element.setAttribute("src", src); // fallback navigateurs anciens
+    this._element.setAttribute(
+      "srcset",
+      `${base}-400w.webp 400w, ${base}-800w.webp 800w, ${src} 1200w`,
+    );
+    this._element.setAttribute(
+      "sizes",
+      "(max-width: 500px) 400px, (max-width: 900px) 800px, 1200px",
+    );
+    this._element.setAttribute("alt", this._data.an);
     this._element.setAttribute("class", aspectClass);
     // La configuration commune (dataset) est gérée par le constructeur parent
   }
