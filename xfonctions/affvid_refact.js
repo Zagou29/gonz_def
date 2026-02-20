@@ -171,6 +171,7 @@ export class Affvid {
     // Activer la lecture automatique
     if (iframe.src) {
       iframe.src = iframe.src.replace("autoplay=0", "autoplay=1");
+      console.log(iframe.src);
     }
 
     this.#container.append(videoElement);
