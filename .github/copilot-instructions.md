@@ -61,14 +61,23 @@ const tempId = mob().mob ? "ytFrame" : "ytThumb";
 // xfonctions/config/video-config.js
 export const VIDEO_CONFIG = {
   TEMPLATES: { THUMB: "ytThumb", FRAME: "ytFrame", FRAME_READ: "ytFrameR" },
+  CLASSES: { VIDEO: ".vid", DIAPO: ".dia" },
+  TYPES: { VIDEO: "video", DIAPO: "diapo" },
+  FORMATS: {
+    FORMAT_4_3: "43",
+    RATIO_4_3: 4 / 3,
+    RATIO_16_9: 16 / 9,
+  },
+  DIMENSIONS: { MARGE_LARGEUR: 5, MARGE_HAUTEUR: 27 },
+  MAX_ID_LENGTH: 12,
+  PLAYLIST_ID_LENGTH: 34,
   YOUTUBE: {
     EMBED_BASE_URL: "https://www.youtube-nocookie.com/embed/",
     THUMB_BASE_URL: "https://img.youtube.com/vi/",
+    THUMB_QUALITY: "maxresdefault.jpg",
     PLAYLIST_OEMBED_URL:
       "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=",
   },
-  PLAYLIST_ID_LENGTH: 34,
-  MAX_ID_LENGTH: 12,
 };
 ```
 
@@ -118,7 +127,15 @@ Utilisé pour créer dynamiquement vidéos, barres de navigation, etc.
 // recupIndex.js - extrait vidéos HTML vers JSON
 // recupPhotos.js - extrait données photos
 // recupBox.js - extrait configuration menus
+// recupVideos.js - extrait données vidéos
 ```
+
+### Scripts Utilitaires Racine
+
+- **`vidScript.js`** : Script principal vidéos (racine)
+- **`photos.js`** : Script principal photos (racine)
+- **`photos.css`** : CSS spécifique galerie photos (racine)
+- **`scripts/resize-images.js`** : Utilitaire de redimensionnement d'images
 
 ### Structure Fichiers Médias
 
