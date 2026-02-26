@@ -83,20 +83,14 @@ export class Affvid {
    * @private
    */
   #filtrerVideos() {
+    // si classe =.ann 
     if (this.#an) {
-      // Si on déselectionne video ou diapo dans onglet année
-      if (this.#classe.length > 4) {
-        this.#classe = this.#classe.slice(0, 4);
-      } else {
-        this.#classe = "";
-      }
-
-      // Filtre par année, classe et longueur d'ID (exclut les playlists)
+      // Filtre par année et longueur d'ID (exclut les playlists)
       this.#vidSelect = this.#vidlist
         .filter((obj) => obj.annee === this.#an)
-        .filter((obj) => obj.clas.includes(this.#classe))
         .filter((obj) => obj.id.length < VIDEO_CONFIG.MAX_ID_LENGTH);
     } else {
+      // Filtre uniquement par classe
       this.#vidSelect = this.#vidlist.filter((obj) =>
         obj.clas.includes(this.#classe),
       );

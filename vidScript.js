@@ -141,8 +141,8 @@ const aff_Videos = (e) => {
   const activeMenu = dom.menu.querySelector(".activeMenu");
   if (!activeMenu) return;
   const spanChoisi = e.target;
-  //videotype = .voy.amer.usa ou .ann
-  const videoType = `${spanChoisi.dataset.select}`;
+  //clasChoisie = .voy.amer.usa ou .ann
+  const clasChoisie = `${spanChoisi.dataset.select}`;
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
   // Sur mobile : iframes directes, sur desktop : toujours thumbnails pour tous les types
@@ -154,7 +154,7 @@ const aff_Videos = (e) => {
       "0px",
     );
   }
-  const nbVideos = afficheLiens(videoType, year, tempId);
+  const nbVideos = afficheLiens(clasChoisie, year, tempId);
   dom.titre.textContent = nbVideos ? spanChoisi.textContent : "";
   state.blockLinks_open = false;
 };
