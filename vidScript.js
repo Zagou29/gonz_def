@@ -75,9 +75,7 @@ const ferme_videos = (entries) => {
       barItem.classList.remove("peint");
       const videoImg = target.querySelector(".vidImg");
       // Arrêter la vidéo en désactivant l'autoplay
-      if (videoImg && videoImg.src.includes("autoplay=1")) {
         videoImg.src = videoImg.src.replace("autoplay=1", "autoplay=0");
-      }
     } else {
       barItem.classList.add("peint");
     }
