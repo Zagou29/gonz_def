@@ -1,5 +1,6 @@
 import { mob } from "./xfonctions/nav_os.js";
 import { createElement } from "./xfonctions/dom.js";
+import { loadJson } from "./xfonctions/api.js";
 import boxJson from "./xjson/box.json" with { type: "json" };
 import vidListJson from "./xjson/indexVid.json" with { type: "json" };
 import menuListJson from "./xjson/menusVideos.json" with { type: "json" };
@@ -75,7 +76,7 @@ const ferme_videos = (entries) => {
       barItem.classList.remove("peint");
       const videoImg = target.querySelector(".vidImg");
       // Arrêter la vidéo en désactivant l'autoplay
-        videoImg.src = videoImg.src.replace("autoplay=1", "autoplay=0");
+      videoImg.src = videoImg.src.replace("autoplay=1", "autoplay=0");
     } else {
       barItem.classList.add("peint");
     }
@@ -223,10 +224,13 @@ const setupObserver = () => {
 (async function init() {
   // Charger les menuboxes
   try {
-    // Données JSON disponibles via imports statiques (mise en cache navigateur)
-    const menuBoxesData = boxJson;
-    const vidList = [...vidListJson]; // spread pour protéger le module en cache du sort()
-    const menuList = menuListJson;
+    // Import statique (navigateurs modernes) avec fallback fetch via loadJson
+    const menuBoxesData = boxJson ?? (await loadJson("./xjson/box.json"));
+    const vidList = [
+      ...(vidListJson ?? (await loadJson("./xjson/indexVid.json"))),
+    ];
+    const menuList =
+      menuListJson ?? (await loadJson("./xjson/menusVideos.json"));
     const boxes = new Menubox(menuBoxesData);
     // afficher les menus boxes de Photos puis Blogs
     boxes.apBox_Ph(dom.ePhotos, "ph", "1");
