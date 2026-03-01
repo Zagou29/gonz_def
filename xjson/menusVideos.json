@@ -1,177 +1,152 @@
 [
-    {
-        "clas": ".fam.1749.ava",
-        "menu": "Famille",
-        "groupe": "Avant-guerre",
-        "src": "./box_img/grandpere-1917.webp",
-        "detail": "Années 1900 à 1949"
-    },
-    {
-        "clas": ".fam.7079.a70",
-        "menu": "Famille",
-        "groupe": "Enfants",
-        "src": "./box_img/annees70.webp",
-        "detail": "Années 70"
-    },
-    {
-        "clas": ".fam.8089.a80",
-        "menu": "Famille",
-        "groupe": "Enfants",
-        "src": "./box_img/enfants-86.webp",
-        "detail": "Années 80"
-    },
-    {
-        "clas": ".fam.9099.a90",
-        "menu": "Famille",
-        "groupe": "Ados",
-        "src": "./box_img/annee95.webp",
-        "detail": "Années 90"
-    },
-    {
-        "clas": ".fam.an20.a00",
-        "menu": "Famille",
-        "groupe": "Ados",
-        "src": "./box_img/annees2000.webp",
-        "detail": "Années 2000"
-    },
-    {
-        "clas": ".fam.an20.a10",
-        "menu": "Famille",
-        "groupe": "Margot",
-        "src": "./box_img/margot-2014.webp",
-        "detail": "Années 2010"
-    },
-    {
-        "clas": ".fam.an20.a20",
-        "menu": "Famille",
-        "groupe": "Margot",
-        "src": "./box_img/margot-2023.webp",
-        "detail": "Années 2020"
-    },
-    {
-        "clas": ".fam.5069.a60",
-        "menu": "Famille",
-        "groupe": "Parents",
-        "src": "./box_img/parents-1947.webp",
-        "detail": "Années 50/60"
-    },
-    {
-        "clas": ".voy.amer.usa",
-        "menu": "Voyages",
-        "groupe": "Amérique",
-        "src": "./box_img/usa.webp",
-        "detail": "États-Unis"
-    },
-    {
-        "clas": ".voy.amer.mex",
-        "menu": "Voyages",
-        "groupe": "Amérique",
-        "src": "./box_img/mexique.webp",
-        "detail": "Mexique"
-    },
-    {
-        "clas": ".voy.asie.chi",
-        "menu": "Voyages",
-        "groupe": "Asie",
-        "src": "./box_img/chine-box.webp",
-        "detail": "Chine"
-    },
-    {
-        "clas": ".voy.asie.vie",
-        "menu": "Voyages",
-        "groupe": "Asie",
-        "src": "./box_img/vietnam.webp",
-        "detail": "Vietnam"
-    },
-    {
-        "clas": ".voy.euro.frn",
-        "menu": "Voyages",
-        "groupe": "Europe",
-        "src": "./box_img/normandie.webp",
-        "detail": "France Nord"
-    },
-    {
-        "clas": ".voy.euro.frs",
-        "menu": "Voyages",
-        "groupe": "Europe",
-        "src": "./box_img/france-sud.webp",
-        "detail": "France Sud"
-    },
-    {
-        "clas": ".voy.euro.med",
-        "menu": "Voyages",
-        "groupe": "Europe",
-        "src": "./box_img/grece.webp",
-        "detail": "Mediterranée"
-    },
-    {
-        "clas": ".voy.euro.irl",
-        "menu": "Voyages",
-        "groupe": "Europe",
-        "src": "./box_img/irlande.webp",
-        "detail": "Irlande-UK"
-    },
-    {
-        "clas": ".voy.euro.sca",
-        "menu": "Voyages",
-        "groupe": "Europe",
-        "src": "./box_img/scandinavie.webp",
-        "detail": "Scandinavie"
-    },
-    {
-        "clas": ".voy.iles.imd",
-        "menu": "Voyages",
-        "groupe": "Les Iles",
-        "src": "./box_img/mediterranee.webp",
-        "detail": "Iles Mediterranée"
-    },
-    {
-        "clas": ".voy.iles.fra",
-        "menu": "Voyages",
-        "groupe": "Les Iles",
-        "src": "./box_img/antilles.webp",
-        "detail": "Iles France Antilles"
-    },
-    {
-        "clas": ".pll.amis.amis",
-        "menu": "Playlist",
-        "groupe": "Amis",
-        "src": "./box_img/amis.webp",
-        "detail": "Vidéos Amis"
-    },
-    {
-        "clas": ".pll.fami.fami",
-        "menu": "Playlist",
-        "groupe": "Zag & Margot",
-        "src": "./box_img/famille.webp",
-        "detail": "Famille"
-    },
-    {
-        "clas": ".pll.voya.asie",
-        "menu": "Playlist",
-        "groupe": "Asie",
-        "src": "./box_img/chine-box.webp",
-        "detail": "Voyages Asie"
-    },
-    {
-        "clas": ".pll.voya.amer",
-        "menu": "Playlist",
-        "groupe": "Amérique",
-        "src": "./box_img/mexique-800.webp",
-        "detail": "Voyages Amériques"
-    },
-    {
-        "clas": ".pll.voya.euro",
-        "menu": "Playlist",
-        "groupe": "Europe",
-        "src": "./box_img/irlande.webp",
-        "detail": "Voyages Europe"
-    },
-    {
-        "clas": ".pll.xuse.muse",
-        "menu": "Playlist",
-        "groupe": "Nos Musées",
-        "src": "./box_img/musee-perle.webp",
-        "detail": "Les Musées"
-    }
+  {
+    "clas": ".fam.ava",
+    "groupe": "1 Avant-guerre",
+    "src": "./box_img/grandpere-1917.webp",
+    "detail": "Années 1900 à 1949"
+  },
+  {
+    "clas": ".fam.a70",
+    "groupe": "3 Enfants",
+    "src": "./box_img/annees70.webp",
+    "detail": "Années 70"
+  },
+  {
+    "clas": ".fam.a80",
+    "groupe": "4 Enfants",
+    "src": "./box_img/enfants-86.webp",
+    "detail": "Années 80"
+  },
+  {
+    "clas": ".fam.a90",
+    "groupe": "5 Ados",
+    "src": "./box_img/annee95.webp",
+    "detail": "Années 90"
+  },
+  {
+    "clas": ".fam.a00",
+    "groupe": "6 Ados",
+    "src": "./box_img/annees2000.webp",
+    "detail": "Années 2000"
+  },
+  {
+    "clas": ".fam.a10",
+    "groupe": "7 Margot",
+    "src": "./box_img/margot-2014.webp",
+    "detail": "Années 2010"
+  },
+  {
+    "clas": ".fam.a20",
+    "groupe": "8 Margot",
+    "src": "./box_img/margot-2023.webp",
+    "detail": "Années 2020"
+  },
+  {
+    "clas": ".fam.a60",
+    "groupe": "2 Parents",
+    "src": "./box_img/parents-1947.webp",
+    "detail": "Années 50/60"
+  },
+  {
+    "clas": ".voy.usa",
+    "groupe": "Amérique",
+    "src": "./box_img/usa.webp",
+    "detail": "États-Unis"
+  },
+  {
+    "clas": ".voy.mex",
+    "groupe": "Amérique",
+    "src": "./box_img/mexique.webp",
+    "detail": "Mexique"
+  },
+  {
+    "clas": ".voy.chi",
+    "groupe": "Asie",
+    "src": "./box_img/chine-box.webp",
+    "detail": "Chine"
+  },
+  {
+    "clas": ".voy.vie",
+    "groupe": "Asie",
+    "src": "./box_img/vietnam.webp",
+    "detail": "Vietnam"
+  },
+  {
+    "clas": ".voy.frn",
+    "groupe": "Europe",
+    "src": "./box_img/normandie.webp",
+    "detail": "France Nord"
+  },
+  {
+    "clas": ".voy.frs",
+    "groupe": "Europe",
+    "src": "./box_img/france-sud.webp",
+    "detail": "France Sud"
+  },
+  {
+    "clas": ".voy.med",
+    "groupe": "Europe",
+    "src": "./box_img/grece.webp",
+    "detail": "Mediterranée"
+  },
+  {
+    "clas": ".voy.irl",
+    "groupe": "Europe",
+    "src": "./box_img/irlande.webp",
+    "detail": "Irlande-UK"
+  },
+  {
+    "clas": ".voy.sca",
+    "groupe": "Europe",
+    "src": "./box_img/scandinavie.webp",
+    "detail": "Scandinavie"
+  },
+  {
+    "clas": ".voy.imd",
+    "groupe": "Les Iles",
+    "src": "./box_img/mediterranee.webp",
+    "detail": "Iles Mediterranée"
+  },
+  {
+    "clas": ".voy.fra",
+    "groupe": "Les Iles",
+    "src": "./box_img/antilles.webp",
+    "detail": "Iles France Antilles"
+  },
+  {
+    "clas": ".pll.amis",
+    "groupe": "Les Amis",
+    "src": "./box_img/amis.webp",
+    "detail": "Vidéos Amis"
+  },
+  {
+    "clas": ".pll.fami",
+    "groupe": "Famille",
+    "src": "./box_img/famille.webp",
+    "detail": "Famille"
+  },
+  {
+    "clas": ".pll.asie",
+    "groupe": "Asie",
+    "src": "./box_img/chine-box.webp",
+    "detail": "Voyages Asie"
+  },
+  {
+    "clas": ".pll.amer",
+    "groupe": "Amérique",
+    "src": "./box_img/mexique-800.webp",
+    "detail": "Voyages Amériques"
+  },
+  {
+    "clas": ".pll.euro",
+    "groupe": "Europe",
+    "src": "./box_img/irlande.webp",
+    "detail": "Voyages Europe"
+  },
+  {
+    "clas": ".pll.muse",
+    "groupe": "Nos Musées",
+    "src": "./box_img/musee-perle.webp",
+    "detail": "Les Musées"
+  }
 ]

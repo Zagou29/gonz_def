@@ -229,7 +229,7 @@ const setupObserver = () => {
     const menuList = menuListJson;
     const boxes = new Menubox(menuBoxesData);
     // afficher les menus boxes de Photos puis Blogs
-    boxes.apBox_Ph(dom.ePhotos, "ph", "-1");
+    boxes.apBox_Ph(dom.ePhotos, "ph", "1");
     boxes.apBox_Ph(dom.eBlogs, "bl", "1");
 
     /* Charger et trier la liste globale des vidéos */

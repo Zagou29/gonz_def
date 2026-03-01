@@ -59,19 +59,17 @@ export class MenuVid {
     });
     // ne garder que le menu (fam/voy/pll), le id_groupe, le detail venat de la classe
     this.#listatrier = this.#boxSelect.map((item) => {
-      const { clas } = item;
+      const { clas, groupe } = item;
       const menu = clas.slice(0, 4);
-      const id_groupe = clas.slice(4, 9);
       const detail = clas.slice(9, 17);
-      return { clas, menu, id_groupe, detail };
+      return { clas, menu, groupe, detail };
     });
     /* enlever tous les doublons de listeatrier et trier : par detail puis groupe*/
     this.#liensSelect = Array.from(
       new Map(this.#listatrier.map((item) => [item.clas, item])).values(),
     ).sort((a, b) => {
       return (
-        a.id_groupe.localeCompare(b.id_groupe) ||
-        a.detail.localeCompare(b.detail)
+        a.groupe.localeCompare(b.groupe) || a.detail.localeCompare(b.detail)
       );
     });
     this.#listElement = new DocumentFragment();
@@ -84,7 +82,7 @@ export class MenuVid {
   }
 }
 
-// box=:{"clas": ".dia.voy.asie.vie","groupe": "Asie","text": "2017 Saigon-Da.Nang",
+// box=:{"clas": ".dia.voy.vie","groupe": "Asie","text": "2017 Saigon-Da.Nang",
 // "src": "./box_img/Vietnam-11.jpg","detail": "Vietnam}
 class MenuItem {
   #boxElement;
