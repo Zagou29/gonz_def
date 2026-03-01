@@ -3,8 +3,6 @@ import { createElement } from "./xfonctions/dom.js";
 import { Menubox } from "./xfonctions/menubox.js";
 import { navig, ordi_OS } from "./xfonctions/nav_os.js";
 import { loadJson } from "./xfonctions/api.js";
-import boxJson from "./xjson/box.json" with { type: "json" };
-import photoJson from "./xjson/photoImg.json" with { type: "json" };
 import {
   AudioManager,
   NavigationManager,
@@ -99,11 +97,11 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
     const eventManager = new EventManager(domElements, stats, managers);
 
     /** creation des lien_menu et du tableau des ph/spText */
-    // Import statique (navigateurs modernes) avec fallback fetch via loadJson
-    const menuBoxes = boxJson ?? (await loadJson("./xjson/box.json"));
-    const listImages = [
-      ...(photoJson ?? (await loadJson("./xjson/photoImg.json"))),
-    ];
+    const [menuBoxes, photoJson] = await Promise.all([
+      loadJson("./xjson/box.json"),
+      loadJson("./xjson/photoImg.json"),
+    ]);
+    const listImages = [...photoJson]; // spread pour protéger le cache du sort()
 
     const boxes = new Menubox(menuBoxes.filter((obj) => obj.menu === "ph"));
     boxes.apLienMenu(domElements.menu, "-1");
