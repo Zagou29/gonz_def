@@ -14,6 +14,9 @@ const CACHE_VERSION = "v1";
 const CACHE_SHELL = `zagou-shell-${CACHE_VERSION}`;
 const CACHE_IMAGES = `zagou-images-${CACHE_VERSION}`;
 
+// BASE : préfixe automatique selon l'emplacement du SW (ex: "/gonz_def" sur GitHub Pages)
+const BASE = self.location.pathname.replace(/\/sw\.js$/, "");
+
 /**
  * App-shell photos : précaché à l'installation → 0 requête réseau dès la 2e visite
  * Limité volontairement à photos.html pour éviter qu'un fichier manquant côté
@@ -22,24 +25,24 @@ const CACHE_IMAGES = `zagou-images-${CACHE_VERSION}`;
  * lors de la 1ère visite de cette page (cache-on-demand).
  */
 const PRECACHE_FILES = [
-  "/photos.html",
-  "/photos.css",
-  "/photos.js",
-  "/xjson/photoImg.json",
-  "/xjson/box.json",
-  "/xfonctions/affimg.js",
-  "/xfonctions/audio.js",
-  "/xfonctions/diaporama.js",
-  "/xfonctions/dom.js",
-  "/xfonctions/events.js",
-  "/xfonctions/fullScreen.js",
-  "/xfonctions/managers.js",
-  "/xfonctions/menubox.js",
-  "/xfonctions/nav_os.js",
-  "/xfonctions/navigation.js",
-  "/xfonctions/ui.js",
-  "/xfonctions/zoom.js",
-  "/box_img/Zag_icon.png",
+  `${BASE}/photos.html`,
+  `${BASE}/photos.css`,
+  `${BASE}/photos.js`,
+  `${BASE}/xjson/photoImg.json`,
+  `${BASE}/xjson/box.json`,
+  `${BASE}/xfonctions/affimg.js`,
+  `${BASE}/xfonctions/audio.js`,
+  `${BASE}/xfonctions/diaporama.js`,
+  `${BASE}/xfonctions/dom.js`,
+  `${BASE}/xfonctions/events.js`,
+  `${BASE}/xfonctions/fullScreen.js`,
+  `${BASE}/xfonctions/managers.js`,
+  `${BASE}/xfonctions/menubox.js`,
+  `${BASE}/xfonctions/nav_os.js`,
+  `${BASE}/xfonctions/navigation.js`,
+  `${BASE}/xfonctions/ui.js`,
+  `${BASE}/xfonctions/zoom.js`,
+  `${BASE}/box_img/Zag_icon.png`,
 ];
 
 /* ── INSTALL : précache de l'app-shell ──────────────────────────────────── */
@@ -77,6 +80,9 @@ self.addEventListener("fetch", (event) => {
   // Ne traiter que les requêtes GET
   if (request.method !== "GET") return;
 
+  // ── Requêtes Range (audio/vidéo en streaming) : network-only ─────────
+  if (request.headers.get("range")) return;
+
   // ── Google Fonts : network-first (CDN externe) ────────────────────────
   if (
     url.hostname === "fonts.googleapis.com" ||
@@ -90,7 +96,10 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return;
 
   // ── Images .webp : stale-while-revalidate ─────────────────────────────
-  if (url.pathname.startsWith("/images/") && url.pathname.endsWith(".webp")) {
+  if (
+    url.pathname.startsWith(`${BASE}/images/`) &&
+    url.pathname.endsWith(".webp")
+  ) {
     event.respondWith(staleWhileRevalidate(request, CACHE_IMAGES));
     return;
   }
@@ -110,7 +119,7 @@ async function cacheFirstStrategy(request, cacheName) {
 
   try {
     const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
+    if (networkResponse.ok && networkResponse.status !== 206) {
       const cache = await caches.open(cacheName);
       cache.put(request, networkResponse.clone());
     }
@@ -131,7 +140,7 @@ async function staleWhileRevalidate(request, cacheName) {
   // Lancement de la mise à jour réseau en arrière-plan (sans await)
   const networkFetch = fetch(request)
     .then((resp) => {
-      if (resp.ok) cache.put(request, resp.clone());
+      if (resp.ok && resp.status !== 206) cache.put(request, resp.clone());
       return resp;
     })
     .catch(() => null);
@@ -145,7 +154,7 @@ async function staleWhileRevalidate(request, cacheName) {
 async function networkFirstStrategy(request, cacheName) {
   try {
     const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
+    if (networkResponse.ok && networkResponse.status !== 206) {
       const cache = await caches.open(cacheName);
       cache.put(request, networkResponse.clone());
     }
