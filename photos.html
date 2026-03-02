@@ -104,6 +104,13 @@
   <template id="menu_dates">
     <li class="lien_menu" data-idmenu=""></li>
   </template>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(err => console.warn('SW:', err));
+    }
+  </script>
 </body>
 
 </html>
