@@ -37,7 +37,7 @@ body {
   grid-area: main;
   padding: 2px 0 5px 0;
   overflow: hidden;
-  background: url("../box_img/Mimosa2.jpg") left/cover;
+  background: url("../box_img/Mimosa.webp") left/cover;
   display: flex;
   flex-direction: column;
   position: relative;
