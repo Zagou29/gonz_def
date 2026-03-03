@@ -9,7 +9,7 @@
   },
   {
     "menu": "ph",
-    "ph": "carious",
+    "ph": "cario",
     "href": "",
     "src": "./box_img/carious.webp",
     "spText": "Les Carious",
@@ -17,7 +17,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a1418",
+    "ph": "g1418",
     "href": "",
     "src": "./box_img/avions.webp",
     "spText": "Guerre 14-18",
@@ -33,7 +33,7 @@
   },
   {
     "menu": "ph",
-    "ph": "gonz",
+    "ph": "gonz1",
     "href": "",
     "src": "./box_img/gonzague2.webp",
     "spText": "Gonzague II",
@@ -41,7 +41,7 @@
   },
   {
     "menu": "ph",
-    "ph": "amer",
+    "ph": "hoffm",
     "href": "",
     "src": "./box_img/cousinsus.webp",
     "spText": "Américains",
@@ -57,7 +57,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a7079",
+    "ph": "ann70",
     "href": "",
     "src": "./box_img/annees70.webp",
     "spText": "Années 1970",
@@ -65,7 +65,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a8089",
+    "ph": "ann80",
     "href": "",
     "src": "./box_img/annees80.webp",
     "spText": "Années 1980",
@@ -73,7 +73,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a9099",
+    "ph": "ann90",
     "href": "",
     "src": "./box_img/annees90.webp",
     "spText": "Années 1990",
@@ -81,7 +81,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a0009",
+    "ph": "ann00",
     "href": "",
     "src": "./box_img/annees2000.webp",
     "spText": "Années 2000",
@@ -89,7 +89,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a1019",
+    "ph": "ann10",
     "href": "",
     "src": "./box_img/annees2010.webp",
     "spText": "Années 2010",
@@ -97,7 +97,7 @@
   },
   {
     "menu": "ph",
-    "ph": "a2029",
+    "ph": "ann20",
     "href": "",
     "src": "./box_img/annees2020.webp",
     "spText": "Années 2020",

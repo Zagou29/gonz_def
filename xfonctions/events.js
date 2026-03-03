@@ -151,7 +151,7 @@ export class EventManager {
     let isManualScroll = false;
     const debouncedHandleScroll = this.uiManager.debounce(() => {
       lastscroll = this.uiManager.handleScroll(lastscroll);
-    }, 10);
+    }, 50);
 
     window.addEventListener("scroll", debouncedHandleScroll);
 
