@@ -10,24 +10,14 @@
   <link rel="preconnect" href="https://www.youtube.com">
   <link rel="icon" href="./box_img/Zag_icon.png" type="image/x-icon">
 
-  <!-- CSS critique - chargement immédiat -->
-  <link rel="preload" href="./css/variables.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="./css/layout.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="./css/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-  <!-- CSS non-critique - chargement différé -->
-  <link rel="stylesheet" href="./css/dropdown.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/video.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/blog.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/responsive.css" media="print" onload="this.media='all'">
-
-  <!-- Fallback pour navigateurs sans JS -->
-  <noscript>
-    <link rel="stylesheet" href="./css/dropdown.css">
-    <link rel="stylesheet" href="./css/video.css">
-    <link rel="stylesheet" href="./css/blog.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-  </noscript>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/dropdown.css">
+  <link rel="stylesheet" href="./css/video.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <!-- Préchargement du script -->
   <link rel="modulepreload" href="./vidScript.js">
