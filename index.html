@@ -10,14 +10,22 @@
   <link rel="preconnect" href="https://www.youtube.com">
   <link rel="icon" href="./box_img/Zag_icon.png" type="image/x-icon">
 
-  <!-- CSS -->
+  <!-- CSS critique (render-blocking) -->
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/menu.css">
-  <link rel="stylesheet" href="./css/dropdown.css">
-  <link rel="stylesheet" href="./css/video.css">
-  <link rel="stylesheet" href="./css/blog.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- CSS non-critique : préchargé mais non-bloquant -->
+  <link rel="preload" href="./css/dropdown.css" as="style">
+  <link rel="preload" href="./css/video.css" as="style">
+  <link rel="preload" href="./css/blog.css" as="style">
+  <link rel="preload" href="./css/responsive.css" as="style">
+  <!-- Fallback noscript -->
+  <noscript>
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+  </noscript>
 
   <!-- Préchargement du script -->
   <link rel="modulepreload" href="./vidScript.js">
