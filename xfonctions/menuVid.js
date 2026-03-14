@@ -61,7 +61,7 @@ export class MenuVid {
     this.#listatrier = this.#boxSelect.map((item) => {
       const { clas, groupe } = item;
       const menu = clas.slice(0, 4);
-      const detail = clas.slice(9, 17);
+      const detail = clas.slice(5, 8);
       return { clas, menu, groupe, detail };
     });
     /* enlever tous les doublons de listeatrier et trier : par detail puis groupe*/
