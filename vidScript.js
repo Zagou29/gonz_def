@@ -1,3 +1,4 @@
+import { mob } from "./xfonctions/nav_os.js";
 import { createElement } from "./xfonctions/dom.js";
 import boxJson from "./xjson/box.json" with { type: "json" };
 import vidListJson from "./xjson/indexVid.json" with { type: "json" };
@@ -5,7 +6,6 @@ import menuListJson from "./xjson/menusVideos.json" with { type: "json" };
 import { Menubox } from "./xfonctions/menubox.js";
 import { MenuVid } from "./xfonctions/menuVid.js";
 import { Affvid } from "./xfonctions/affvid_refact.js";
-
 // Activation des CSS non-critiques préchargés (compatible CSP script-src 'self')
 ["dropdown", "video", "blog", "responsive"].forEach((name) => {
   const preloaded = document.querySelector(
@@ -152,8 +152,8 @@ const aff_Videos = (e) => {
   const clasChoisie = `${spanChoisi.dataset.select}`;
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
-  // Toujours thumbnails (facade YouTube) : mobile et desktop
-  const tempId = "ytThumb";
+  // Sur mobile : iframes directes, sur desktop : toujours thumbnails pour tous les types
+  const tempId = mob().mob ? "ytFrame" : "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     setHeight(
@@ -164,7 +164,7 @@ const aff_Videos = (e) => {
   const nbVideos = afficheLiens(clasChoisie, year, tempId);
   dom.titre.textContent = nbVideos ? spanChoisi.textContent : "";
   state.blockLinks_open = false;
-};
+};;
 
 /**
  * Transfère le dataset.ph vers photos.html.
