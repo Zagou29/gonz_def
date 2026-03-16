@@ -1,4 +1,3 @@
-import { mob } from "./xfonctions/nav_os.js";
 import { createElement } from "./xfonctions/dom.js";
 import boxJson from "./xjson/box.json" with { type: "json" };
 import vidListJson from "./xjson/indexVid.json" with { type: "json" };
@@ -9,7 +8,9 @@ import { Affvid } from "./xfonctions/affvid_refact.js";
 
 // Activation des CSS non-critiques préchargés (compatible CSP script-src 'self')
 ["dropdown", "video", "blog", "responsive"].forEach((name) => {
-  const preloaded = document.querySelector(`link[rel="preload"][href*="${name}.css"]`);
+  const preloaded = document.querySelector(
+    `link[rel="preload"][href$="${name}.css"]`,
+  );
   if (preloaded) preloaded.rel = "stylesheet";
 });
 
@@ -96,10 +97,11 @@ const ferme_videos = (entries) => {
  */
 const click_img = (e) => {
   const { target } = e;
-  if (target.classList.contains("vidImg")) {
+  if (target.tagName === "IMG" && target.classList.contains("vidImg")) {
     const divImg = target.parentElement;
     const videoId = target.dataset.id;
 
+    divImg.querySelector(".yt-play-btn")?.remove();
     target.remove();
 
     state.vidClass.aff_ytFrameR(divImg, videoId);
@@ -150,8 +152,8 @@ const aff_Videos = (e) => {
   const clasChoisie = `${spanChoisi.dataset.select}`;
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
-  // Sur mobile : iframes directes, sur desktop : toujours thumbnails pour tous les types
-  const tempId = mob().mob ? "ytFrame" : "ytThumb";
+  // Toujours thumbnails (facade YouTube) : mobile et desktop
+  const tempId = "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     setHeight(

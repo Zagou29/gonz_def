@@ -18,6 +18,42 @@
   scroll-snap-align: start;
   margin: 0 auto;
   z-index: 1;
+  position: relative;
+  display: inline-block;
+}
+
+/* Bouton Play YouTube centré sur le thumbnail */
+.yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 68px;
+  height: 48px;
+  background-color: #ff0000;
+  border-radius: 12px;
+  pointer-events: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.yt-play-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent white;
+}
+
+.lect:hover .yt-play-btn {
+  background-color: #cc0000;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .vidImg {
