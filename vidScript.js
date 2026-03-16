@@ -1,4 +1,4 @@
-import { mob } from "./xfonctions/nav_os.js";
+import { mob, ordi_OS } from "./xfonctions/nav_os.js";
 import { createElement } from "./xfonctions/dom.js";
 import boxJson from "./xjson/box.json" with { type: "json" };
 import vidListJson from "./xjson/indexVid.json" with { type: "json" };
@@ -152,8 +152,8 @@ const aff_Videos = (e) => {
   const clasChoisie = `${spanChoisi.dataset.select}`;
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
-  // Sur mobile : iframes directes, sur desktop : toujours thumbnails pour tous les types
-  const tempId = mob().mob ? "ytFrame" : "ytThumb";
+  // Mobile et iPad : iframes directes ; desktop : thumbnails (facade YouTube)
+  const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     setHeight(
@@ -164,7 +164,7 @@ const aff_Videos = (e) => {
   const nbVideos = afficheLiens(clasChoisie, year, tempId);
   dom.titre.textContent = nbVideos ? spanChoisi.textContent : "";
   state.blockLinks_open = false;
-};;
+};
 
 /**
  * Transfère le dataset.ph vers photos.html.

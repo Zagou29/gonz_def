@@ -1,26 +1,32 @@
 /* OS? */
 
 /* Win Mac Linux Android like Mac */
+const ua = navigator.userAgent;
+const uaLow = ua.toLowerCase();
+
+// iPad : "iPad" dans le UA (iPadOS <= 12) OU Mac + touchpoints > 1 (iPadOS 13+, M1/M2/M4...)
+const isIpad =
+  /iPad/.test(ua) ||
+  (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+
 const ordiOS = {
-  win: navigator.userAgent.indexOf("Win") > 0,
-  mac: navigator.userAgent.indexOf("Mac") > 0,
-  linux: navigator.userAgent.indexOf("Linux") > 0,
-  android: navigator.userAgent.indexOf("Android") > 0,
-  ios: navigator.userAgent.indexOf("like Mac") > 0,
-  /*  */
+  win: ua.indexOf("Win") > 0,
+  mac: ua.indexOf("Mac") > 0,
+  linux: ua.indexOf("Linux") > 0,
+  android: ua.indexOf("Android") > 0,
+  ios: ua.indexOf("like Mac") > 0,
+  ipad: isIpad,
 };
 const mobile = {
-  mob: navigator.userAgent.toLowerCase().indexOf("mobi") > 0,
+  mob: uaLow.indexOf("mobi") > 0,
 };
 const navigateur = {
-  edge: navigator.userAgent.toLowerCase().indexOf("edg") > 0,
-  opera: navigator.userAgent.toLowerCase().indexOf("opr") > 0,
-  chrome: navigator.userAgent.toLowerCase().indexOf("chrome") > 0,
-  chromeIos: navigator.userAgent.toLowerCase().indexOf("crios") > 0,
-  firefox: navigator.userAgent.toLowerCase().indexOf("firefox") > 0,
-  safari:
-    navigator.userAgent.toLowerCase().indexOf("safari") > 0 &&
-    navigator.userAgent.toLowerCase().indexOf("chrome") < 0,
+  edge: uaLow.indexOf("edg") > 0,
+  opera: uaLow.indexOf("opr") > 0,
+  chrome: uaLow.indexOf("chrome") > 0,
+  chromeIos: uaLow.indexOf("crios") > 0,
+  firefox: uaLow.indexOf("firefox") > 0,
+  safari: uaLow.indexOf("safari") > 0 && uaLow.indexOf("chrome") < 0,
 };
 const ordi_OS = () => ordiOS;
 const navig = () => navigateur;
