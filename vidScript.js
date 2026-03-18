@@ -245,13 +245,15 @@ const setupObserver = () => {
     vidList.sort((a, b) => a.annee - b.annee);
     // Raccorder les vidéos aux menuboxes par les classes (sans le type vidéo)
     const list_menus = vidList.map((item) => {
-      const { clas, text } = item;
-      const lien = menuList.find((li) => li.clas === clas.slice(4));
+      const { clas, text, typVid } = item;
+      const lien = menuList.find((li) => li.clas === clas);
       const { groupe = "", src = "", detail = "" } = lien;
-      return { clas, groupe, text, src, detail };
+      return { clas, groupe, text, src, detail, typVid };
     });
+    console.log("Liste des menus préparée:", list_menus);
     /* Initialisation des classes d'affichage */
     state.vidClass = new Affvid(vidList);
+    console;
     /* afficher les boites menus fam, voy, pll */
     state.vidMenu = new MenuVid(list_menus);
     ["menu_fam", "menu_voy", "menu_pll"].forEach((selector) =>

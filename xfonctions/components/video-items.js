@@ -62,7 +62,7 @@ export class VidItem {
 
     // Déterminer si c'est une vidéo ou un diaporama
     this.#vidClass =
-      this.#vidItem.clas.slice(0, 4) === VIDEO_CONFIG.CLASSES.VIDEO
+      this.#vidItem.typVid === VIDEO_CONFIG.CLASSES.VIDEO
         ? VIDEO_CONFIG.TYPES.VIDEO
         : VIDEO_CONFIG.TYPES.DIAPO;
 
@@ -193,7 +193,7 @@ export class BarItem {
     this.#barElement.classList.add("ytItem");
 
     // Ajouter la classe spécifique au type (vid/dia)
-    const typeClass = this.#vidObj.clas.slice(1, 4);
+    const typeClass = this.#vidObj.typVid;
     if (typeClass) {
       this.#barElement.classList.add(typeClass);
     }

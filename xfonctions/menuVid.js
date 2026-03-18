@@ -33,7 +33,6 @@ export class MenuVid {
     // videos est la liste de toutes le videos raccrochées aux menusVideos.json
     this.#videos = videos;
   }
-
   /**
    * Affiche les boxes de sélection
    * @param {HTMLElement} element - Élément DOM parent
@@ -47,17 +46,13 @@ export class MenuVid {
     this.#boxElement = element;
     this.#boxSelect = this.#videos.filter((objbox) =>
       objbox.clas
-        .slice(4, 8)
+        .slice(0, 4)
         .includes("." + this.#boxElement.className.slice(13)),
     );
     // this.#boxSelect filtre de videos(videos+menus) par la clas .fam/.voy/.pll
     // enlever le typevideo de la clas et le mettre dans tv
-    this.#boxSelect = this.#boxSelect.map((item) => {
-      item.tv = item.clas.slice(1, 4);
-      item.clas = item.clas.slice(4);
-      return item;
-    });
-    // ne garder que le menu (fam/voy/pll), le id_groupe, le detail venat de la classe
+    
+    // ne garder que le menu (fam/voy/pll), le id_groupe, le detail venant de la classe
     this.#listatrier = this.#boxSelect.map((item) => {
       const { clas, groupe } = item;
       const menu = clas.slice(0, 4);
@@ -104,7 +99,7 @@ class MenuItem {
     this.#boxElement.querySelector(".groupe").textContent = firstItem.groupe;
     this.liste = new DocumentFragment();
     this.#boxList
-      .sort((a, b) => b.tv.localeCompare(a.tv))
+      .sort((a, b) => b.typVid.localeCompare(a.typVid))
       .forEach((obj) => {
         const ligne = new Box_liste(obj);
         this.liste.append(ligne.returnDetail);
@@ -125,7 +120,7 @@ class Box_liste {
     this.#ligneElement = cloneTemplate("line").firstElementChild;
     this.#ligneElement.textContent = this.#detail.text;
     this.#ligneElement.classList.add("detail");
-    this.#ligneElement.classList.add(this.#detail.tv);
+    this.#ligneElement.classList.add(this.#detail.typVid);
   }
   get returnDetail() {
     return this.#ligneElement;

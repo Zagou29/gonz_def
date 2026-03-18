@@ -8,8 +8,8 @@ export const VIDEO_CONFIG = {
     FRAME_READ: "ytFrameR",
   },
   CLASSES: {
-    VIDEO: ".vid",
-    DIAPO: ".dia",
+    VIDEO: "vid",
+    DIAPO: "dia",
   },
   TYPES: {
     VIDEO: "video",

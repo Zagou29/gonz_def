@@ -97,12 +97,12 @@ export class Affvid {
     }
     // Trier les vidéos et diaporamas
     this.#liste = this.#vidSelect.sort((a, b) => {
-      const isVideoA = a.clas.includes(VIDEO_CONFIG.CLASSES.VIDEO);
-      const isVideoB = b.clas.includes(VIDEO_CONFIG.CLASSES.VIDEO);
+      const isVideoA = a.typVid.includes(VIDEO_CONFIG.CLASSES.VIDEO);
+      const isVideoB = b.typVid.includes(VIDEO_CONFIG.CLASSES.VIDEO);
       return isVideoB - isVideoA; // Les vidéos avant les diaporamas
     });
+    console.log("Vidéos filtrées:",this.#liste);
   }
-
   /**
    * Crée les miniatures pour chaque vidéo
    * @private
