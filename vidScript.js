@@ -250,7 +250,6 @@ const setupObserver = () => {
       const { groupe = "", src = "", detail = "" } = lien;
       return { clas, groupe, text, src, detail, typVid };
     });
-    console.log("Liste des menus préparée:", list_menus);
     /* Initialisation des classes d'affichage */
     state.vidClass = new Affvid(vidList);
     console;

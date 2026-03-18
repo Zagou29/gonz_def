@@ -93,7 +93,6 @@ class MenuItem {
     const tiBlogElement = this.#boxElement.querySelector(".ti_blog");
     imgElement.setAttribute("src", firstItem.src);
     imgElement.setAttribute("alt", firstItem.detail);
-    imgElement.classList.add(firstItem.clas.slice(1, 4));
     tiBlogElement.textContent = firstItem.detail;
     tiBlogElement.dataset.select = this.#boxItem;
     this.#boxElement.querySelector(".groupe").textContent = firstItem.groupe;
