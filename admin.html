@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin — Galerie Zagou</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+
+    <!-- ══ HEADER ══════════════════════════════════════════════════════════════ -->
+    <header>
+        <h1>⚙️ Administration — Galerie Zagou</h1>
+        <a href="./index.html">← Retour accueil</a>
+    </header>
+
+    <!-- ══ NAV ═════════════════════════════════════════════════════════════════ -->
+    <nav class="main-nav">
+        <button class="nav-btn active" data-tab="videos">🎬 Vidéos</button>
+        <button class="nav-btn" data-tab="menus">📂 Menus Videos</button>
+        <button class="nav-btn" data-tab="photos">📸 Menus Photos</button>
+        <button class="nav-btn" data-tab="blogs">📝 Menus Blogs</button>
+    </nav>
+
+    <!-- ══ MAIN ════════════════════════════════════════════════════════════════ -->
+    <main>
+
+        <!-- ─── VIDÉOS ──────────────────────────────────────────────────────── -->
+        <section class="section active" id="sec-videos">
+            <div class="section-header">
+                <h2>Vidéos <small id="vid-count"></small></h2>
+            </div>
+
+            <div class="export-bar" id="vid-export-bar" style="display:none">
+                <span>⚠️ Modifications non enregistrées — téléchargez le fichier JSON mis à jour.</span>
+                <button class="btn btn-success btn-sm" id="btn-export-vid">⬇ indexVid.json</button>
+                <button class="btn btn-outline  btn-sm" id="btn-copy-vid">📋 Copier</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="vid-search" placeholder="Titre, ID, classe, année…">
+                <select class="form-control" id="vid-filter-type" style="width:auto">
+                    <option value="">Tous types</option>
+                    <option value="vid">vid</option>
+                    <option value="dia">dia</option>
+                </select>
+                <select class="form-control" id="vid-filter-clas" style="width:auto">
+                    <option value="">Toutes catégories</option>
+                </select>
+            </div>
+
+            <div class="table-container" id="vid-table-wrap">
+                <div class="loading">Chargement…</div>
+            </div>
+            <div class="pagination" id="vid-pagination"></div>
+        </section>
+
+        <!-- ─── MENUS ───────────────────────────────────────────────────────── -->
+        <section class="section" id="sec-menus">
+            <div class="section-header">
+                <h2>Menus Vidéos <small id="men-count"></small></h2>
+            </div>
+
+            <div class="export-bar" id="men-export-bar" style="display:none">
+                <span>⚠️ Modifications non enregistrées — téléchargez le fichier JSON mis à jour.</span>
+                <button class="btn btn-success btn-sm" id="btn-export-men">⬇ menusVideos.json</button>
+                <button class="btn btn-outline  btn-sm" id="btn-copy-men">📋 Copier</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="men-search" placeholder="Classe, groupe, détail…">
+            </div>
+
+            <div class="table-container" id="men-table-wrap">
+                <div class="loading">Chargement…</div>
+            </div>
+        </section>
+
+        <!-- ─── PHOTOS ──────────────────────────────────────────────────────── -->
+        <section class="section" id="sec-photos">
+            <div class="section-header">
+                <h2>Albums Photos <small id="pho-count"></small></h2>
+            </div>
+
+            <div class="export-bar" id="pho-export-bar" style="display:none">
+                <span>⚠️ Modifications non enregistrées — téléchargez le fichier box.json mis à jour.</span>
+                <button class="btn btn-success btn-sm" id="btn-export-pho">⬇ box.json</button>
+                <button class="btn btn-outline  btn-sm" id="btn-copy-pho">📋 Copier</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="pho-search" placeholder="Identifiant, titre, description…">
+            </div>
+
+            <div class="table-container" id="pho-table-wrap">
+                <div class="loading">Chargement…</div>
+            </div>
+        </section>
+
+        <!-- ─── BLOGS ───────────────────────────────────────────────────────── -->
+        <section class="section" id="sec-blogs">
+            <div class="section-header">
+                <h2>Blogs <small id="blo-count"></small></h2>
+            </div>
+
+            <div class="export-bar" id="blo-export-bar" style="display:none">
+                <span>⚠️ Modifications non enregistrées — téléchargez le fichier box.json mis à jour.</span>
+                <button class="btn btn-success btn-sm" id="btn-export-blo">⬇ box.json</button>
+                <button class="btn btn-outline  btn-sm" id="btn-copy-blo">📋 Copier</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="blo-search" placeholder="Titre, URL, description…">
+            </div>
+
+            <div class="table-container" id="blo-table-wrap">
+                <div class="loading">Chargement…</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══ MODALS ══════════════════════════════════════════════════════════════ -->
+
+    <!-- Modal Vidéo -->
+    <div class="modal-overlay" id="modal-vid">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-vid-title">Nouvelle vidéo</h3>
+                <button class="modal-close" data-close="modal-vid">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-grid">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Type</label>
+                            <select class="form-control" id="f-vid-typVid">
+                                <option value="vid">vid — Vidéo</option>
+                                <option value="dia">dia — Diaporama</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Format (ec)</label>
+                            <select class="form-control" id="f-vid-ec">
+                                <option value="">16:9 (défaut)</option>
+                                <option value="43">4:3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Classe CSS</label>
+                        <input type="text" class="form-control" id="f-vid-clas" placeholder=".fam.ava">
+                        <span class="form-hint">Ex : .fam.ava · .voy.usa · .pll.amis</span>
+                    </div>
+                    <div class="form-group">
+                        <label>YouTube ID</label>
+                        <input type="text" class="form-control" id="f-vid-id" placeholder="-aHnvpSc4t4">
+                        <span class="form-hint">ID vidéo (11 car.) ou playlist (34 car.)</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Année</label>
+                            <input type="text" class="form-control" id="f-vid-annee" placeholder="1973" maxlength="4">
+                        </div>
+                        <div class="form-group">
+                            <label>Titre</label>
+                            <input type="text" class="form-control" id="f-vid-text" placeholder="1973 Régates">
+                        </div>
+                    </div>
+                    <!-- Aperçu thumbnail -->
+                    <div id="vid-preview" style="display:none; text-align:center; margin-top:0.25rem;">
+                        <img id="vid-preview-img" src="" alt="aperçu"
+                            style="max-width:100%; max-height:120px; border-radius:4px; border:1px solid var(--border);">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-close="modal-vid">Annuler</button>
+                <button class="btn btn-primary" id="btn-save-vid">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Menu -->
+    <div class="modal-overlay" id="modal-men">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-men-title">Nouveau menu</h3>
+                <button class="modal-close" data-close="modal-men">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Classe CSS</label>
+                        <input type="text" class="form-control" id="f-men-clas" placeholder=".fam.ava">
+                        <span class="form-hint">Ex : .fam.ava · .voy.usa · .pll.amis</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Groupe</label>
+                        <input type="text" class="form-control" id="f-men-groupe" placeholder="1 Avant-guerre">
+                    </div>
+                    <div class="form-group">
+                        <label>Image (src)</label>
+                        <input type="text" class="form-control" id="f-men-src"
+                            placeholder="./box_img/grandpere-1917.webp">
+                    </div>
+                    <div class="form-group">
+                        <label>Détail</label>
+                        <input type="text" class="form-control" id="f-men-detail" placeholder="Années 1900 à 1949">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-close="modal-men">Annuler</button>
+                <button class="btn btn-primary" id="btn-save-men">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Photo -->
+    <div class="modal-overlay" id="modal-pho">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-pho-title">Nouvel album photo</h3>
+                <button class="modal-close" data-close="modal-pho">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Identifiant (ph)</label>
+                        <input type="text" class="form-control" id="f-pho-ph" placeholder="ann70">
+                        <span class="form-hint">Ex : ann70, cario, g1418, gonz1</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Image (src)</label>
+                        <input type="text" class="form-control" id="f-pho-src" placeholder="./box_img/annees70.webp">
+                    </div>
+                    <div class="form-group">
+                        <label>Titre court (spText)</label>
+                        <input type="text" class="form-control" id="f-pho-spText" placeholder="Années 1970">
+                    </div>
+                    <div class="form-group">
+                        <label>Description (divText)</label>
+                        <textarea class="form-control" id="f-pho-divText" rows="3"
+                            placeholder="Description de l'album…"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-close="modal-pho">Annuler</button>
+                <button class="btn btn-primary" id="btn-save-pho">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Blog -->
+    <div class="modal-overlay" id="modal-blo">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-blo-title">Nouveau blog</h3>
+                <button class="modal-close" data-close="modal-blo">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Titre (spText)</label>
+                        <input type="text" class="form-control" id="f-blo-spText" placeholder="Nom du blog">
+                    </div>
+                    <div class="form-group">
+                        <label>URL (href)</label>
+                        <input type="url" class="form-control" id="f-blo-href"
+                            placeholder="https://monblog.blogspot.com/">
+                    </div>
+                    <div class="form-group">
+                        <label>Image (src)</label>
+                        <input type="text" class="form-control" id="f-blo-src" placeholder="./box_img/image.webp">
+                    </div>
+                    <div class="form-group">
+                        <label>Description (divText)</label>
+                        <textarea class="form-control" id="f-blo-divText" rows="3"
+                            placeholder="Description du blog…"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-close="modal-blo">Annuler</button>
+                <button class="btn btn-primary" id="btn-save-blo">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script type="module" src="./admin.js"></script>
+</body>
+
+</html>
