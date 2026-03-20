@@ -2,15 +2,16 @@
 
 ## Architecture du Projet
 
-Ce projet est une **galerie familiale multimédia** (photos et vidéos YouTube) avec deux interfaces principales :
+Ce projet est une **galerie familiale multimédia** (photos et vidéos YouTube) avec trois interfaces principales :
 
 - **`index.html`** : Interface vidéos/diaporamas YouTube avec navigation par menus dropdown
 - **`photos.html`** : Galerie photos avec diaporama et zoom
+- **`admin.html`** : Interface d'administration pour gérer les données JSON (vidéos, menus, photos, blogs) — `noindex, nofollow`
 
 ### Structure Modulaire
 
 - **`xfonctions/`** : Modules ES6 organisés par responsabilité
-- **`css/`** : CSS modulaire avec variables CSS et responsive design
+- **`css/`** : CSS modulaire avec variables CSS et responsive design (`admin.css`, `blog.css`, `dropdown.css`, `layout.css`, `menu.css`, `responsive.css`, `variables.css`, `video.css`)
 - **`xjson/`** : Données JSON pour vidéos, menus et photos
 
 ## Convention de Classes CSS
@@ -50,10 +51,12 @@ const tempId = mob().mob ? "ytFrame" : "ytThumb";
 
 ### Architecture Modulaire par Responsabilité
 
-- **`affvid_refact.js`** : Classe `Affvid` pour affichage vidéos
+- **`affvid_refact.js`** : Classe `Affvid` pour affichage et filtrage des vidéos
 - **`menuVid.js`** : Classe `MenuVid` pour navigation menus
-- **`managers.js`** : Managers spécialisés (Navigation, Audio, Zoom, etc.)
-- **`components/`** : Composants réutilisables (`VidItem`, `BarItem`)
+- **`managers.js`** : Bundle d'exports des managers — `AudioManager`, `NavigationManager`, `DiaporamaManager`, `UIManager`, `ZoomManager`, `EventManager`
+- **`components/video-items.js`** : Composants réutilisables — `VidItem` (miniature/iframe), `BarItem` (barre de nav), `AnnItem` (élément année)
+- **`utils/dimension-calculator.js`** : Classe `DimensionCalculator` — calcul dimensions optimales vidéo selon ratio et conteneur
+- **`dom.js`** : Fonction utilitaire `cloneTemplate(id)` — clone un `<template>` HTML par son ID
 
 ### Configuration Centralisée
 
@@ -61,7 +64,7 @@ const tempId = mob().mob ? "ytFrame" : "ytThumb";
 // xfonctions/config/video-config.js
 export const VIDEO_CONFIG = {
   TEMPLATES: { THUMB: "ytThumb", FRAME: "ytFrame", FRAME_READ: "ytFrameR" },
-  CLASSES: { VIDEO: ".vid", DIAPO: ".dia" },
+  CLASSES: { VIDEO: "vid", DIAPO: "dia" }, // sans point — utilisés pour classList, pas querySelector
   TYPES: { VIDEO: "video", DIAPO: "diapo" },
   FORMATS: {
     FORMAT_4_3: "43",
@@ -135,7 +138,8 @@ Utilisé pour créer dynamiquement vidéos, barres de navigation, etc.
 - **`vidScript.js`** : Script principal vidéos (racine)
 - **`photos.js`** : Script principal photos (racine)
 - **`photos.css`** : CSS spécifique galerie photos (racine)
-- **`scripts/resize-images.js`** : Utilitaire de redimensionnement d'images
+- **`admin.js`** : Script interface d'administration — gestion CRUD des JSON, export/clipboard
+- **`scripts/resize-images.js`** : Utilitaire de redimensionnement d'images (Node.js + sharp)
 
 ### Structure Fichiers Médias
 

@@ -131,6 +131,11 @@ function markDirty(section) {
   $(`#${section}-export-bar`).style.display = "";
 }
 
+function markClean(section) {
+  state[`${section}Dirty`] = false;
+  $(`#${section}-export-bar`).style.display = "none";
+}
+
 function syncBox() {
   state.box = [...state.photos, ...state.blogs];
 }
@@ -165,6 +170,7 @@ function buildVidCategoryFilter() {
     ),
   ].sort();
   const sel = $("#vid-filter-clas");
+  while (sel.options.length > 1) sel.remove(1);
   cats.forEach((c) => {
     const opt = document.createElement("option");
     opt.value = c;
@@ -328,12 +334,24 @@ $("#btn-save-vid").addEventListener("click", () => {
   renderVideos();
 });
 
-$("#btn-export-vid").addEventListener("click", () =>
-  downloadJSON(state.videos, "indexVid.json"),
-);
+$("#btn-export-vid").addEventListener("click", () => {
+  downloadJSON(getSortedVideos(), "indexVid.json");
+  markClean("vid");
+});
 $("#btn-copy-vid").addEventListener("click", () =>
-  copyToClipboard(JSON.stringify(state.videos, null, 2)),
+  copyToClipboard(JSON.stringify(getSortedVideos(), null, 2)),
 );
+getSortedVideos()
+// Trie les vidéos par classe (2 niveaux), puis par type, puis par année ( Attention:il faut remplacer le fichier indexVid.json par la version triée pour que l'affichage dans l'admin soit lui aussi trié, sinon les vidéos seront dans un ordre différent de celui du site )
+function getSortedVideos() {
+  return [...state.videos].sort((a, b) => {
+    const clasCmp = (a.clas || "").localeCompare(b.clas || "");
+    if (clasCmp !== 0) return clasCmp;
+    const anneeCmp = (b.typVid || "").localeCompare(a.typVid || "");
+    if (anneeCmp !== 0) return anneeCmp;
+    return (a.annee || "").localeCompare(b.annee || "");
+  });
+}
 
 // ════════════════════════════════════════════════════════════════════════════
 // SECTION MENUS
@@ -433,9 +451,10 @@ $("#btn-save-men").addEventListener("click", () => {
   renderMenus();
 });
 
-$("#btn-export-men").addEventListener("click", () =>
-  downloadJSON(state.menus, "menusVideos.json"),
-);
+$("#btn-export-men").addEventListener("click", () => {
+  downloadJSON(state.menus, "menusVideos.json");
+  markClean("men");
+});
 $("#btn-copy-men").addEventListener("click", () =>
   copyToClipboard(JSON.stringify(state.menus, null, 2)),
 );
@@ -543,6 +562,7 @@ $("#btn-save-pho").addEventListener("click", () => {
 $("#btn-export-pho").addEventListener("click", () => {
   syncBox();
   downloadJSON(state.box, "box.json");
+  markClean("pho");
 });
 $("#btn-copy-pho").addEventListener("click", () => {
   syncBox();
@@ -652,6 +672,7 @@ $("#btn-save-blo").addEventListener("click", () => {
 $("#btn-export-blo").addEventListener("click", () => {
   syncBox();
   downloadJSON(state.box, "box.json");
+  markClean("blo");
 });
 $("#btn-copy-blo").addEventListener("click", () => {
   syncBox();

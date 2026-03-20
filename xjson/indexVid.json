@@ -2,174 +2,6 @@
   {
     "ec": "43",
     "typVid": "vid",
-    "clas": ".fam.ava",
-    "id": "-aHnvpSc4t4",
-    "text": "1917 Hydravions",
-    "annee": "1917"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a60",
-    "id": "8xYguJORLI0",
-    "text": "1968 les-3-soeurs",
-    "annee": "1968"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a70",
-    "id": "PqXJVVViFyo",
-    "text": "1973 Régates",
-    "annee": "1973"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a70",
-    "id": "x1azKh8QTVI",
-    "text": "1976 Anne Lise",
-    "annee": "1976"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a70",
-    "id": "sGEAd_tRXdc",
-    "text": "1977 Marie",
-    "annee": "1977"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a70",
-    "id": "EVq1pklbfmw",
-    "text": "1978 Eric Tanneguy",
-    "annee": "1978"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a70",
-    "id": "6bC223DTeYI",
-    "text": "1979 Pantin",
-    "annee": "1979"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a80",
-    "id": "0hdFT88-AiI",
-    "text": "1980-1981 Pantin suite",
-    "annee": "1980"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a80",
-    "id": "vYjOkeQ7Ez8",
-    "text": "1982 Lise",
-    "annee": "1982"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a80",
-    "id": "iErEMOomM0E",
-    "text": "1983 Premiers-pas",
-    "annee": "1983"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a80",
-    "id": "6rVJQEVNabI",
-    "text": "1984-87 Bavent",
-    "annee": "1984"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a80",
-    "id": "l6P0RQojLWM",
-    "text": "1988-89 Hotot",
-    "annee": "1988"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "2H9aWe3uNrU",
-    "text": "1990 Eliane TV1",
-    "annee": "1990"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "f4yogdWi-tQ",
-    "text": "1990-91 Voile",
-    "annee": "1990"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "ARyRKLg_Dbk",
-    "text": "1991 92 Classe-de-Neige",
-    "annee": "1992"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "rPSAhlVBGjE",
-    "text": "1992 Irlande",
-    "annee": "1992"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "5XdjGvcchVY",
-    "text": "1993 Meadowlands",
-    "annee": "1993"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "OVJbpEcIBSs",
-    "text": "1993-94 Aber/Giens",
-    "annee": "1993"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "2K_71XxyDXY",
-    "text": "1995 Papa 71ans",
-    "annee": "1995"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "pRHvYpqFF-E",
-    "text": "1996-97 Jamie/Persée",
-    "annee": "1996"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "hkoP6hAjxu4",
-    "text": "1997 Benoit/Michele",
-    "annee": "1997"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
     "clas": ".fam.a00",
     "id": "Ibps7pXQ89w",
     "text": "2002 Marie/Yann",
@@ -216,6 +48,30 @@
     "annee": "2009"
   },
   {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a00",
+    "id": "j_vNW2AaQYM",
+    "text": "2002-04 Résumé",
+    "annee": "2002"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a00",
+    "id": "8NP6CuZxWQk",
+    "text": "2005-07 Résumé",
+    "annee": "2005"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a00",
+    "id": "KTG9EPvYiVI",
+    "text": "2008-09 Résumé",
+    "annee": "2008"
+  },
+  {
     "ec": "16",
     "typVid": "vid",
     "clas": ".fam.a10",
@@ -229,6 +85,22 @@
     "clas": ".fam.a10",
     "id": "En-H0ydWndA",
     "text": "2011 Hill/Dan.",
+    "annee": "2011"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".fam.a10",
+    "id": "xCfkAVHMGYY",
+    "text": "2011 Louison",
+    "annee": "2011"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".fam.a10",
+    "id": "RndnJNKOZJo",
+    "text": "2011 Fête Guilvinec",
     "annee": "2011"
   },
   {
@@ -259,6 +131,14 @@
     "ec": "16",
     "typVid": "vid",
     "clas": ".fam.a10",
+    "id": "PjJ6l_LohRs",
+    "text": "2015 50ans Lucas",
+    "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".fam.a10",
     "id": "InfI9wJWP-s",
     "text": "2019 Résumé",
     "annee": "2019"
@@ -272,52 +152,44 @@
     "annee": "2019"
   },
   {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a60",
-    "id": "vlc7K9ACgjw",
-    "text": "1963-85 Voy Carious ",
-    "annee": "1963"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a60",
-    "id": "ix9TqCW30j0",
-    "text": "1965-85 Carious",
-    "annee": "1965"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a90",
-    "id": "Z1cDnbCryWM",
-    "text": "1998 Eliane TV2",
-    "annee": "1998"
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a10",
+    "id": "X0nurv9kFlw",
+    "text": "2010_14 Résumé",
+    "annee": "2010"
   },
   {
     "ec": "16",
-    "typVid": "vid",
+    "typVid": "dia",
     "clas": ".fam.a10",
-    "id": "xCfkAVHMGYY",
-    "text": "2011 Louison",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".fam.a10",
-    "id": "RndnJNKOZJo",
-    "text": "2011 Fête Guilvinec",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".fam.a10",
-    "id": "PjJ6l_LohRs",
-    "text": "2015 50ans Lucas",
+    "id": "c738Ijdczjk",
+    "text": "2015 Fête St-Guerin",
     "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a10",
+    "id": "Ffb0if6e-qw",
+    "text": "2015_2019 Résumé",
+    "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a10",
+    "id": "-_PfkZtoBmU",
+    "text": "2018 Eric Didier",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a10",
+    "id": "55rUeR9rCJs",
+    "text": "2019 Américains",
+    "annee": "2019"
   },
   {
     "ec": "16",
@@ -426,6 +298,294 @@
   {
     "ec": "16",
     "typVid": "dia",
+    "clas": ".fam.a20",
+    "id": "qXg8ZmQssHw",
+    "text": "2025 Mega Show",
+    "annee": "2025"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a20",
+    "id": "_liiFVJSW-s",
+    "text": "2025 Résumé D",
+    "annee": "2025"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a60",
+    "id": "vlc7K9ACgjw",
+    "text": "1963-85 Voy Carious ",
+    "annee": "1963"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a60",
+    "id": "ix9TqCW30j0",
+    "text": "1965-85 Carious",
+    "annee": "1965"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a60",
+    "id": "8xYguJORLI0",
+    "text": "1968 les-3-soeurs",
+    "annee": "1968"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a60",
+    "id": "m-9o0tQRh34",
+    "text": "1956-65 Mimosas",
+    "annee": "1956"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a60",
+    "id": "0VOHWKq-mNA",
+    "text": "1958-2002 Christian",
+    "annee": "1958"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a70",
+    "id": "PqXJVVViFyo",
+    "text": "1973 Régates",
+    "annee": "1973"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a70",
+    "id": "x1azKh8QTVI",
+    "text": "1976 Anne Lise",
+    "annee": "1976"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a70",
+    "id": "sGEAd_tRXdc",
+    "text": "1977 Marie",
+    "annee": "1977"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a70",
+    "id": "EVq1pklbfmw",
+    "text": "1978 Eric Tanneguy",
+    "annee": "1978"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a70",
+    "id": "6bC223DTeYI",
+    "text": "1979 Pantin",
+    "annee": "1979"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a70",
+    "id": "w9j7hewUcxM",
+    "text": "1970-80 Résumé",
+    "annee": "1970"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".fam.a70",
+    "id": "8uHOrs_MzII",
+    "text": "1970 The Moore's",
+    "annee": "1976"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a80",
+    "id": "0hdFT88-AiI",
+    "text": "1980-1981 Pantin suite",
+    "annee": "1980"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a80",
+    "id": "vYjOkeQ7Ez8",
+    "text": "1982 Lise",
+    "annee": "1982"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a80",
+    "id": "iErEMOomM0E",
+    "text": "1983 Premiers-pas",
+    "annee": "1983"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a80",
+    "id": "6rVJQEVNabI",
+    "text": "1984-87 Bavent",
+    "annee": "1984"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a80",
+    "id": "l6P0RQojLWM",
+    "text": "1988-89 Hotot",
+    "annee": "1988"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a80",
+    "id": "ISi4mZmI90Y",
+    "text": "1981-82 Résumé",
+    "annee": "1981"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a80",
+    "id": "R4jvO5K2L0I",
+    "text": "1982-87 Résumé",
+    "annee": "1982"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a80",
+    "id": "qjbQErMmbjY",
+    "text": "1987-90 Résumé",
+    "annee": "1987"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "2H9aWe3uNrU",
+    "text": "1990 Eliane TV1",
+    "annee": "1990"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "f4yogdWi-tQ",
+    "text": "1990-91 Voile",
+    "annee": "1990"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "ARyRKLg_Dbk",
+    "text": "1991 92 Classe-de-Neige",
+    "annee": "1992"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "rPSAhlVBGjE",
+    "text": "1992 Irlande",
+    "annee": "1992"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "5XdjGvcchVY",
+    "text": "1993 Meadowlands",
+    "annee": "1993"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "OVJbpEcIBSs",
+    "text": "1993-94 Aber/Giens",
+    "annee": "1993"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "2K_71XxyDXY",
+    "text": "1995 Papa 71ans",
+    "annee": "1995"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "pRHvYpqFF-E",
+    "text": "1996-97 Jamie/Persée",
+    "annee": "1996"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "hkoP6hAjxu4",
+    "text": "1997 Benoit/Michele",
+    "annee": "1997"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.a90",
+    "id": "Z1cDnbCryWM",
+    "text": "1998 Eliane TV2",
+    "annee": "1998"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a90",
+    "id": "PTHvyBHxHX4",
+    "text": "1991-92 Résumé",
+    "annee": "1991"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a90",
+    "id": "CWnQ9i0CGAA",
+    "text": "1992-93 Irlande",
+    "annee": "1992"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".fam.a90",
+    "id": "4TfWA9K6V_o",
+    "text": "1993-2000 Résumé",
+    "annee": "1993"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".fam.ava",
+    "id": "-aHnvpSc4t4",
+    "text": "1917 Hydravions",
+    "annee": "1917"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
     "clas": ".fam.ava",
     "id": "ZJzPWn7XIMU",
     "text": "1917 Guerre 14-18",
@@ -480,30 +640,6 @@
     "annee": "1947"
   },
   {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.ava",
-    "id": "pZ_CEYB9lC4",
-    "text": "1948-58 Lascamps",
-    "annee": "1948"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a60",
-    "id": "m-9o0tQRh34",
-    "text": "1956-65 Mimosas",
-    "annee": "1956"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a60",
-    "id": "0VOHWKq-mNA",
-    "text": "1958-2002 Christian",
-    "annee": "1958"
-  },
-  {
     "ec": "43",
     "typVid": "dia",
     "clas": ".fam.ava",
@@ -514,274 +650,354 @@
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".fam.a10",
-    "id": "X0nurv9kFlw",
-    "text": "2010_14 Résumé",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a10",
-    "id": "c738Ijdczjk",
-    "text": "2015 Fête St-Guerin",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a10",
-    "id": "Ffb0if6e-qw",
-    "text": "2015_2019 Résumé",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a70",
-    "id": "8uHOrs_MzII",
-    "text": "1970 The Moore's",
-    "annee": "1976"
+    "clas": ".fam.ava",
+    "id": "pZ_CEYB9lC4",
+    "text": "1948-58 Lascamps",
+    "annee": "1948"
   },
   {
     "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a70",
-    "id": "w9j7hewUcxM",
-    "text": "1970-80 Résumé",
-    "annee": "1970"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a80",
-    "id": "ISi4mZmI90Y",
-    "text": "1981-82 Résumé",
-    "annee": "1981"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a80",
-    "id": "R4jvO5K2L0I",
-    "text": "1982-87 Résumé",
-    "annee": "1982"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a80",
-    "id": "qjbQErMmbjY",
-    "text": "1987-90 Résumé",
-    "annee": "1987"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a90",
-    "id": "PTHvyBHxHX4",
-    "text": "1991-92 Résumé",
-    "annee": "1991"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a90",
-    "id": "CWnQ9i0CGAA",
-    "text": "1992-93 Irlande",
-    "annee": "1992"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a90",
-    "id": "4TfWA9K6V_o",
-    "text": "1993-2000 Résumé",
-    "annee": "1993"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a00",
-    "id": "j_vNW2AaQYM",
-    "text": "2002-04 Résumé",
+    "typVid": "vid",
+    "clas": ".pll.amer",
+    "id": "PLfEuyy3Ro4prZQucgLcxinxNcd7vOZ5So",
+    "text": "2002 Mexique Margot",
     "annee": "2002"
   },
   {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".fam.a00",
-    "id": "8NP6CuZxWQk",
-    "text": "2005-07 Résumé",
-    "annee": "2005"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a00",
-    "id": "KTG9EPvYiVI",
-    "text": "2008-09 Résumé",
-    "annee": "2008"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a10",
-    "id": "-_PfkZtoBmU",
-    "text": "2018 Eric Didier",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a10",
-    "id": "55rUeR9rCJs",
-    "text": "2019 Américains",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a20",
-    "id": "qXg8ZmQssHw",
-    "text": "2025 Mega Show",
-    "annee": "2025"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".fam.a20",
-    "id": "_liiFVJSW-s",
-    "text": "2025 Résumé D",
-    "annee": "2025"
-  },
-  {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "Yw7vC26IF4c",
-    "text": "2009 Cote d'Azur",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.med",
-    "id": "zYrjzAtFqD0",
-    "text": "2010 Turquie",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "rfSAP-gLv4o",
-    "text": "2010 Frisco-Denver",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "T0WP0UCz6Dk",
-    "text": "2010 Denver-Chicago",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "P_SbssKfSkM",
-    "text": "2010 Marielle-Dickie",
+    "clas": ".pll.amer",
+    "id": "PLqkgFQr1NwGwLVVrThBlIbsNSQWOWSoyV",
+    "text": "2010 Nord Amer",
     "annee": "2010"
   },
   {
     "ec": "43",
     "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "Bosccg9hi0I",
-    "text": "2010 NYC Marzagou",
-    "annee": "2010"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".voy.fra",
-    "id": "S9vgPLn8TAE",
-    "text": "2011 Martinique",
-    "annee": "2011"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "hRsY9fVv9Gc",
-    "text": "2011 Suisses",
-    "annee": "2011"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "tVqPPMabdRo",
-    "text": "2011 NYC  Bea+Dom",
+    "clas": ".pll.amer",
+    "id": "PLqkgFQr1NwGxkDD3hxfjCKnFZ3IAuoH3d",
+    "text": "2011 Antilles",
     "annee": "2011"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "kCtHWG3itFg",
-    "text": "2011 Quebec",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "fJPVxsUQpsA",
+    "clas": ".pll.amer",
+    "id": "PLfEuyy3Ro4pqElZa33qePsB6Y_IDXOciB",
     "text": "2017 NYC Marie Yann ",
     "annee": "2017"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "s9QOMNbC2qE",
-    "text": "2019 NYC les Gourvès",
+    "clas": ".pll.amer",
+    "id": "PLqkgFQr1NwGxTtKAeFljrH8LPo1aFZX7v",
+    "text": "2018 Mexique",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amer",
+    "id": "PLcupyD4Gq2T-yaCItt6IiXIh-mtixj6AB",
+    "text": "2006 Mexique",
+    "annee": "2006"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amer",
+    "id": "PLcupyD4Gq2T80ygksZHfGLUT3v2Wc1cVY",
+    "text": "2010 Nord Amer",
+    "annee": "2010"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amer",
+    "id": "PLcupyD4Gq2T-Mof-XCx4BSlmIUSqVu_wA",
+    "text": "2011 Antilles",
+    "annee": "2011"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".pll.amer",
+    "id": "PLcupyD4Gq2T8GD_7rAkL8uWSBgFr3qZh8",
+    "text": "2018 Musées Mex",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amer",
+    "id": "PL93ZplvOw_8GK6NR7LvH4VY5ZDFnfOanf",
+    "text": "2025 QM2 et NYC",
+    "annee": "2025"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.amis",
+    "id": "PLfEuyy3Ro4pp9og-FzOS7v2VgLcJ9n67W",
+    "text": "2013 Kerichen",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.amis",
+    "id": "PLfEuyy3Ro4pp4FEa6qkUYT_sL4tEHB6BM",
+    "text": "2016 Imagine",
+    "annee": "2016"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amis",
+    "id": "PLfEuyy3Ro4pq47utLFwyX_0P8u6j8BoSm",
+    "text": "2013 Kerichen",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.amis",
+    "id": "PLfEuyy3Ro4poH-nOqfyaIsOcZnrm-O528",
+    "text": "2016 Imagine",
+    "annee": "2016"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".pll.asie",
+    "id": "PLfEuyy3Ro4praVyLtwNkjAKJBJYa0kGL_",
+    "text": "2001 Inde Margot",
+    "annee": "2001"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.asie",
+    "id": "PLqkgFQr1NwGz3TT54Igp3KsfLspJgA7e5",
+    "text": "2013 Chine",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.asie",
+    "id": "PLqkgFQr1NwGyAetBRedKk6Bezo-lsZY9E",
+    "text": "2017 Vietnam",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.asie",
+    "id": "PLcupyD4Gq2T_Arnr1_JifwTStgQdaakWm",
+    "text": "2013 Chine",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.asie",
+    "id": "PLcupyD4Gq2T_bfOBN-A7VkbzcEXpHP75c",
+    "text": "2017 Vietnam",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGwPiNGpAqvkzE6LzsFMyRCK",
+    "text": "2009-20 Marzagou",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGxWhnO8ORftXuGc0mjxrY5R",
+    "text": "2009 France",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGzZG0C0ZqvHW0faRMp9S46M",
+    "text": "2010 Méditerranée",
+    "annee": "2010"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGzA0USzlnokjyrjxmHO2PL3",
+    "text": "2014 les Iles",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGw6eLwyz9rHK7IDBl4XA7WU",
+    "text": "2014 Espa Port",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGw3O6ToKmVlOjJTiUtzCFtl",
+    "text": "2019 Irlande & UK",
     "annee": "2019"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "vBr65eKAjAE",
-    "text": "2025 Queen Mary II",
-    "annee": "2025"
+    "clas": ".pll.euro",
+    "id": "PLqkgFQr1NwGwaTGY5fFkwCGIZ2rrsOmV4",
+    "text": "2023 Scandinavie",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "90XWCvTVPc0",
-    "text": "2025 NYC 5 au 9 mai",
-    "annee": "2025"
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T_I2K5NC3sOt9VNEhZDp-xS",
+    "text": "2006-20 Marzagou",
+    "annee": "2006"
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.usa",
-    "id": "QmFJduD48k0",
-    "text": "2025 NYC 9 au 12 mai",
-    "annee": "2025"
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T_19jf1weeI-e1oJAcT9uRS",
+    "text": "2008 Mediterranée",
+    "annee": "2008"
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.fra",
-    "id": "PtGlOd8ZGFQ",
-    "text": "2012 Saint-Martin",
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T8NFTWb4GKONcRvGDWa48rd",
+    "text": "2009 France",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T8zI7FQ-BCsYfHBpYUfvGj7",
+    "text": "2009 Irlande/UK",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T_73gC6lod1fyWR1A8yXSZr",
+    "text": "2012 les Iles",
     "annee": "2012"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T_e6L1wAeMUGtApkocsdSwN",
+    "text": "2014 Espa-Port",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.euro",
+    "id": "PLcupyD4Gq2T_5a-RaEUWPy-SGPsJXxPmq",
+    "text": "2023 Scandinavie",
+    "annee": "2023"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T-3G0HZbH6tDz5NFviKq7Ni",
+    "text": "1917 1968 Avant",
+    "annee": "1917"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.fami",
+    "id": "PL93ZplvOw_8FhDhDbnOgp0P1F1uGhEca-",
+    "text": "1963-20 Les Carious",
+    "annee": "1963"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T_PCtZdmya6frcLtYQ4FeBI",
+    "text": "1968-08 Zag Family",
+    "annee": "1968"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T9wpdhJL4cK0613RxQufK_l",
+    "text": "2009-25 Marzagou",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T9iGb5yis4705_rK43zAPir",
+    "text": "1918 1970 Avant",
+    "annee": "1918"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.fami",
+    "id": "PL93ZplvOw_8HVEl6-HooDruTjx5-_dD4Q",
+    "text": "1946-20 Les Carious",
+    "annee": "1946"
+  },
+  {
+    "ec": "43",
+    "typVid": "dia",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T_dow7FKSZL4exEodERRC6n",
+    "text": "1970 2004 Zag family",
+    "annee": "1970"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.fami",
+    "id": "PLcupyD4Gq2T_JNTswdMaWxWgerJG7_pcq",
+    "text": "2005 2025 Marzagou",
+    "annee": "2005"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.muse",
+    "id": "PLnduLHFIVpxBQ4j1xGP8P1gjYXWVd-L2E",
+    "text": "2024 Musées SDR",
+    "annee": "2024"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".pll.muse",
+    "id": "PLnduLHFIVpxBnJ1daVVQwwZM5HHcGSsWq",
+    "text": "2024 Musées HDR",
+    "annee": "2024"
   },
   {
     "ec": "16",
@@ -817,83 +1033,51 @@
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "G4hx5pjOY4I",
-    "text": "2013 Cyclades",
+    "typVid": "dia",
+    "clas": ".voy.chi",
+    "id": "RVl2b52NWmY",
+    "text": "2013 Pekin",
     "annee": "2013"
   },
   {
     "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.chi",
+    "id": "DRLaOeqx3bA",
+    "text": "2013 Shaolin",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.chi",
+    "id": "Vq0-cpVBOWU",
+    "text": "2013 Xian",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.chi",
+    "id": "H-YBpSaw32s",
+    "text": "2013 Shangaï",
+    "annee": "2013"
+  },
+  {
+    "ec": "43",
     "typVid": "vid",
-    "clas": ".voy.med",
-    "id": "fG7Yly-19dw",
-    "text": "2014 Port-Espa",
-    "annee": "2014"
+    "clas": ".voy.fra",
+    "id": "S9vgPLn8TAE",
+    "text": "2011 Martinique",
+    "annee": "2011"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "HljeQEZ4pM4",
-    "text": "2023 Suède",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "T_8EIrp7xE0",
-    "text": "2023 Mandel Geiran",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "Z5hBQ8bUQgU",
-    "text": "2023 Geiran Bodo",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "_v-nee83WTE",
-    "text": "2023 Iles Lofoten",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "N2bOP8Q4RPg",
-    "text": "2023 Stockholm",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.irl",
-    "id": "A1ZWxjDK5iI",
-    "text": "2023 The Moores",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "ZrFLVkFkOs8",
-    "text": "2023 Nord Holl",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.sca",
-    "id": "26K_1o5gstI",
-    "text": "2023 Sud Holl",
-    "annee": "2023"
+    "clas": ".voy.fra",
+    "id": "PtGlOd8ZGFQ",
+    "text": "2012 Saint-Martin",
+    "annee": "2012"
   },
   {
     "ec": "16",
@@ -906,26 +1090,82 @@
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "qepT5JwgNmQ",
-    "text": "2014 Soirée grecqueI",
-    "annee": "2014"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "bcjkP9nCmJM",
-    "text": "2014 Soirée grecqueII",
-    "annee": "2014"
+    "clas": ".voy.fra",
+    "id": "JKfWufOnld4",
+    "text": "2015 Ile-Sein",
+    "annee": "2015"
   },
   {
     "ec": "16",
     "typVid": "vid",
     "clas": ".voy.fra",
-    "id": "JKfWufOnld4",
+    "id": "CyAqp2G8g44",
+    "text": "2016 Ouessant",
+    "annee": "2016"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.fra",
+    "id": "oCmzJ3fkKl4",
+    "text": "2022 Ouessant",
+    "annee": "2022"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "YFjxQym0HP0",
+    "text": "2011 Martinique",
+    "annee": "2011"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "_ap5WhDUN3M",
+    "text": "2012 Saint-Martin",
+    "annee": "2012"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "ojqdQwaPdj8",
+    "text": "2012 Martinique",
+    "annee": "2012"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "XATLdJVJDBk",
+    "text": "2012 Iles-Scilly",
+    "annee": "2012"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "oq8n_LBoPIg",
+    "text": "2014 Anglo-Norm",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "MSM2l7eellM",
     "text": "2015 Ile-Sein",
     "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.fra",
+    "id": "9uVHdITFqX4",
+    "text": "2016 Ouessant",
+    "annee": "2016"
   },
   {
     "ec": "16",
@@ -946,10 +1186,386 @@
   {
     "ec": "16",
     "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "xbwl9Dzw-2A",
+    "text": "2018 France-Nord",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "IpRITyXYluw",
+    "text": "2018 France-Est",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "bt1c5nJ9riE",
+    "text": "2021 Fra-Centre1",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "YBdhtqKE7nc",
+    "text": "2021 Fra-Centre2",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "LVrl0F1YDQA",
+    "text": "2021 Fra-Centre3",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frn",
+    "id": "Sc0x6ANw_sc",
+    "text": "2024 La Rochelle",
+    "annee": "2024"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "ypl7aUt1Ft0",
+    "text": "2012 Normandie",
+    "annee": "2012"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "NVhAO0xCgoU",
+    "text": "2013 Crozon",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "BgOo8L6XbL0",
+    "text": "2015 Guerledan",
+    "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "V6rz77sOsiM",
+    "text": "2018 France-Nord",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "FSvLNqZ0D7I",
+    "text": "2018 France-Est",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "nPulCDT3HCo",
+    "text": "2018 Alsace",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "0pa8_UfsIJg",
+    "text": "2021 Fra-Centre1",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "fJPUpAt8pp0",
+    "text": "2021 Fra-Centre2",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frn",
+    "id": "wDWjRjQT4Rg",
+    "text": "2021 Fra-Centre3",
+    "annee": "2021"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "Yw7vC26IF4c",
+    "text": "2009 Cote d'Azur",
+    "annee": "2009"
+  },
+  {
+    "ec": "43",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "hRsY9fVv9Gc",
+    "text": "2011 Suisses",
+    "annee": "2011"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
     "clas": ".voy.frs",
     "id": "kMVnLV5KeC8",
     "text": "2015 Quercy",
     "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "PlniBj9tmOA",
+    "text": "2019 Drôme",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "l5rDbHZG-W4",
+    "text": "2019 Luberon",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "2EzlYv7YhdU",
+    "text": "2019 Marseille",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.frs",
+    "id": "3dYlc5ZmCYE",
+    "text": "2019 Cathares",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "GEt3a00EIhs",
+    "text": "2009 Cote-d'azur",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "4zmG9hG7mWs",
+    "text": "2015 Quercy",
+    "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "usnEVS7b6eY",
+    "text": "2019 Drôme",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "rYI6OdFDAtI",
+    "text": "2019 Luberon",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "0EwQz97hofU",
+    "text": "2019 Marseille",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.frs",
+    "id": "neWHriH-5zo",
+    "text": "2019 Cathares",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "G4hx5pjOY4I",
+    "text": "2013 Cyclades",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "qepT5JwgNmQ",
+    "text": "2014 Soirée grecqueI",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "bcjkP9nCmJM",
+    "text": "2014 Soirée grecqueII",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "dGYWcffvOt4",
+    "text": "2018 Baléares1",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "6XTlOa8YHyk",
+    "text": "2018 Baléares2",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.imd",
+    "id": "NxN3_foNkss",
+    "text": "2018 Baléares3",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.imd",
+    "id": "n2kx5SnfY3s",
+    "text": "2008 Crete",
+    "annee": "2008"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.imd",
+    "id": "uiR4kRg8XH8",
+    "text": "2013 Cyclades1",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.imd",
+    "id": "wixwxt6dbj0",
+    "text": "2013 Cyclades2",
+    "annee": "2013"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.imd",
+    "id": "OL2RZWGEn8g",
+    "text": "2014 Grèce",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.imd",
+    "id": "ICFKCfx6_EE",
+    "text": "2018 Baléares",
+    "annee": "2018"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.irl",
+    "id": "5933IT5ruE4",
+    "text": "2019 Irlande Joan",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.irl",
+    "id": "aFvD8GzIO8Y",
+    "text": "2019 Irlande roads",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.irl",
+    "id": "ofvxbSpBPQQ",
+    "text": "2019 Irlande Chants1",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.irl",
+    "id": "3Vai5VxAkp8",
+    "text": "2019 Irlande Chants2",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.irl",
+    "id": "A1ZWxjDK5iI",
+    "text": "2023 The Moores",
+    "annee": "2023"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.irl",
+    "id": "oVH_1nnRqSU",
+    "text": "2009 Irlande",
+    "annee": "2009"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.irl",
+    "id": "0CkljqZWTuI",
+    "text": "2019 Irlande",
+    "annee": "2019"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.med",
+    "id": "zYrjzAtFqD0",
+    "text": "2010 Turquie",
+    "annee": "2010"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.med",
+    "id": "fG7Yly-19dw",
+    "text": "2014 Port-Espa",
+    "annee": "2014"
   },
   {
     "ec": "16",
@@ -1001,115 +1617,35 @@
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.fra",
-    "id": "CyAqp2G8g44",
-    "text": "2016 Ouessant",
+    "typVid": "dia",
+    "clas": ".voy.med",
+    "id": "xnAd0oNpdsQ",
+    "text": "2010 Turquie",
+    "annee": "2010"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.med",
+    "id": "8A1ud5kLvuU",
+    "text": "2014 Portugal",
+    "annee": "2014"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.med",
+    "id": "tbENwo9ODrM",
+    "text": "2015 Venise",
+    "annee": "2015"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.med",
+    "id": "GjwmGtJ_VOI",
+    "text": "2016 Barcelone",
     "annee": "2016"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.fra",
-    "id": "oCmzJ3fkKl4",
-    "text": "2022 Ouessant",
-    "annee": "2022"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "Sc0x6ANw_sc",
-    "text": "2024 La Rochelle",
-    "annee": "2024"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "MtxyZHmmKNY",
-    "text": "2017 Saigon-Da.Nang",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "ODCOEVIV3AU",
-    "text": "2017 Da.Nang-Hué",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "uNCDhLCS9Gw",
-    "text": "2017 Hanoi-Bac.Ha",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "Or6MvwbcOFY",
-    "text": "2017 Bac.Ha-Hi.Giang",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "31GMVL-xFrM",
-    "text": "2017 Hi.Gia-Cao.Bg",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.vie",
-    "id": "oDCH5itsdFU",
-    "text": "2017 Cao.Bg-Ha.Lg",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "dGYWcffvOt4",
-    "text": "2018 Baléares1",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "6XTlOa8YHyk",
-    "text": "2018 Baléares2",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.imd",
-    "id": "NxN3_foNkss",
-    "text": "2018 Baléares3",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "xbwl9Dzw-2A",
-    "text": "2018 France-Nord",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "IpRITyXYluw",
-    "text": "2018 France-Est",
-    "annee": "2018"
   },
   {
     "ec": "16",
@@ -1145,403 +1681,11 @@
   },
   {
     "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.irl",
-    "id": "5933IT5ruE4",
-    "text": "2019 Irlande Joan",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.irl",
-    "id": "aFvD8GzIO8Y",
-    "text": "2019 Irlande roads",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.irl",
-    "id": "ofvxbSpBPQQ",
-    "text": "2019 Irlande Chants1",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.irl",
-    "id": "3Vai5VxAkp8",
-    "text": "2019 Irlande Chants2",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "PlniBj9tmOA",
-    "text": "2019 Drôme",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "l5rDbHZG-W4",
-    "text": "2019 Luberon",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "2EzlYv7YhdU",
-    "text": "2019 Marseille",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frs",
-    "id": "3dYlc5ZmCYE",
-    "text": "2019 Cathares",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "bt1c5nJ9riE",
-    "text": "2021 Fra-Centre1",
-    "annee": "2021"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "YBdhtqKE7nc",
-    "text": "2021 Fra-Centre2",
-    "annee": "2021"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".voy.frn",
-    "id": "LVrl0F1YDQA",
-    "text": "2021 Fra-Centre3",
-    "annee": "2021"
-  },
-  {
-    "ec": "16",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "S3syBurqDLA",
     "text": "2006 Mexique",
     "annee": "2006"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.imd",
-    "id": "n2kx5SnfY3s",
-    "text": "2008 Crete",
-    "annee": "2008"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "GEt3a00EIhs",
-    "text": "2009 Cote-d'azur",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.irl",
-    "id": "oVH_1nnRqSU",
-    "text": "2009 Irlande",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.med",
-    "id": "xnAd0oNpdsQ",
-    "text": "2010 Turquie",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.usa",
-    "id": "5a0qwFTGa9k",
-    "text": "2010 Transam",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "YFjxQym0HP0",
-    "text": "2011 Martinique",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.usa",
-    "id": "duOgkyEg1iI",
-    "text": "2011 USA",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.usa",
-    "id": "opQ9hkhRjXQ",
-    "text": "2011 Quebec",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "_ap5WhDUN3M",
-    "text": "2012 Saint-Martin",
-    "annee": "2012"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "ojqdQwaPdj8",
-    "text": "2012 Martinique",
-    "annee": "2012"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "XATLdJVJDBk",
-    "text": "2012 Iles-Scilly",
-    "annee": "2012"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "ypl7aUt1Ft0",
-    "text": "2012 Normandie",
-    "annee": "2012"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.chi",
-    "id": "RVl2b52NWmY",
-    "text": "2013 Pekin",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.chi",
-    "id": "DRLaOeqx3bA",
-    "text": "2013 Shaolin",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.chi",
-    "id": "Vq0-cpVBOWU",
-    "text": "2013 Xian",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.chi",
-    "id": "H-YBpSaw32s",
-    "text": "2013 Shangaï",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "NVhAO0xCgoU",
-    "text": "2013 Crozon",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.imd",
-    "id": "uiR4kRg8XH8",
-    "text": "2013 Cyclades1",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.imd",
-    "id": "wixwxt6dbj0",
-    "text": "2013 Cyclades2",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.med",
-    "id": "8A1ud5kLvuU",
-    "text": "2014 Portugal",
-    "annee": "2014"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "oq8n_LBoPIg",
-    "text": "2014 Anglo-Norm",
-    "annee": "2014"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.imd",
-    "id": "OL2RZWGEn8g",
-    "text": "2014 Grèce",
-    "annee": "2014"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "MSM2l7eellM",
-    "text": "2015 Ile-Sein",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "BgOo8L6XbL0",
-    "text": "2015 Guerledan",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "4zmG9hG7mWs",
-    "text": "2015 Quercy",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.med",
-    "id": "tbENwo9ODrM",
-    "text": "2015 Venise",
-    "annee": "2015"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.med",
-    "id": "GjwmGtJ_VOI",
-    "text": "2016 Barcelone",
-    "annee": "2016"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.fra",
-    "id": "9uVHdITFqX4",
-    "text": "2016 Ouessant",
-    "annee": "2016"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "tTpn4peQNt4",
-    "text": "2017 Saigon-Da.Nang",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "PZjzUa9cKU8",
-    "text": "2017 Da.Nang-Hué",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "4VFbEVhzLX0",
-    "text": "2017 Hanoi-Bac.Ha",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "mJbqiQrDfNQ",
-    "text": "2017 Bac.Ha-Hi.Giang",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "HCnvEudV50Y",
-    "text": "2017 Hi.Gia-Cao.Bg",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.vie",
-    "id": "1-jB5BaIOgU",
-    "text": "2017 Cao.Bg-Ha.Lg",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.imd",
-    "id": "ICFKCfx6_EE",
-    "text": "2018 Baléares",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "V6rz77sOsiM",
-    "text": "2018 France-Nord",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "FSvLNqZ0D7I",
-    "text": "2018 France-Est",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "nPulCDT3HCo",
-    "text": "2018 Alsace",
-    "annee": "2018"
   },
   {
     "ec": "16",
@@ -1601,67 +1745,59 @@
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.irl",
-    "id": "0CkljqZWTuI",
-    "text": "2019 Irlande",
-    "annee": "2019"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "HljeQEZ4pM4",
+    "text": "2023 Suède",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "usnEVS7b6eY",
-    "text": "2019 Drôme",
-    "annee": "2019"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "T_8EIrp7xE0",
+    "text": "2023 Mandel Geiran",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "rYI6OdFDAtI",
-    "text": "2019 Luberon",
-    "annee": "2019"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "Z5hBQ8bUQgU",
+    "text": "2023 Geiran Bodo",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "0EwQz97hofU",
-    "text": "2019 Marseille",
-    "annee": "2019"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "_v-nee83WTE",
+    "text": "2023 Iles Lofoten",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frs",
-    "id": "neWHriH-5zo",
-    "text": "2019 Cathares",
-    "annee": "2019"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "N2bOP8Q4RPg",
+    "text": "2023 Stockholm",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "0pa8_UfsIJg",
-    "text": "2021 Fra-Centre1",
-    "annee": "2021"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "ZrFLVkFkOs8",
+    "text": "2023 Nord Holl",
+    "annee": "2023"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "fJPUpAt8pp0",
-    "text": "2021 Fra-Centre2",
-    "annee": "2021"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".voy.frn",
-    "id": "wDWjRjQT4Rg",
-    "text": "2021 Fra-Centre3",
-    "annee": "2021"
+    "typVid": "vid",
+    "clas": ".voy.sca",
+    "id": "26K_1o5gstI",
+    "text": "2023 Sud Holl",
+    "annee": "2023"
   },
   {
     "ec": "16",
@@ -1712,347 +1848,211 @@
     "annee": "2023"
   },
   {
-    "ec": "43",
+    "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T-3G0HZbH6tDz5NFviKq7Ni",
-    "text": "1917 1968 Avant",
-    "annee": "1917"
+    "clas": ".voy.usa",
+    "id": "rfSAP-gLv4o",
+    "text": "2010 Frisco-Denver",
+    "annee": "2010"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T9wpdhJL4cK0613RxQufK_l",
-    "text": "2009-25 Marzagou",
-    "annee": "2009"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T_PCtZdmya6frcLtYQ4FeBI",
-    "text": "1968-08 Zag Family",
-    "annee": "1968"
+    "clas": ".voy.usa",
+    "id": "T0WP0UCz6Dk",
+    "text": "2010 Denver-Chicago",
+    "annee": "2010"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.fami",
-    "id": "PL93ZplvOw_8FhDhDbnOgp0P1F1uGhEca-",
-    "text": "1963-20 Les Carious",
-    "annee": "1963"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGwPiNGpAqvkzE6LzsFMyRCK",
-    "text": "2009-20 Marzagou",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGxWhnO8ORftXuGc0mjxrY5R",
-    "text": "2009 France",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.asie",
-    "id": "PLqkgFQr1NwGz3TT54Igp3KsfLspJgA7e5",
-    "text": "2013 Chine",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGzA0USzlnokjyrjxmHO2PL3",
-    "text": "2014 les Iles",
-    "annee": "2014"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.amer",
-    "id": "PLqkgFQr1NwGxTtKAeFljrH8LPo1aFZX7v",
-    "text": "2018 Mexique",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGzZG0C0ZqvHW0faRMp9S46M",
-    "text": "2010 Méditerranée",
+    "clas": ".voy.usa",
+    "id": "P_SbssKfSkM",
+    "text": "2010 Marielle-Dickie",
     "annee": "2010"
   },
   {
     "ec": "43",
     "typVid": "vid",
-    "clas": ".pll.asie",
-    "id": "PLfEuyy3Ro4praVyLtwNkjAKJBJYa0kGL_",
-    "text": "2001 Inde Margot",
-    "annee": "2001"
+    "clas": ".voy.usa",
+    "id": "Bosccg9hi0I",
+    "text": "2010 NYC Marzagou",
+    "annee": "2010"
   },
   {
     "ec": "43",
     "typVid": "vid",
-    "clas": ".pll.amer",
-    "id": "PLfEuyy3Ro4prZQucgLcxinxNcd7vOZ5So",
-    "text": "2002 Mexique Margot",
-    "annee": "2002"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".pll.amer",
-    "id": "PLqkgFQr1NwGxkDD3hxfjCKnFZ3IAuoH3d",
-    "text": "2011 Antilles",
+    "clas": ".voy.usa",
+    "id": "tVqPPMabdRo",
+    "text": "2011 NYC  Bea+Dom",
     "annee": "2011"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.asie",
-    "id": "PLqkgFQr1NwGyAetBRedKk6Bezo-lsZY9E",
-    "text": "2017 Vietnam",
-    "annee": "2017"
+    "clas": ".voy.usa",
+    "id": "kCtHWG3itFg",
+    "text": "2011 Quebec",
+    "annee": "2011"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGw3O6ToKmVlOjJTiUtzCFtl",
-    "text": "2019 Irlande & UK",
-    "annee": "2019"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGwaTGY5fFkwCGIZ2rrsOmV4",
-    "text": "2023 Scandinavie",
-    "annee": "2023"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.amer",
-    "id": "PLqkgFQr1NwGwLVVrThBlIbsNSQWOWSoyV",
-    "text": "2010 Nord Amer",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "vid",
-    "clas": ".pll.amer",
-    "id": "PLfEuyy3Ro4pqElZa33qePsB6Y_IDXOciB",
+    "clas": ".voy.usa",
+    "id": "fJPVxsUQpsA",
     "text": "2017 NYC Marie Yann ",
     "annee": "2017"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.euro",
-    "id": "PLqkgFQr1NwGw6eLwyz9rHK7IDBl4XA7WU",
-    "text": "2014 Espa Port",
-    "annee": "2014"
+    "clas": ".voy.usa",
+    "id": "s9QOMNbC2qE",
+    "text": "2019 NYC les Gourvès",
+    "annee": "2019"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.amis",
-    "id": "PLfEuyy3Ro4pp9og-FzOS7v2VgLcJ9n67W",
-    "text": "2013 Kerichen",
-    "annee": "2013"
+    "clas": ".voy.usa",
+    "id": "vBr65eKAjAE",
+    "text": "2025 Queen Mary II",
+    "annee": "2025"
   },
   {
     "ec": "16",
     "typVid": "vid",
-    "clas": ".pll.amis",
-    "id": "PLfEuyy3Ro4pp4FEa6qkUYT_sL4tEHB6BM",
-    "text": "2016 Imagine",
-    "annee": "2016"
+    "clas": ".voy.usa",
+    "id": "90XWCvTVPc0",
+    "text": "2025 NYC 5 au 9 mai",
+    "annee": "2025"
   },
   {
     "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T9iGb5yis4705_rK43zAPir",
-    "text": "1918 1970 Avant",
-    "annee": "1918"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T_dow7FKSZL4exEodERRC6n",
-    "text": "1970 2004 Zag family",
-    "annee": "1970"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.fami",
-    "id": "PLcupyD4Gq2T_JNTswdMaWxWgerJG7_pcq",
-    "text": "2005 2025 Marzagou",
-    "annee": "2005"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.fami",
-    "id": "PL93ZplvOw_8HVEl6-HooDruTjx5-_dD4Q",
-    "text": "1946-20 Les Carious",
-    "annee": "1946"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T_I2K5NC3sOt9VNEhZDp-xS",
-    "text": "2006-20 Marzagou",
-    "annee": "2006"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T8NFTWb4GKONcRvGDWa48rd",
-    "text": "2009 France",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.asie",
-    "id": "PLcupyD4Gq2T_Arnr1_JifwTStgQdaakWm",
-    "text": "2013 Chine",
-    "annee": "2013"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T_73gC6lod1fyWR1A8yXSZr",
-    "text": "2012 les Iles",
-    "annee": "2012"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.amer",
-    "id": "PLcupyD4Gq2T-yaCItt6IiXIh-mtixj6AB",
-    "text": "2006 Mexique",
-    "annee": "2006"
-  },
-  {
-    "ec": "43",
-    "typVid": "dia",
-    "clas": ".pll.amer",
-    "id": "PLcupyD4Gq2T8GD_7rAkL8uWSBgFr3qZh8",
-    "text": "2018 Musées Mex",
-    "annee": "2018"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T_19jf1weeI-e1oJAcT9uRS",
-    "text": "2008 Mediterranée",
-    "annee": "2008"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.amer",
-    "id": "PLcupyD4Gq2T-Mof-XCx4BSlmIUSqVu_wA",
-    "text": "2011 Antilles",
-    "annee": "2011"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.asie",
-    "id": "PLcupyD4Gq2T_bfOBN-A7VkbzcEXpHP75c",
-    "text": "2017 Vietnam",
-    "annee": "2017"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T8zI7FQ-BCsYfHBpYUfvGj7",
-    "text": "2009 Irlande/UK",
-    "annee": "2009"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.amer",
-    "id": "PLcupyD4Gq2T80ygksZHfGLUT3v2Wc1cVY",
-    "text": "2010 Nord Amer",
-    "annee": "2010"
-  },
-  {
-    "ec": "16",
-    "typVid": "dia",
-    "clas": ".pll.amer",
-    "id": "PL93ZplvOw_8GK6NR7LvH4VY5ZDFnfOanf",
-    "text": "2025 QM2 et NYC",
+    "typVid": "vid",
+    "clas": ".voy.usa",
+    "id": "QmFJduD48k0",
+    "text": "2025 NYC 9 au 12 mai",
     "annee": "2025"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T_e6L1wAeMUGtApkocsdSwN",
-    "text": "2014 Espa-Port",
-    "annee": "2014"
+    "clas": ".voy.usa",
+    "id": "5a0qwFTGa9k",
+    "text": "2010 Transam",
+    "annee": "2010"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.euro",
-    "id": "PLcupyD4Gq2T_5a-RaEUWPy-SGPsJXxPmq",
-    "text": "2023 Scandinavie",
-    "annee": "2023"
+    "clas": ".voy.usa",
+    "id": "duOgkyEg1iI",
+    "text": "2011 USA",
+    "annee": "2011"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.amis",
-    "id": "PLfEuyy3Ro4pq47utLFwyX_0P8u6j8BoSm",
-    "text": "2013 Kerichen",
-    "annee": "2013"
+    "clas": ".voy.usa",
+    "id": "opQ9hkhRjXQ",
+    "text": "2011 Quebec",
+    "annee": "2011"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "MtxyZHmmKNY",
+    "text": "2017 Saigon-Da.Nang",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "ODCOEVIV3AU",
+    "text": "2017 Da.Nang-Hué",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "uNCDhLCS9Gw",
+    "text": "2017 Hanoi-Bac.Ha",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "Or6MvwbcOFY",
+    "text": "2017 Bac.Ha-Hi.Giang",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "31GMVL-xFrM",
+    "text": "2017 Hi.Gia-Cao.Bg",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "vid",
+    "clas": ".voy.vie",
+    "id": "oDCH5itsdFU",
+    "text": "2017 Cao.Bg-Ha.Lg",
+    "annee": "2017"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.amis",
-    "id": "PLfEuyy3Ro4poH-nOqfyaIsOcZnrm-O528",
-    "text": "2016 Imagine",
-    "annee": "2016"
+    "clas": ".voy.vie",
+    "id": "tTpn4peQNt4",
+    "text": "2017 Saigon-Da.Nang",
+    "annee": "2017"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.muse",
-    "id": "PLnduLHFIVpxBQ4j1xGP8P1gjYXWVd-L2E",
-    "text": "2024 Musées SDR",
-    "annee": "2024"
+    "clas": ".voy.vie",
+    "id": "PZjzUa9cKU8",
+    "text": "2017 Da.Nang-Hué",
+    "annee": "2017"
   },
   {
     "ec": "16",
     "typVid": "dia",
-    "clas": ".pll.muse",
-    "id": "PLnduLHFIVpxBnJ1daVVQwwZM5HHcGSsWq",
-    "text": "2024 Musées HDR",
-    "annee": "2024"
+    "clas": ".voy.vie",
+    "id": "4VFbEVhzLX0",
+    "text": "2017 Hanoi-Bac.Ha",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.vie",
+    "id": "mJbqiQrDfNQ",
+    "text": "2017 Bac.Ha-Hi.Giang",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.vie",
+    "id": "HCnvEudV50Y",
+    "text": "2017 Hi.Gia-Cao.Bg",
+    "annee": "2017"
+  },
+  {
+    "ec": "16",
+    "typVid": "dia",
+    "clas": ".voy.vie",
+    "id": "1-jB5BaIOgU",
+    "text": "2017 Cao.Bg-Ha.Lg",
+    "annee": "2017"
   }
 ]
