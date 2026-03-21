@@ -13,6 +13,7 @@
   --text-light: #64748b;
   --radius: 6px;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --modal_color: #e9eef6;
 }
 
 * {
@@ -348,7 +349,7 @@ a {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 100;
   align-items: center;
   justify-content: center;
@@ -359,9 +360,9 @@ a {
 }
 
 .modal {
-  background: white;
+  background: var(--modal_color);
   border-radius: 10px;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.62);
   width: 100%;
   max-width: 560px;
   max-height: 92vh;
@@ -377,7 +378,7 @@ a {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: white;
+  background: var(--primary);
   z-index: 1;
 }
 
@@ -410,7 +411,6 @@ a {
   gap: 0.5rem;
   position: sticky;
   bottom: 0;
-  background: white;
 }
 
 /* ── Formulaire ── */
