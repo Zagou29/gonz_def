@@ -205,9 +205,9 @@ function renderVideos() {
       <td>${v.annee || ""}</td>
       <td class="td-trunc" title="${escHtml(v.text || "")}">${escHtml(v.text || "")}</td>
       <td><div class="td-actions">
-        <button class="btn btn-sm btn-outline" onclick="editVid(${realIdx})" title="Modifier">✏️</button>
-        <button class="btn btn-sm btn-danger"  onclick="deleteVid(${realIdx})" title="Supprimer">🗑</button>
-        <button class="btn btn-sm btn-primary" onclick="dupVid(${realIdx})" title="Dupliquer">+</button>
+        <button class="btn btn-sm btn-outline" data-action="edit" data-idx="${realIdx}" title="Modifier">✏️</button>
+        <button class="btn btn-sm btn-danger"  data-action="delete" data-idx="${realIdx}" title="Supprimer">🗑</button>
+        <button class="btn btn-sm btn-primary" data-action="dup" data-idx="${realIdx}" title="Dupliquer">+</button>
       </div></td>
     </tr>`;
     })
@@ -290,18 +290,25 @@ function openVidModal(v, title, editIdx) {
   openModal("modal-vid");
 }
 
-window.dupVid = (idx) =>
-  openVidModal(state.videos[idx], "Copie de vidéo (nouveau)", -1);
-window.editVid = (idx) =>
-  openVidModal(state.videos[idx], "Modifier la vidéo", idx);
-
-window.deleteVid = (idx) => {
+function deleteVid(idx) {
   if (!confirm(`Supprimer "${state.videos[idx].text}" ?`)) return;
   state.videos.splice(idx, 1);
   markDirty("vid");
   renderVideos();
   showToast("Vidéo supprimée");
-};
+}
+
+$("#vid-table-wrap").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
+  if (!btn) return;
+  const idx = +btn.dataset.idx;
+  const action = btn.dataset.action;
+  if (action === "edit")
+    openVidModal(state.videos[idx], "Modifier la vidéo", idx);
+  else if (action === "delete") deleteVid(idx);
+  else if (action === "dup")
+    openVidModal(state.videos[idx], "Copie de vidéo (nouveau)", -1);
+});
 
 $("#btn-save-vid").addEventListener("click", () => {
   const id = $("#f-vid-id").value.trim();
@@ -341,7 +348,6 @@ $("#btn-export-vid").addEventListener("click", () => {
 $("#btn-copy-vid").addEventListener("click", () =>
   copyToClipboard(JSON.stringify(getSortedVideos(), null, 2)),
 );
-getSortedVideos()
 // Trie les vidéos par classe (2 niveaux), puis par type, puis par année ( Attention:il faut remplacer le fichier indexVid.json par la version triée pour que l'affichage dans l'admin soit lui aussi trié, sinon les vidéos seront dans un ordre différent de celui du site )
 function getSortedVideos() {
   return [...state.videos].sort((a, b) => {
@@ -383,9 +389,9 @@ function renderMenus() {
       <td class="td-mono td-trunc" title="${escHtml(m.src || "")}">${m.src?.replace("./box_img/", "") || ""}</td>
       <td class="td-trunc" title="${escHtml(m.detail || "")}">${escHtml(m.detail || "")}</td>
       <td><div class="td-actions">
-        <button class="btn btn-sm btn-outline" onclick="editMen(${realIdx})" title="Modifier">✏️</button>
-        <button class="btn btn-sm btn-danger"  onclick="deleteMen(${realIdx})" title="Supprimer">🗑</button>
-        <button class="btn btn-sm btn-primary" onclick="dupMen(${realIdx})" title="Dupliquer">+</button>
+        <button class="btn btn-sm btn-outline" data-action="edit" data-idx="${realIdx}" title="Modifier">✏️</button>
+        <button class="btn btn-sm btn-danger"  data-action="delete" data-idx="${realIdx}" title="Supprimer">🗑</button>
+        <button class="btn btn-sm btn-primary" data-action="dup" data-idx="${realIdx}" title="Dupliquer">+</button>
       </div></td>
     </tr>`;
     })
@@ -414,18 +420,25 @@ function openMenModal(m, title, editIdx) {
   openModal("modal-men");
 }
 
-window.dupMen = (idx) =>
-  openMenModal(state.menus[idx], "Copie de menu (nouveau)", -1);
-window.editMen = (idx) =>
-  openMenModal(state.menus[idx], "Modifier le menu", idx);
-
-window.deleteMen = (idx) => {
+function deleteMen(idx) {
   if (!confirm(`Supprimer "${state.menus[idx].detail}" ?`)) return;
   state.menus.splice(idx, 1);
   markDirty("men");
   renderMenus();
   showToast("Menu supprimé");
-};
+}
+
+$("#men-table-wrap").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
+  if (!btn) return;
+  const idx = +btn.dataset.idx;
+  const action = btn.dataset.action;
+  if (action === "edit")
+    openMenModal(state.menus[idx], "Modifier le menu", idx);
+  else if (action === "delete") deleteMen(idx);
+  else if (action === "dup")
+    openMenModal(state.menus[idx], "Copie de menu (nouveau)", -1);
+});
 
 $("#btn-save-men").addEventListener("click", () => {
   const clas = $("#f-men-clas").value.trim();
@@ -489,9 +502,9 @@ function renderPhotos() {
       <td>${escHtml(p.spText || "")}</td>
       <td class="td-trunc" title="${escHtml(p.divText || "")}">${escHtml(p.divText || "")}</td>
       <td><div class="td-actions">
-        <button class="btn btn-sm btn-outline" onclick="editPho(${realIdx})" title="Modifier">✏️</button>
-        <button class="btn btn-sm btn-danger"  onclick="deletePho(${realIdx})" title="Supprimer">🗑</button>
-        <button class="btn btn-sm btn-primary" onclick="dupPho(${realIdx})" title="Dupliquer">+</button>
+        <button class="btn btn-sm btn-outline" data-action="edit" data-idx="${realIdx}" title="Modifier">✏️</button>
+        <button class="btn btn-sm btn-danger"  data-action="delete" data-idx="${realIdx}" title="Supprimer">🗑</button>
+        <button class="btn btn-sm btn-primary" data-action="dup" data-idx="${realIdx}" title="Dupliquer">+</button>
       </div></td>
     </tr>`;
     })
@@ -520,18 +533,25 @@ function openPhoModal(p, title, editIdx) {
   openModal("modal-pho");
 }
 
-window.dupPho = (idx) =>
-  openPhoModal(state.photos[idx], "Copie d'album (nouveau)", -1);
-window.editPho = (idx) =>
-  openPhoModal(state.photos[idx], "Modifier l'album", idx);
-
-window.deletePho = (idx) => {
+function deletePho(idx) {
   if (!confirm(`Supprimer l'album "${state.photos[idx].spText}" ?`)) return;
   state.photos.splice(idx, 1);
   markDirty("pho");
   renderPhotos();
   showToast("Album supprimé");
-};
+}
+
+$("#pho-table-wrap").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
+  if (!btn) return;
+  const idx = +btn.dataset.idx;
+  const action = btn.dataset.action;
+  if (action === "edit")
+    openPhoModal(state.photos[idx], "Modifier l'album", idx);
+  else if (action === "delete") deletePho(idx);
+  else if (action === "dup")
+    openPhoModal(state.photos[idx], "Copie d'album (nouveau)", -1);
+});
 
 $("#btn-save-pho").addEventListener("click", () => {
   const ph = $("#f-pho-ph").value.trim();
@@ -599,9 +619,9 @@ function renderBlogs() {
       <td class="td-mono td-trunc" title="${escHtml(b.src || "")}">${b.src?.replace("./box_img/", "") || ""}</td>
       <td class="td-trunc" title="${escHtml(b.divText || "")}">${escHtml(b.divText || "")}</td>
       <td><div class="td-actions">
-        <button class="btn btn-sm btn-outline" onclick="editBlo(${realIdx})" title="Modifier">✏️</button>
-        <button class="btn btn-sm btn-danger"  onclick="deleteBlo(${realIdx})" title="Supprimer">🗑</button>
-        <button class="btn btn-sm btn-primary" onclick="dupBlo(${realIdx})" title="Dupliquer">+</button>
+        <button class="btn btn-sm btn-outline" data-action="edit" data-idx="${realIdx}" title="Modifier">✏️</button>
+        <button class="btn btn-sm btn-danger"  data-action="delete" data-idx="${realIdx}" title="Supprimer">🗑</button>
+        <button class="btn btn-sm btn-primary" data-action="dup" data-idx="${realIdx}" title="Dupliquer">+</button>
       </div></td>
     </tr>`;
     })
@@ -630,18 +650,25 @@ function openBloModal(b, title, editIdx) {
   openModal("modal-blo");
 }
 
-window.dupBlo = (idx) =>
-  openBloModal(state.blogs[idx], "Copie de blog (nouveau)", -1);
-window.editBlo = (idx) =>
-  openBloModal(state.blogs[idx], "Modifier le blog", idx);
-
-window.deleteBlo = (idx) => {
+function deleteBlo(idx) {
   if (!confirm(`Supprimer le blog "${state.blogs[idx].spText}" ?`)) return;
   state.blogs.splice(idx, 1);
   markDirty("blo");
   renderBlogs();
   showToast("Blog supprimé");
-};
+}
+
+$("#blo-table-wrap").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
+  if (!btn) return;
+  const idx = +btn.dataset.idx;
+  const action = btn.dataset.action;
+  if (action === "edit")
+    openBloModal(state.blogs[idx], "Modifier le blog", idx);
+  else if (action === "delete") deleteBlo(idx);
+  else if (action === "dup")
+    openBloModal(state.blogs[idx], "Copie de blog (nouveau)", -1);
+});
 
 $("#btn-save-blo").addEventListener("click", () => {
   const spText = $("#f-blo-spText").value.trim();
