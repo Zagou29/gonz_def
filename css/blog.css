@@ -82,6 +82,7 @@
   z-index: 2;
 }
 
+.touch .texte,
 .bloc_img:hover .texte {
   opacity: 1;
   transition: opacity var(--transition-duration) ease-in-out;

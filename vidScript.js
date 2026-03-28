@@ -230,6 +230,7 @@ const setupObserver = () => {
 };
 // ----- IIFE principale -----
 (async function init() {
+  if (mob().mob || ordi_OS().ipad) document.body.classList.add("touch");
   // Charger les menuboxes
   try {
     // Données JSON disponibles via imports statiques (mise en cache navigateur)
