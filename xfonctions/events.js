@@ -14,23 +14,14 @@ export class EventManager {
 
   /* utilisation des icones menu, ratio, retour, et inverser image */
   setupMenuActions(image) {
-    const MENU_ACTIONS = {
-      HAMBURGER: 0,
-      RATIO: 1,
-      ARROW_LEFT: 2,
-      ARROW_RIGHT: 3,
-      RETURN: 4,
-      INVERT: 5,
-    };
-
-    this.domElements.ret_fl.forEach((el, index) => {
+    this.domElements.ret_fl.forEach((el) => {
       el.addEventListener("click", (e) => {
-        switch (index) {
-          case MENU_ACTIONS.HAMBURGER:
+        switch (e.currentTarget.dataset.action) {
+          case "hamburger":
             this.domElements.hamb.classList.toggle("open");
             this.domElements.menu.classList.toggle("open");
             break;
-          case MENU_ACTIONS.RATIO:
+          case "ratio":
             this.stats.asp =
               this.stats.asp === "show" ? "show show_mod" : "show";
             this.uiManager.setLocalStorageAndRedirect({
@@ -39,19 +30,19 @@ export class EventManager {
               pos_img: -this.domElements.boiteImg.getBoundingClientRect().top,
             });
             break;
-          case MENU_ACTIONS.ARROW_LEFT:
+          case "arrow-left":
             this.diaporamaManager.clearMusic();
             this.navigationManager.depHor(image, -1);
             break;
-          case MENU_ACTIONS.ARROW_RIGHT:
+          case "arrow-right":
             this.diaporamaManager.clearMusic();
             this.navigationManager.depHor(image, 1);
             break;
-          case MENU_ACTIONS.RETURN:
+          case "return":
             localStorage.clear();
             window.location.href = "./index.html";
             break;
-          case MENU_ACTIONS.INVERT:
+          case "invert":
             this.uiManager.setLocalStorageAndRedirect({
               delai: this.stats.delai,
               sens_dates: this.stats.sens_date === "1" ? "-1" : "1",

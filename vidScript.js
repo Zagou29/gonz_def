@@ -253,7 +253,6 @@ const setupObserver = () => {
     });
     /* Initialisation des classes d'affichage */
     state.vidClass = new Affvid(vidList);
-    console;
     /* afficher les boites menus fam, voy, pll */
     state.vidMenu = new MenuVid(list_menus);
     ["menu_fam", "menu_voy", "menu_pll"].forEach((selector) =>

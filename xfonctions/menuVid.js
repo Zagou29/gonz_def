@@ -44,19 +44,20 @@ export class MenuVid {
     }
     // element est la div menu_fam, menu_voy ou menu_pll
     this.#boxElement = element;
+    const category =
+      Array.from(this.#boxElement.classList)
+        .find((c) => c.startsWith("menu_"))
+        ?.slice(5) ?? "";
     this.#boxSelect = this.#videos.filter((objbox) =>
-      objbox.clas
-        .slice(0, 4)
-        .includes("." + this.#boxElement.className.slice(13)),
+      objbox.clas.startsWith("." + category),
     );
     // this.#boxSelect filtre de videos(videos+menus) par la clas .fam/.voy/.pll
-    // enlever le typevideo de la clas et le mettre dans tv
-    
-    // ne garder que le menu (fam/voy/pll), le id_groupe, le detail venant de la classe
+    // ne garder que le menu (fam/voy/pll), le groupe, le detail venant de la classe
     this.#listatrier = this.#boxSelect.map((item) => {
       const { clas, groupe } = item;
-      const menu = clas.slice(0, 4);
-      const detail = clas.slice(5, 8);
+      const parts = clas.split(".");
+      const menu = "." + parts[1];
+      const detail = parts[2] || "";
       return { clas, menu, groupe, detail };
     });
     /* enlever tous les doublons de listeatrier et trier : par detail puis groupe*/

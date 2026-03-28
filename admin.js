@@ -233,17 +233,20 @@ function renderVidPagination(totalPages) {
     p.innerHTML = "";
     return;
   }
-  let html = `<button class="page-btn" onclick="vidPage(${state.vidPage - 1})" ${state.vidPage === 1 ? "disabled" : ""}>‹</button>`;
+  let html = `<button class="page-btn" data-page="${state.vidPage - 1}" ${state.vidPage === 1 ? "disabled" : ""}>‹</button>`;
   for (let i = 1; i <= totalPages; i++) {
-    html += `<button class="page-btn ${i === state.vidPage ? "active" : ""}" onclick="vidPage(${i})">${i}</button>`;
+    html += `<button class="page-btn ${i === state.vidPage ? "active" : ""}" data-page="${i}">${i}</button>`;
   }
-  html += `<button class="page-btn" onclick="vidPage(${state.vidPage + 1})" ${state.vidPage === totalPages ? "disabled" : ""}>›</button>`;
+  html += `<button class="page-btn" data-page="${state.vidPage + 1}" ${state.vidPage === totalPages ? "disabled" : ""}>›</button>`;
   p.innerHTML = html;
 }
-window.vidPage = (n) => {
-  state.vidPage = n;
+
+$("#vid-pagination").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-page]");
+  if (!btn || btn.disabled) return;
+  state.vidPage = +btn.dataset.page;
   renderVideos();
-};
+});
 
 $("#vid-search").addEventListener("input", () => {
   state.vidPage = 1;

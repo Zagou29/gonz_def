@@ -33,12 +33,12 @@
 <body>
   <header class="entete">
     <div class="minibar">
-      <button class="ret_fl hamburger" type="button">
+      <button class="ret_fl hamburger" type="button" data-action="hamburger">
         <span class="barre haut"></span>
         <span class="barre milieu"></span>
         <span class="barre bas"></span>
       </button>
-      <button class="ret_fl ratio" type="button">
+      <button class="ret_fl ratio" type="button" data-action="ratio">
         <span class="material-icons-outlined asp_image">aspect_ratio</span>
       </button>
     </div>
@@ -57,11 +57,11 @@
 
   <main class="envel">
     <div class="image">
-      <div class="ret_fl fleches bloc precedent">
+      <div class="ret_fl fleches bloc precedent" data-action="arrow-left">
         <span class="material-icons-outlined bloc iconFl left">arrow_circle_left</span>
         <span class="material-icons-outlined bloc iconFl debut">block</span>
       </div>
-      <div class="ret_fl fleches bloc suivant">
+      <div class="ret_fl fleches bloc suivant" data-action="arrow-right">
         <span class="material-icons-outlined bloc iconFl right">arrow_circle_right</span>
         <span class="material-icons-outlined bloc iconFl fin">block</span>
       </div>
@@ -78,7 +78,7 @@
   </main>
 
   <footer class="pied">
-    <button class="ret_fl retour">
+    <button class="ret_fl retour" data-action="return">
       <span class="material-icons-outlined spanRetour">arrow_circle_left</span>
     </button>
     <button class="diapo">
@@ -87,7 +87,7 @@
       <span class="material-icons-outlined spanRetour son">volume_up</span>
       <span class="spanRetour duree"></span>
     </button>
-    <button class="ret_fl inverser">
+    <button class="ret_fl inverser" data-action="invert">
       <span class="material-icons-outlined spanRetour history">history</span>
       <span class="material-icons-outlined spanRetour update">update</span>
     </button>

@@ -132,8 +132,11 @@ export class VidItem {
         }&format=json`,
       );
 
+      if (!this.#video.isConnected) return;
+
       if (response.ok) {
         const data = await response.json();
+        if (!this.#video.isConnected) return;
         if (data.thumbnail_url) {
           // Utiliser le thumbnail fourni par oEmbed
           this.#video.setAttribute("src", data.thumbnail_url);
@@ -141,6 +144,7 @@ export class VidItem {
         }
       }
     } catch (error) {
+      if (!this.#video.isConnected) return;
       console.warn(
         "Impossible de récupérer le thumbnail de la playlist:",
         error,
@@ -148,7 +152,9 @@ export class VidItem {
     }
 
     // Fallback: utiliser une image générique
-    this.#video.setAttribute("src", "./box_img/Zag_icon.png");
+    if (this.#video.isConnected) {
+      this.#video.setAttribute("src", "./box_img/Zag_icon.png");
+    }
   }
 
   /**
