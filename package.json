@@ -2,6 +2,9 @@
     "name": "gonz_def",
     "version": "1.0.0",
     "type": "module",
+    "engines": {
+        "node": ">=20.3.0"
+    },
     "scripts": {
         "resize": "node scripts/resize-images.js"
     },
