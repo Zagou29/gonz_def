@@ -162,23 +162,32 @@ audio/         # Fichiers audio pour diaporamas
 ## Conventions et Patterns Établis
 
 ### Parsing des classes CSS (`menuVid.js`)
+
 Toujours utiliser `split(".")` pour extraire les segments de `clas`, jamais `slice()` à position fixe :
+
 ```javascript
-const parts = clas.split(".");   // ["", "fam", "ava"]
-const menu   = "." + parts[1];  // ".fam"
-const detail = parts[2] || "";  // "ava" — longueur quelconque
+const parts = clas.split("."); // ["", "fam", "ava"]
+const menu = "." + parts[1]; // ".fam"
+const detail = parts[2] || ""; // "ava" — longueur quelconque
 ```
+
 Pour identifier la catégorie d'un élément DOM, utiliser `classList.find()` :
+
 ```javascript
-const category = Array.from(element.classList)
-  .find((c) => c.startsWith("menu_"))?.slice(5) ?? "";
+const category =
+  Array.from(element.classList)
+    .find((c) => c.startsWith("menu_"))
+    ?.slice(5) ?? "";
 ```
 
 ### Identification des boutons par `data-action` (`events.js`, `photos.html`)
+
 Les boutons `.ret_fl` sont identifiés par `data-action` (jamais par index DOM) :
+
 ```html
 <button class="ret_fl" data-action="hamburger">...</button>
 ```
+
 ```javascript
 switch (e.currentTarget.dataset.action) {
   case "hamburger": ...
@@ -187,18 +196,23 @@ switch (e.currentTarget.dataset.action) {
 ```
 
 ### Initialisation lazy de `AudioManager` (`audio.js`)
+
 `new Audio()` n'est créé qu'au premier appel de `playPause()` via `#ensureAudio()`.  
 `clearMusic()` est safe même si l'audio n'a jamais été initialisé (`if (!this.audio) return`).  
 Ne jamais accéder à `audioManager.audio` directement — toujours passer par `playPause()` ou `clearMusic()`.
 
 ### Gardes `isConnected` pour les promesses fire-and-forget (`video-items.js`)
+
 Après chaque `await` dans `#loadPlaylistThumbnail()`, vérifier que le nœud est toujours dans le DOM :
+
 ```javascript
 if (!this.#video.isConnected) return;
 ```
 
 ### Pagination sans global (`admin.js`)
+
 La pagination utilise `data-page` + un seul `addEventListener` par délégation, sans `window.vidPage` :
+
 ```javascript
 $("#vid-pagination").addEventListener("click", (e) => {
   const btn = e.target.closest("[data-page]");
@@ -209,8 +223,9 @@ $("#vid-pagination").addEventListener("click", (e) => {
 ```
 
 ### Sécurité XSS dans `admin.js`
+
 Toutes les propriétés JSON injectées dans `innerHTML` doivent passer par `escHtml()` :
+
 ```javascript
-`<span class="badge badge-${escHtml(v.typVid || "")}">${escHtml(v.typVid || "")}</span>`
-`<td class="td-mono">${escHtml(v.clas || "")}</td>`
+`<span class="badge badge-${escHtml(v.typVid || "")}">${escHtml(v.typVid || "")}</span>``<td class="td-mono">${escHtml(v.clas || "")}</td>`;
 ```
