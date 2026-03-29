@@ -4,13 +4,12 @@ export class AudioManager {
   constructor(domElements) {
     this.domElements = domElements;
     this.audio = null;
-    this.init();
   }
 
-  init() {
+  #ensureAudio() {
+    if (this.audio) return;
     const rnd = (max) => Math.floor(Math.random() * max) + 1;
     this.audio = new Audio(`./audio/audio_${rnd(11)}.mp3`);
-    // Gestion propre de la boucle
     this.audio.addEventListener("ended", () => {
       this.audio.currentTime = 0;
       this.audio.play();
@@ -18,6 +17,7 @@ export class AudioManager {
   }
 
   playPause(sens) {
+    this.#ensureAudio();
     const shouldPlay = sens === 1;
     this.audio[shouldPlay ? "play" : "pause"]();
     this.domElements.mute.classList.toggle("eff_fl", shouldPlay);
@@ -26,6 +26,7 @@ export class AudioManager {
   }
 
   clearMusic() {
+    if (!this.audio) return;
     this.audio.currentTime = 0;
     this.audio.pause();
     this.domElements.mute.classList.add("eff_fl");

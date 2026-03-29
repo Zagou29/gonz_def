@@ -24,7 +24,7 @@ export class DiaporamaManager {
             this.clearMusic();
           }
         }, this.stats.delai);
-        this.audioManager.audio.play();
+        this.audioManager.playPause(1);
       } else {
         this.clearMusic();
       }

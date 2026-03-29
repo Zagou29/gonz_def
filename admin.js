@@ -198,9 +198,9 @@ function renderVideos() {
           : `https://www.youtube.com/watch?v=${v.id}`;
       return `<tr>
       <td class="td-mono td-num">${start + i + 1}</td>
-      <td><span class="badge badge-${v.typVid}">${v.typVid || ""}</span></td>
-      <td>${v.ec ? `<span class="badge badge-43">${v.ec}</span>` : '<span style="color:var(--text-light);font-size:0.75rem">16:9</span>'}</td>
-      <td class="td-mono">${v.clas || ""}</td>
+      <td><span class="badge badge-${escHtml(v.typVid || "")}">${escHtml(v.typVid || "")}</span></td>
+      <td>${v.ec ? `<span class="badge badge-43">${escHtml(v.ec)}</span>` : '<span style="color:var(--text-light);font-size:0.75rem">16:9</span>'}</td>
+      <td class="td-mono">${escHtml(v.clas || "")}</td>
       <td class="td-mono"><a href="${ytUrl}" target="_blank" rel="noopener" title="Voir sur YouTube">${v.id || ""}</a></td>
       <td>${v.annee || ""}</td>
       <td class="td-trunc" title="${escHtml(v.text || "")}">${escHtml(v.text || "")}</td>

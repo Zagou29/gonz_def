@@ -69,7 +69,6 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
   try {
     // Initialisation des managers
     const audioManager = new AudioManager(domElements);
-    stats.audio = audioManager.audio;
 
     const uiManager = new UIManager(domElements, stats);
     uiManager.switchArrowDirection();
