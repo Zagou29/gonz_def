@@ -117,8 +117,7 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
     const images = new Affimg(listchoisie, stats.val_trans, stats.asp);
     images.creeimages(domElements.boiteImg);
     images.creedates(domElements.cont);
-    stats.list_img = [...domElements.boiteImg.querySelectorAll(".show")];
-
+    stats.list_img = images.elements;
     /** ne faire apparaitre qu'une date sur 4 pour "photo" et sur 3 pour les autres */
     stats.lien_an = [...domElements.cont.querySelectorAll(".liens")];
     stats.val_trans === "photo" ? (stats.skip_img = 3) : (stats.skip_img = 2);

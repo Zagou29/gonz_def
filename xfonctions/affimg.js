@@ -12,6 +12,7 @@ export class Affimg {
   #datesFragment; // Fragment où charger les liensdates
   #imagesContainer; // Boite où charger les images
   #datesContainer; // Boite où charger les Li dates
+  #imageElements = []; // Éléments img collectés pendant la préparation
 
   /**
    * Crée une nouvelle instance d'Affimg
@@ -55,6 +56,7 @@ export class Affimg {
 
       // Crée et ajoute l'élément image
       const imageItem = new AffItem(imgData, this.#aspectClass);
+      this.#imageElements.push(imageItem.element);
       this.#imagesFragment.append(imageItem.element);
 
       // Crée et ajoute l'élément date (conditionnellement pour 'photo')
@@ -77,6 +79,14 @@ export class Affimg {
     // Vider le conteneur avant d'ajouter (optionnel, mais souvent utile)
     this.#imagesContainer.append(this.#imagesFragment);
     return this;
+  }
+
+  /**
+   * Retourne les éléments img collectés pendant #preparerElements()
+   * @return {HTMLImageElement[]}
+   */
+  get elements() {
+    return this.#imageElements;
   }
 
   /**

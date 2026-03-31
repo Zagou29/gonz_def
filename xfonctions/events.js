@@ -13,44 +13,44 @@ export class EventManager {
   }
 
   /* utilisation des icones menu, ratio, retour, et inverser image */
-  setupMenuActions(image) {
-    this.domElements.ret_fl.forEach((el) => {
-      el.addEventListener("click", (e) => {
-        switch (e.currentTarget.dataset.action) {
-          case "hamburger":
-            this.domElements.hamb.classList.toggle("open");
-            this.domElements.menu.classList.toggle("open");
-            break;
-          case "ratio":
-            this.stats.asp =
-              this.stats.asp === "show" ? "show show_mod" : "show";
-            this.uiManager.setLocalStorageAndRedirect({
-              asp_images: this.stats.asp,
-              delai: this.stats.delai,
-              pos_img: -this.domElements.boiteImg.getBoundingClientRect().top,
-            });
-            break;
-          case "arrow-left":
-            this.diaporamaManager.clearMusic();
-            this.navigationManager.depHor(image, -1);
-            break;
-          case "arrow-right":
-            this.diaporamaManager.clearMusic();
-            this.navigationManager.depHor(image, 1);
-            break;
-          case "return":
-            localStorage.clear();
-            window.location.href = "./index.html";
-            break;
-          case "invert":
-            this.uiManager.setLocalStorageAndRedirect({
-              delai: this.stats.delai,
-              sens_dates: this.stats.sens_date === "1" ? "-1" : "1",
-              pos_img: 0,
-            });
-            break;
-        }
-      });
+  setupMenuActions() {
+    document.addEventListener("click", (e) => {
+      const actionEl = e.target.closest(".ret_fl[data-action]");
+      if (!actionEl) return;
+      switch (actionEl.dataset.action) {
+        case "hamburger":
+          this.domElements.hamb.classList.toggle("open");
+          this.domElements.menu.classList.toggle("open");
+          break;
+        case "ratio":
+          this.stats.asp =
+            this.stats.asp === "show" ? "show show_mod" : "show";
+          this.uiManager.setLocalStorageAndRedirect({
+            asp_images: this.stats.asp,
+            delai: this.stats.delai,
+            pos_img: -this.domElements.boiteImg.getBoundingClientRect().top,
+          });
+          break;
+        case "arrow-left":
+          this.diaporamaManager.clearMusic();
+          this.navigationManager.depHor(this.domElements.boiteImg, -1);
+          break;
+        case "arrow-right":
+          this.diaporamaManager.clearMusic();
+          this.navigationManager.depHor(this.domElements.boiteImg, 1);
+          break;
+        case "return":
+          localStorage.clear();
+          window.location.href = "./index.html";
+          break;
+        case "invert":
+          this.uiManager.setLocalStorageAndRedirect({
+            delai: this.stats.delai,
+            sens_dates: this.stats.sens_date === "1" ? "-1" : "1",
+            pos_img: 0,
+          });
+          break;
+      }
     });
   }
 
@@ -146,11 +146,8 @@ export class EventManager {
 
     window.addEventListener("scroll", debouncedHandleScroll);
 
-    // Détecter le début d'un scroll manuel (touchstart/mousedown)
-    this.domElements.boiteImg.addEventListener("touchstart", () => {
-      isManualScroll = true;
-    });
-    this.domElements.boiteImg.addEventListener("mousedown", () => {
+    // Détecter le début d'un scroll manuel
+    this.domElements.boiteImg.addEventListener("pointerdown", () => {
       isManualScroll = true;
     });
 
@@ -163,12 +160,7 @@ export class EventManager {
     });
 
     // Réinitialiser le flag après un délai
-    this.domElements.boiteImg.addEventListener("touchend", () => {
-      setTimeout(() => {
-        isManualScroll = false;
-      }, 100);
-    });
-    this.domElements.boiteImg.addEventListener("mouseup", () => {
+    this.domElements.boiteImg.addEventListener("pointerup", () => {
       setTimeout(() => {
         isManualScroll = false;
       }, 100);
@@ -184,7 +176,7 @@ export class EventManager {
       this.navigationManager.scrollImg(e),
     );
 
-    this.setupMenuActions(this.domElements.boiteImg);
+    this.setupMenuActions();
     this.diaporamaManager.setupDiaporama(this.domElements.boiteImg);
     this.setupKeyboardEvents(this.domElements.boiteImg);
   }

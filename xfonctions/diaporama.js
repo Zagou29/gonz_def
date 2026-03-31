@@ -50,32 +50,17 @@ export class DiaporamaManager {
 
   /* gestion des diapo par icones */
   setupDiaporama(image) {
-    const DIAPO_ACTIONS = {
-      TOGGLE_DIAPO: 0,
-      PLAY: 1,
-      PAUSE: 2,
-      SPEED_UP: 3,
-    };
-
-    this.domElements.diap.querySelectorAll("*").forEach((el, index) => {
-      el.addEventListener("click", (e) => {
-        switch (index) {
-          case DIAPO_ACTIONS.TOGGLE_DIAPO:
-            this.toggleDiapo(image);
-            break;
-          case DIAPO_ACTIONS.PLAY:
-            if (this.stats.nId === null) break;
-            this.audioManager.playPause(1);
-            break;
-          case DIAPO_ACTIONS.PAUSE:
-            if (this.stats.nId === null) break;
-            this.audioManager.playPause(0);
-            break;
-          case DIAPO_ACTIONS.SPEED_UP:
-            this.stats.delai = this.delaiChange(this.stats.delai, +1);
-            break;
-        }
-      });
+    this.domElements.diap.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target.classList.contains("slide")) {
+        this.toggleDiapo(image);
+      } else if (target.classList.contains("mute")) {
+        if (this.stats.nId !== null) this.audioManager.playPause(1);
+      } else if (target.classList.contains("son")) {
+        if (this.stats.nId !== null) this.audioManager.playPause(0);
+      } else if (target.classList.contains("duree")) {
+        this.stats.delai = this.delaiChange(this.stats.delai, +1);
+      }
     });
   }
 }
