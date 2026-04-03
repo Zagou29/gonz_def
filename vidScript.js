@@ -6,13 +6,6 @@ import menuListJson from "./xjson/menusVideos.json" with { type: "json" };
 import { Menubox } from "./xfonctions/menubox.js";
 import { MenuVid } from "./xfonctions/menuVid.js";
 import { Affvid } from "./xfonctions/affvid_refact.js";
-// Activation des CSS non-critiques préchargés (compatible CSP script-src 'self')
-["dropdown", "video", "blog", "responsive"].forEach((name) => {
-  const preloaded = document.querySelector(
-    `link[rel="preload"][href$="${name}.css"]`,
-  );
-  if (preloaded) preloaded.rel = "stylesheet";
-});
 
 // Constantes globales pour améliorer la lisibilité
 const IGNORE_TAGS = ["LABEL", "INPUT"];
