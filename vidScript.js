@@ -45,29 +45,9 @@ const state = {
 };
 // --------- Fonctions utilitaires ---------
 // Gestion du scroll
-const scrollModule = (() => {
-  const scrollToTop = () =>
-    dom.ecVideos.scrollTo({ top: 0, behavior: "smooth" });
-  return { scrollToTop };
-})();
-// Régler la hauteur d'un bloc
-const setHeight = (element, height) => {
-  element.style.height = height;
-};
-
-/**
- * Afficher ou masquer le bouton "Retour au début de page"
- * @param {string} sens '+' pour afficher, '-' pour masquer
- */
-const affEffRetour = (sens) => {
-  if (sens === "+") {
-    dom.retour.classList.add("show");
-    dom.retour.addEventListener("click", scrollModule.scrollToTop);
-  } else {
-    dom.retour.classList.remove("show");
-    dom.retour.removeEventListener("click", scrollModule.scrollToTop);
-  }
-};
+const scrollToTop = () => dom.ecVideos.scrollTo({ top: 0, behavior: "smooth" });
+dom.retour.addEventListener("click", scrollToTop);
+const affEffRetour = (show) => dom.retour.classList.toggle("show", show);
 
 /**
  * Callback pour l'IntersectionObserver : arrête la vidéo sortante.
@@ -133,7 +113,7 @@ const afficheLiens = (classe, year, tempId) => {
   state.videoObserver.disconnect();
   if (dom.ecVideos.innerHTML && nbVideos > 1) {
     state.vidClass.affBar(dom.barBox);
-    affEffRetour("+");
+    affEffRetour(true);
     const lect = dom.ecVideos.querySelectorAll(".lect");
     lect.forEach((lecteur) => state.videoObserver.observe(lecteur));
   }
@@ -156,10 +136,8 @@ const aff_Videos = (e) => {
   const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
-    setHeight(
-      activeMenu.parentElement.querySelector(SELECTORS.blocLinks),
-      "0px",
-    );
+    activeMenu.parentElement.querySelector(SELECTORS.blocLinks).style.height =
+      "0px";
   }
   const nbVideos = afficheLiens(clasChoisie, year, tempId);
   dom.titre.textContent = nbVideos ? spanChoisi.textContent : "";
@@ -187,13 +165,13 @@ const fermerBlockLinks = () => {
   menus.forEach((sp) => {
     if (sp.classList.contains("activeMenu")) {
       const bloclinks = sp.parentElement.querySelector(SELECTORS.blocLinks);
-      setHeight(bloclinks, "0px");
+      bloclinks.style.height = "0px";
       cleanupEventListeners(bloclinks);
       dom.ecVideos.replaceChildren();
       dom.barBox.replaceChildren();
 
       dom.titre.textContent = "";
-      affEffRetour("-");
+      affEffRetour(false);
       state.blockLinks_open = false;
       sp.classList.remove("activeMenu");
     }
@@ -279,7 +257,7 @@ const setupObserver = () => {
         const dropCour = spanChoisi.parentElement.querySelector(
           SELECTORS.blocLinks,
         );
-        setHeight(dropCour, dropCour.scrollHeight + "px");
+        dropCour.style.height = dropCour.scrollHeight + "px";
         state.blockLinks_open = true;
         spanChoisi.classList.add("activeMenu");
         attachEventToDropdown(dropCour);
