@@ -96,11 +96,12 @@ export class NavigationManager {
 
   /*  fonction pour placer l'image verticalement selon l'année*/
   scrollImg(e) {
+    const num = e.target.dataset.num;
+    if (num == null) return;
     window.scrollTo({
-      top: this.stats.list_img[e.target.dataset.num].offsetTop,
+      top: this.stats.list_img[num].offsetTop,
       behavior: "instant",
     });
-    this.domElements.aff_an.textContent =
-      this.stats.list_img[e.target.dataset.num].dataset.an;
+    this.domElements.aff_an.textContent = this.stats.list_img[num].dataset.an;
   }
 }

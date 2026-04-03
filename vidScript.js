@@ -65,7 +65,7 @@ const ferme_videos = (entries) => {
       // Mettre en pause sans recharger l'iframe
       if (videoImg.tagName === "IFRAME") {
         videoImg.contentWindow?.postMessage(
-          '{"event":"command","func":"pauseVideo","args":""}',
+          '{"event":"command","func":"stopVideo","args":""}',
           "*",
         );
       }

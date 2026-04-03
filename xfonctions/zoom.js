@@ -51,6 +51,7 @@ export class ZoomManager {
   }
 
   handleZoomIn(e) {
+    this._zoomedTarget = e.target;
     this.domElements.boiteImg.scrollTo({ left: e.target.offsetLeft });
     this.domElements.hamb.classList.remove("open");
     this.domElements.menu.classList.remove("open");
@@ -60,12 +61,14 @@ export class ZoomManager {
     this.domElements.boiteImg.addEventListener("wheel", this._wheelHandler);
   }
 
-  handleZoomOut(e) {
+  handleZoomOut() {
     this.domElements.full.classList.remove("showfl");
     this.domElements.boiteImg.removeEventListener("wheel", this._wheelHandler);
+    const target = this._zoomedTarget || this.stats.list_img[0];
     window.scrollTo({
-      top: e.target.offsetTop - this.stats.yimg,
+      top: target.offsetTop - this.stats.yimg,
       behavior: "instant",
     });
+    this._zoomedTarget = null;
   }
 }
