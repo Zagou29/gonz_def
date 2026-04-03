@@ -45,9 +45,7 @@ export class UIManager {
 
   /* parametres à stocker sur localStorage et rediriger */
   setLocalStorageAndRedirect(par) {
-    Object.keys(par).forEach((key) => {
-      localStorage.setItem(key, par[key]);
-    });
+    Object.entries(par).forEach(([k, v]) => localStorage.setItem(k, v));
     window.location.href = "./photos.html";
   }
 

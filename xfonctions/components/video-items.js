@@ -110,10 +110,10 @@ export class VidItem {
       const isPlaylist =
         this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
       const baseUrl = VIDEO_CONFIG.YOUTUBE.EMBED_BASE_URL;
-      const videoUrl = `${baseUrl}${this.#vidItem.id}?rel=0&autoplay=0`;
+      const videoUrl = `${baseUrl}${this.#vidItem.id}?rel=0&autoplay=0&enablejsapi=1`;
       const playlistUrl = `${baseUrl}videoseries?list=${
         this.#vidItem.id
-      }&rel=0&autoplay=0`;
+      }&rel=0&autoplay=0&enablejsapi=1`;
 
       this.#video.setAttribute("src", isPlaylist ? playlistUrl : videoUrl);
     }

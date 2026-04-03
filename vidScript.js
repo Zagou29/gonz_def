@@ -62,8 +62,13 @@ const ferme_videos = (entries) => {
     if (!isIntersecting) {
       barItem.classList.remove("peint");
       const videoImg = target.querySelector(".vidImg");
-      // Arrêter la vidéo en désactivant l'autoplay
-      videoImg.src = videoImg.src.replace("autoplay=1", "autoplay=0");
+      // Mettre en pause sans recharger l'iframe
+      if (videoImg.tagName === "IFRAME") {
+        videoImg.contentWindow?.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*",
+        );
+      }
     } else {
       barItem.classList.add("peint");
     }

@@ -41,26 +41,31 @@ export class DiaporamaManager {
   /* augmenter, diminuer le delai */
   delaiChange(del, sens) {
     if (!this.stats.zoome) return del;
-    del === 4000 ? (del = 1000) : (del = del + 500 * sens);
-    del = Math.max(1000, del);
-    del = Math.min(4000, del);
+    del =
+      del === 4000 ? 1000 : Math.min(4000, Math.max(1000, del + 500 * sens));
     this.domElements.duree.textContent = `${del / 1000} sec`;
     return del;
   }
 
   /* gestion des diapo par icones */
   setupDiaporama(image) {
-    this.domElements.diap.addEventListener("click", (e) => {
-      const target = e.target;
-      if (target.classList.contains("slide")) {
-        this.toggleDiapo(image);
-      } else if (target.classList.contains("mute")) {
+    const actions = {
+      slide: () => this.toggleDiapo(image),
+      mute: () => {
         if (this.stats.nId !== null) this.audioManager.playPause(1);
-      } else if (target.classList.contains("son")) {
+      },
+      son: () => {
         if (this.stats.nId !== null) this.audioManager.playPause(0);
-      } else if (target.classList.contains("duree")) {
+      },
+      duree: () => {
         this.stats.delai = this.delaiChange(this.stats.delai, +1);
-      }
+      },
+    };
+    this.domElements.diap.addEventListener("click", (e) => {
+      const action = Object.keys(actions).find((cls) =>
+        e.target.classList.contains(cls),
+      );
+      if (action) actions[action]();
     });
   }
 }
