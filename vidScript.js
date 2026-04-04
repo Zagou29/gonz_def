@@ -34,6 +34,7 @@ const dom = {
   years: document.querySelector(".years"),
   ePhotos: document.querySelector(".ePhotos"),
   eBlogs: document.querySelector(".eBlogs"),
+  menus: document.querySelectorAll(".menu .titMenu"),
 };
 // État de l'application
 const state = {
@@ -137,7 +138,7 @@ const aff_Videos = (e) => {
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
   // Mobile et iPad : iframes directes ; desktop : thumbnails (facade YouTube)
-  const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb"; 
+  const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb";
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     activeMenu.parentElement.querySelector(SELECTORS.blocLinks).style.height =
@@ -165,8 +166,7 @@ const cleanupEventListeners = (element) => {
 };
 const fermerBlockLinks = () => {
   if (!state.blockLinks_open && !dom.ecVideos.innerHTML) return;
-  const menus = dom.menu.querySelectorAll(".titMenu");
-  menus.forEach((sp) => {
+  dom.menus.forEach((sp) => {
     if (sp.classList.contains("activeMenu")) {
       const bloclinks = sp.parentElement.querySelector(SELECTORS.blocLinks);
       bloclinks.style.height = "0px";
@@ -212,7 +212,7 @@ const setupObserver = () => {
 };
 // ----- IIFE principale -----
 (async function init() {
- if (mob().mob || ordi_OS().ipad) document.body.classList.add("touch"); 
+  if (mob().mob || ordi_OS().ipad) document.body.classList.add("touch");
   // Charger les menuboxes
   try {
     // Données JSON disponibles via imports statiques (mise en cache navigateur)
