@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%) scale(1);
   width: 68px;
   height: 48px;
-  background-color: #ff0000;
+  background-color: hsla(0, 100%, 50%, 0.7);
   border-radius: 12px;
   pointer-events: none;
   transition:
@@ -52,7 +52,6 @@
 }
 
 .lect:hover .yt-play-btn {
-  background-color: #cc0000;
   transform: translate(-50%, -50%) scale(1.1);
 }
 
