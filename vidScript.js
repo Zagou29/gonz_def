@@ -137,8 +137,7 @@ const aff_Videos = (e) => {
   //year = 2020
   const year = spanChoisi.dataset.year ? `${spanChoisi.dataset.year}` : "";
   // Mobile et iPad : iframes directes ; desktop : thumbnails (facade YouTube)
-  /*const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb"; */
-  const tempId = "ytThumb";
+  const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb"; 
   // ferme les menus, sauf quand on choisi Vieos ou Diapos and Années
   if (!IGNORE_TAGS.includes(spanChoisi.tagName)) {
     activeMenu.parentElement.querySelector(SELECTORS.blocLinks).style.height =
@@ -213,7 +212,7 @@ const setupObserver = () => {
 };
 // ----- IIFE principale -----
 (async function init() {
- /*  if (mob().mob || ordi_OS().ipad) document.body.classList.add("touch"); */
+ if (mob().mob || ordi_OS().ipad) document.body.classList.add("touch"); 
   // Charger les menuboxes
   try {
     // Données JSON disponibles via imports statiques (mise en cache navigateur)
