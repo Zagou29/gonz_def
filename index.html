@@ -14,11 +14,13 @@
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/menu.css">
-  <!-- CSS non-critique : chargé de manière non-bloquante -->
-  <link rel="stylesheet" href="./css/dropdown.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/video.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/blog.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./css/responsive.css" media="print" onload="this.media='all'">
+
+  <!-- CSS non-critique : préchargé mais non-bloquant -->
+  <link rel="preload" href="./css/dropdown.css" as="style">
+  <link rel="preload" href="./css/video.css" as="style">
+  <link rel="preload" href="./css/blog.css" as="style">
+  <link rel="preload" href="./css/responsive.css" as="style">
+
   <!-- Fallback noscript -->
   <noscript>
     <link rel="stylesheet" href="./css/dropdown.css">
