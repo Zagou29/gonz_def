@@ -15,7 +15,6 @@ html {
   display: none; /* Chrome / Safari */
 }
 
-
 /* Body Styles */
 :root {
   --col_an: blue;
@@ -89,7 +88,6 @@ body {
   border-radius: 999px;
   background-color: var(--col-bout);
   transition: transform 0.3s ease-in-out;
-  will-change: transform;
 }
 .minibar {
   display: flex;
@@ -319,13 +317,13 @@ body {
   transform: translate(-110%);
   transition: transform 0.3s ease-in-out;
   background-color: hsla(0, 0%, 100%, 0.3);
-  will-change: transform;
 }
 .menu.open {
   transform: translate(0);
   cursor: pointer;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  will-change: transform;
 }
 .show_box,
 .box_annees:hover {

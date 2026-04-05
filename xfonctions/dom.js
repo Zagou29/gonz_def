@@ -19,6 +19,8 @@ const createElement = (tagName, attributes = {}) => {
  * @returns {documentFragment} clone du template
  */
 const cloneTemplate = (id) => {
-  return document.getElementById(id).content.cloneNode(true);
+  const tpl = document.getElementById(id);
+  if (!tpl) throw new Error(`Template "#${id}" introuvable`);
+  return tpl.content.cloneNode(true);
 };
 export { createElement, cloneTemplate };

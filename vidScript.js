@@ -66,7 +66,7 @@ const ferme_videos = (entries) => {
       if (videoImg.tagName === "IFRAME") {
         videoImg.contentWindow?.postMessage(
           '{"event":"command","func":"stopVideo","args":""}',
-          "*",
+          "https://www.youtube-nocookie.com",
         );
       }
     } else {

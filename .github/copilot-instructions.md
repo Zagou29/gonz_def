@@ -56,7 +56,7 @@ const tempId = mob().mob ? "ytFrame" : "ytThumb";
 - **`managers.js`** : Bundle d'exports des managers — `AudioManager`, `NavigationManager`, `DiaporamaManager`, `UIManager`, `ZoomManager`, `EventManager`
 - **`components/video-items.js`** : Composants réutilisables — `VidItem` (miniature/iframe), `BarItem` (barre de nav), `AnnItem` (élément année)
 - **`utils/dimension-calculator.js`** : Classe `DimensionCalculator` — calcul dimensions optimales vidéo selon ratio et conteneur
-- **`dom.js`** : Fonction utilitaire `cloneTemplate(id)` — clone un `<template>` HTML par son ID
+- **`dom.js`** : Fonction utilitaire `cloneTemplate(id)` — clone un `<template>` HTML par son ID (avec garde `null` → `Error` explicite si template introuvable)
 
 ### Configuration Centralisée
 
@@ -119,7 +119,7 @@ Utilisé pour créer dynamiquement vidéos, barres de navigation, etc.
 
 - **CSS Variables** : `clamp()` pour tailles adaptatives
 - **Touch Navigation** : Gestes swipe pour photos
-- **Détection OS/Navigateur** : Safari iOS nécessite bouton spécial
+- **Détection OS/Navigateur** : Safari iOS nécessite bouton spécial (`nav_os.js` utilise `includes()`)
 
 ## Commandes de Développement
 
@@ -155,7 +155,7 @@ audio/         # Fichiers audio pour diaporamas
 - **Gestion Mobile** : Comportements différents mobile/desktop (iframes vs thumbnails)
 - **Performance** : Attention au nombre d'éléments DOM créés dynamiquement
 - **LocalStorage** : Paramètres utilisateur persistants pour UX
-- **YouTube API** : URLs nocookie et gestion autoplay selon contexte
+- **YouTube API** : URLs nocookie, gestion autoplay selon contexte, `postMessage` ciblé sur `https://www.youtube-nocookie.com`
 - **Playlists** : Détection par longueur ID (34 vs 11 caractères) et API oEmbed pour thumbnails
 - **Clic Thumbnails** : Transformation asynchrone thumbnail→iframe avec autoplay activé
 
