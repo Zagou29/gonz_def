@@ -57,10 +57,17 @@ export class Affvid {
    * @param {string} [classe=''] - Classe CSS pour filtrer
    * @param {string} [an] - Année pour filtrer
    * @param {string} [tempId=VIDEO_CONFIG.TEMPLATES.THUMB] - ID du template à utiliser
+   * @param {VideoItem[]} [liste] - Liste pré-filtrée (bypass #filtrerVideos si fourni)
    * @returns {Affvid} - Instance courante pour le chaînage
    * @throws {Error} Si le conteneur n'est pas valide
    */
-  affVideos(container, classe = "", an, tempId = VIDEO_CONFIG.TEMPLATES.THUMB) {
+  affVideos(
+    container,
+    classe = "",
+    an,
+    tempId = VIDEO_CONFIG.TEMPLATES.THUMB,
+    liste,
+  ) {
     if (!container || !(container instanceof HTMLElement)) {
       throw new Error("Le conteneur doit être un élément HTML valide");
     }
@@ -71,7 +78,16 @@ export class Affvid {
     this.#an = an;
     this.#listElement = new DocumentFragment();
 
-    this.#filtrerVideos();
+    if (liste) {
+      this.#vidSelect = liste;
+      this.#liste = [...liste].sort((a, b) => {
+        const isVideoA = a.typVid.includes(VIDEO_CONFIG.CLASSES.VIDEO);
+        const isVideoB = b.typVid.includes(VIDEO_CONFIG.CLASSES.VIDEO);
+        return isVideoB - isVideoA;
+      });
+    } else {
+      this.#filtrerVideos();
+    }
     this.#creerThumbnails();
 
     this.#container.append(this.#listElement);
@@ -83,7 +99,7 @@ export class Affvid {
    * @private
    */
   #filtrerVideos() {
-    // si classe =.ann 
+    // si classe =.ann
     if (this.#an) {
       // Filtre par année et longueur d'ID (exclut les playlists)
       this.#vidSelect = this.#vidlist

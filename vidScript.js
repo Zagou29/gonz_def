@@ -35,6 +35,7 @@ const dom = {
   ePhotos: document.querySelector(".ePhotos"),
   eBlogs: document.querySelector(".eBlogs"),
   menus: document.querySelectorAll(".menu .titMenu"),
+  searchVid: document.querySelector("#searchVid"),
 };
 // État de l'application
 const state = {
@@ -107,12 +108,13 @@ const ecoute_barre = (e) => {
  * @param {string} classe Classe combinée et type (vidéo/diapo)
  * @param {string} year Année (optionnel)
  * @param {string} tempId Identifiant pour iframe ou miniature
+ * @param {Array} [liste] Liste pré-filtrée (bypass filtrage par classe)
  * @returns {number} Nombre de vidéos affichées
  */
-const afficheLiens = (classe, year, tempId) => {
-  if (!classe || !state.vidClass) return 0;
+const afficheLiens = (classe, year, tempId, liste) => {
+  if ((!classe && !liste) || !state.vidClass) return 0;
   dom.ecVideos.replaceChildren();
-  state.vidClass.affVideos(dom.ecVideos, classe, year, tempId);
+  state.vidClass.affVideos(dom.ecVideos, classe, year, tempId, liste);
   //si une seule video, on ne fait rien
   const nbVideos = state.vidClass.retourVideo.length || 0;
   state.videoObserver.disconnect();
@@ -165,21 +167,24 @@ const cleanupEventListeners = (element) => {
   element.removeEventListener("click", aff_Videos);
 };
 const fermerBlockLinks = () => {
-  if (!state.blockLinks_open && !dom.ecVideos.innerHTML) return;
+  const hasActive = [...dom.menus].some((sp) =>
+    sp.classList.contains("activeMenu"),
+  );
+  if (!hasActive && !state.blockLinks_open && !dom.ecVideos.innerHTML) return;
   dom.menus.forEach((sp) => {
     if (sp.classList.contains("activeMenu")) {
       const bloclinks = sp.parentElement.querySelector(SELECTORS.blocLinks);
       bloclinks.style.height = "0px";
       cleanupEventListeners(bloclinks);
-      dom.ecVideos.replaceChildren();
-      dom.barBox.replaceChildren();
-
-      dom.titre.textContent = "";
-      affEffRetour(false);
-      state.blockLinks_open = false;
       sp.classList.remove("activeMenu");
     }
   });
+  dom.ecVideos.replaceChildren();
+  dom.barBox.replaceChildren();
+  dom.titre.textContent = "";
+  affEffRetour(false);
+  state.blockLinks_open = false;
+  if (dom.searchVid) dom.searchVid.value = "";
 };
 /**
  * Ferme le menu dropdown si le clic se fait hors du menu principal.
@@ -243,6 +248,43 @@ const setupObserver = () => {
     /* afficher les boites menus années */
     state.vidClass.aff_ans(dom.years);
 
+    /* ---------- Recherche vidéos ---------- */
+    const norm = (s) =>
+      s
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    dom.searchVid.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      e.preventDefault();
+      const q = norm(dom.searchVid.value.trim());
+      if (!q) return;
+      // Filtrer vidList en cherchant dans text, groupe, detail
+      const filtered = vidList.filter((v) => {
+        const lien = list_menus.find((m) => m.clas === v.clas) || {};
+        return (
+          norm(v.text || "").includes(q) ||
+          norm(lien.groupe || "").includes(q) ||
+          norm(lien.detail || "").includes(q)
+        );
+      });
+      const tempId = mob().mob || ordi_OS().ipad ? "ytFrame" : "ytThumb";
+      const nbVideos = afficheLiens("", "", tempId, filtered);
+      dom.titre.textContent = nbVideos
+        ? `${nbVideos}  « ${dom.searchVid.value.trim()} »`
+        : `Zero « ${dom.searchVid.value.trim()} »`;
+      if (!nbVideos) {
+        dom.ecVideos.replaceChildren();
+        dom.barBox.replaceChildren();
+        dom.searchVid.value = "";
+      }
+      // Fermer le dropdown recherche mais garder activeMenu
+      const searchMenu = dom.searchVid.closest(".btn-top");
+      const blocLinks = searchMenu?.querySelector(SELECTORS.blocLinks);
+      if (blocLinks) blocLinks.style.height = "0px";
+      state.blockLinks_open = false;
+    });
+
     /* clic sur un menu: si ephotos => trans si pas eblogs => affiche videos, sinon clic sur href de blogs */
     const attachEventToDropdown = (dropCour) => {
       if (dropCour.querySelector(SELECTORS.ePhotos)) {
@@ -255,8 +297,8 @@ const setupObserver = () => {
 
     //Écoute du clic sur les menus pour ouvrir / fermer les dropdowns
     dom.menu.addEventListener("click", (e) => {
-      const spanChoisi = e.target;
-      if (spanChoisi.classList.contains("titMenu")) {
+      const spanChoisi = e.target.closest(".titMenu");
+      if (spanChoisi) {
         fermerBlockLinks();
         const dropCour = spanChoisi.parentElement.querySelector(
           SELECTORS.blocLinks,

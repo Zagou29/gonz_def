@@ -100,3 +100,24 @@
 .dia.peint {
   background-color: var(--color-secondary);
 }
+
+/* Recherche vidéos */
+.search-box {
+  padding: 0.8rem;
+}
+.icon-search {
+  vertical-align: middle;
+}
+.search-input {
+  width: 100%;
+  font-size: var(--font-size-dropdown);
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+}
+.search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.15);
+}
