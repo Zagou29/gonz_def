@@ -308,7 +308,7 @@
     "typVid": "dia",
     "clas": ".fam.a20",
     "id": "_liiFVJSW-s",
-    "text": "2025 Résumé D année",
+    "text": "2025 Résumé année",
     "annee": "2025"
   },
   {
@@ -580,7 +580,7 @@
     "typVid": "vid",
     "clas": ".fam.ava",
     "id": "-aHnvpSc4t4",
-    "text": "1917 Hydravions",
+    "text": "1917 Hydravions a L'Aber",
     "annee": "1917"
   },
   {
@@ -1016,19 +1016,19 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.chi",
     "id": "y-zwYwNNNFU",
-    "text": "2013 Shaol-Longm",
+    "text": "2013 Shaolin Longmen",
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.chi",
     "id": "XSVKrpdwSEg",
-    "text": "2013 Xian Guerriers",
+    "text": "2013 Xian Guerriers enterrés",
     "annee": "2013"
   },
   {
@@ -1040,11 +1040,11 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.chi",
     "id": "RVl2b52NWmY",
-    "text": "2013 Pekin",
+    "text": "2013 Pekin Beijing",
     "annee": "2013"
   },
   {
@@ -1088,99 +1088,99 @@
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.fra",
     "id": "Q16FcXE_iYY",
-    "text": "2014 Anglo-Norm",
+    "text": "2014 iles Anglo Normandes",
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.fra",
     "id": "JKfWufOnld4",
-    "text": "2015 Ile-Sein",
+    "text": "2015 Ile de Sein",
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.fra",
     "id": "CyAqp2G8g44",
-    "text": "2016 Ouessant",
+    "text": "2016 Ile d'Ouessant",
     "annee": "2016"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.fra",
     "id": "oCmzJ3fkKl4",
-    "text": "2022 Ouessant",
+    "text": "2022 Ile d'Ouessant",
     "annee": "2022"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "YFjxQym0HP0",
-    "text": "2011 Martinique",
+    "text": "2011 Ile Martinique",
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "_ap5WhDUN3M",
-    "text": "2012 Saint-Martin",
+    "text": "2012 Ile Saint-Martin",
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "ojqdQwaPdj8",
-    "text": "2012 Martinique",
+    "text": "2012 Ile Martinique",
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "XATLdJVJDBk",
-    "text": "2012 Iles-Scilly",
+    "text": "2012 Iles Scilly",
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "oq8n_LBoPIg",
-    "text": "2014 Anglo-Norm",
+    "text": "2014 Iles Anglo Normandes",
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "MSM2l7eellM",
-    "text": "2015 Ile-Sein",
+    "text": "2015 Ile de Sein",
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.fra",
     "id": "9uVHdITFqX4",
-    "text": "2016 Ouessant",
+    "text": "2016 Ile d'Ouessant",
     "annee": "2016"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "FM70V0IzhG8",
-    "text": "2015 Granit-Rose",
+    "text": "2015 Code de Granit Rose",
     "annee": "2015"
   },
   {
@@ -1208,27 +1208,27 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "bt1c5nJ9riE",
-    "text": "2021 Fra-Centre1",
+    "text": "2021 France Centre1",
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "YBdhtqKE7nc",
-    "text": "2021 Fra-Centre2",
+    "text": "2021 France Centre2",
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "LVrl0F1YDQA",
-    "text": "2021 Fra-Centre3",
+    "text": "2021 France Centre3",
     "annee": "2021"
   },
   {
@@ -1288,27 +1288,27 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "0pa8_UfsIJg",
-    "text": "2021 Fra-Centre1",
+    "text": "2021 France Centre1",
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "fJPUpAt8pp0",
-    "text": "2021 Fra-Centre2",
+    "text": "2021 France Centre2",
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "wDWjRjQT4Rg",
-    "text": "2021 Fra-Centre3",
+    "text": "2021 France Centre3",
     "annee": "2021"
   },
   {
@@ -1324,7 +1324,7 @@
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "hRsY9fVv9Gc",
-    "text": "2011 Suisses",
+    "text": "2011 Gabrielle & Jo",
     "annee": "2011"
   },
   {
@@ -1424,35 +1424,35 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "qepT5JwgNmQ",
-    "text": "2014 Soirée grecqueI",
+    "text": "2014 Soirée grecque I",
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "bcjkP9nCmJM",
-    "text": "2014 Soirée grecqueII",
+    "text": "2014 Soirée grecque II",
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "dGYWcffvOt4",
-    "text": "2018 Baléares1",
+    "text": "2018 Baléares 1",
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "6XTlOa8YHyk",
-    "text": "2018 Baléares2",
+    "text": "2018 Baléares 2",
     "annee": "2018"
   },
   {
@@ -1472,19 +1472,19 @@
     "annee": "2008"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.imd",
     "id": "uiR4kRg8XH8",
-    "text": "2013 Cyclades1",
+    "text": "2013 Cyclades 1",
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.imd",
     "id": "wixwxt6dbj0",
-    "text": "2013 Cyclades2",
+    "text": "2013 Cyclades 2",
     "annee": "2013"
   },
   {
@@ -1504,35 +1504,35 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.irl",
     "id": "5933IT5ruE4",
-    "text": "2019 Irlande Joan",
+    "text": "2019 Irlande chez Joan",
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.irl",
     "id": "aFvD8GzIO8Y",
-    "text": "2019 Irlande roads",
+    "text": "2019 Irlande on the roads",
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.irl",
     "id": "ofvxbSpBPQQ",
-    "text": "2019 Irlande Chants1",
+    "text": "2019 Irlande Chants 1",
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.irl",
     "id": "3Vai5VxAkp8",
-    "text": "2019 Irlande Chants2",
+    "text": "2019 Irlande Chants 2",
     "annee": "2019"
   },
   {
@@ -1568,59 +1568,59 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "fG7Yly-19dw",
-    "text": "2014 Port-Espa",
+    "text": "2014 Portugal Espagne",
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "wXiK0p9od4Q",
-    "text": "2015 Venise1",
+    "text": "2015 Venise 1",
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "Vvn7K7venR8",
-    "text": "2015 Venise2",
+    "text": "2015 Venise 2",
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "x-YhGZVqw4s",
-    "text": "2015 Fenice Venise",
+    "text": "2015 Venise la Traviata",
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "TyGta6DaVtI",
-    "text": "2025 France Espagne",
+    "text": "2025 France -> Espagne",
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "qsvfbWHFT9I",
-    "text": "2025 Espagne  Portugal",
+    "text": "2025 Espagne -> Portugal",
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "mfbuoNI0idk",
-    "text": "2025 Portugal France",
+    "text": "2025 Portugal -> France",
     "annee": "2025"
   },
   {
@@ -1632,11 +1632,11 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.med",
     "id": "8A1ud5kLvuU",
-    "text": "2014 Portugal",
+    "text": "2014 Portugal Espagne",
     "annee": "2014"
   },
   {
@@ -1648,7 +1648,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.med",
     "id": "GjwmGtJ_VOI",
@@ -1696,19 +1696,19 @@
     "annee": "2006"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "ec0_uksserQ",
-    "text": "2018 Mexico-In",
+    "text": "2018 Mexico arrivée",
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "f_VkNYEe3AA",
-    "text": "2018 Guanajuato",
+    "text": "2018 Guanajuato 1",
     "annee": "2018"
   },
   {
@@ -1736,19 +1736,19 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "pLXupYsV3no",
-    "text": "2018 Guanajuato2",
+    "text": "2018 Guanajuato 2",
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "NseuO0RoQNU",
-    "text": "2018 Mexico-Out",
+    "text": "2018 Mexico fin",
     "annee": "2018"
   },
   {
@@ -1792,19 +1792,19 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "ZrFLVkFkOs8",
-    "text": "2023 Nord Holl",
+    "text": "2023 Nord pays bas",
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "26K_1o5gstI",
-    "text": "2023 Sud Holl",
+    "text": "2023 Sud pays bas",
     "annee": "2023"
   },
   {
@@ -1840,19 +1840,19 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "qikEd-jQ5fI",
-    "text": "2023 Nord Holl",
+    "text": "2023 Nord pays bas",
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "dLI_Mi7-_eI",
-    "text": "2023 Sud Holl",
+    "text": "2023 Sud pays bas",
     "annee": "2023"
   },
   {
@@ -1872,11 +1872,11 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "P_SbssKfSkM",
-    "text": "2010 Marielle-Dickie",
+    "text": "2010 Marielle & Dickie",
     "annee": "2010"
   },
   {
@@ -1892,27 +1892,27 @@
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "tVqPPMabdRo",
-    "text": "2011 NYC  Bea+Dom",
+    "text": "2011 NYC  Beatrice Dominique",
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "kCtHWG3itFg",
-    "text": "2011 Quebec",
+    "text": "2011 Quebec avec Margot",
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "fJPVxsUQpsA",
-    "text": "2017 NYC Marie Yann ",
+    "text": "2017 NYC Marie & Yann",
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "s9QOMNbC2qE",
