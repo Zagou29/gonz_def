@@ -61,7 +61,8 @@
 }
 
 .ytItem {
-  height: var(--font-size-medium);
+  height: auto;
+  max-height: var(--barbox-height);
   font-size: var(--font-size-small);
   text-align: center;
   cursor: pointer;

@@ -2,7 +2,7 @@
 @media screen and (max-width: 700px) {
   .titre {
     position: absolute;
-    top: 2.5rem;
+    top: 3rem;
     left: 50%;
     transform: translateX(-50%);
   }
