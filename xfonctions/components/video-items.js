@@ -108,7 +108,10 @@ export class VidItem {
       // Pour les iframes, on configure la source selon qu'il s'agisse d'une vidéo ou d'une playlist
       this.#video.setAttribute("title", this.#vidItem.text);
 
- 
+      if (isPlaylist && this.#vidTitre) {
+        this.#vidTitre.textContent = `Playlist: ${this.#vidItem.text}`;
+      }
+
       const baseUrl = VIDEO_CONFIG.YOUTUBE.EMBED_BASE_URL;
       const videoUrl = `${baseUrl}${this.#vidItem.id}?rel=0&autoplay=0&enablejsapi=1`;
       const playlistUrl = `${baseUrl}videoseries?list=${
