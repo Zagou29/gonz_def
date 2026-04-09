@@ -85,14 +85,15 @@ export class VidItem {
 
     this.#video.setAttribute("data-id", this.#vidItem.id);
 
+    const isPlaylist =
+      this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
     if (this.#tempId === VIDEO_CONFIG.TEMPLATES.THUMB) {
       // Pour les Thumbnails, on configure l'image
-      const isPlaylist =
-        this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
       if (isPlaylist) {
         // Pour les playlists, utiliser le thumbnail de la première vidéo
         this.#loadPlaylistThumbnail();
         this.#video.setAttribute("alt", `Playlist: ${this.#vidItem.text}`);
+        this.#vidTitre.textContent = `Playlist: ${this.#vidItem.text}`;
       } else {
         // Pour les vidéos, utiliser l'image de prévisualisation YouTube
         this.#video.setAttribute(
@@ -107,8 +108,7 @@ export class VidItem {
       // Pour les iframes, on configure la source selon qu'il s'agisse d'une vidéo ou d'une playlist
       this.#video.setAttribute("title", this.#vidItem.text);
 
-      const isPlaylist =
-        this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
+ 
       const baseUrl = VIDEO_CONFIG.YOUTUBE.EMBED_BASE_URL;
       const videoUrl = `${baseUrl}${this.#vidItem.id}?rel=0&autoplay=0&enablejsapi=1`;
       const playlistUrl = `${baseUrl}videoseries?list=${
