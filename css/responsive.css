@@ -1,17 +1,5 @@
 /* Media queries pour responsive design */
 
-/* --- Tablette et petit desktop (≤ 768px) --- */
-@media screen and (max-width: 768px) {
-  .years {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .barBox {
-    overflow: hidden;
-  }
-}
-
-/* --- Mobile (≤ 700px) --- */
 @media screen and (max-width: 700px) {
   .titre {
     position: absolute;
@@ -41,13 +29,3 @@
   }
 }
 
-/* --- Petit mobile (≤ 480px) --- */
-@media screen and (max-width: 480px) {
-  .years {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .envIcon {
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-  }
-}
