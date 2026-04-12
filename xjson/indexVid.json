@@ -176,7 +176,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".fam.a10",
     "id": "-_PfkZtoBmU",
@@ -200,7 +200,7 @@
     "annee": "2020"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".fam.a20",
     "id": "a0Smh8grNN0",
@@ -400,7 +400,7 @@
     "annee": "1970"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".fam.a70",
     "id": "8uHOrs_MzII",
@@ -584,7 +584,7 @@
     "annee": "1917"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".fam.ava",
     "id": "ZJzPWn7XIMU",
@@ -624,7 +624,7 @@
     "annee": "1940"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".fam.ava",
     "id": "aEkR_SJwa1A",
@@ -648,7 +648,7 @@
     "annee": "1947"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".fam.ava",
     "id": "pZ_CEYB9lC4",
@@ -680,7 +680,7 @@
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.amer",
     "id": "PLfEuyy3Ro4pqElZa33qePsB6Y_IDXOciB",
@@ -688,7 +688,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.amer",
     "id": "PLqkgFQr1NwGxTtKAeFljrH8LPo1aFZX7v",
@@ -696,7 +696,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amer",
     "id": "PLcupyD4Gq2T-yaCItt6IiXIh-mtixj6AB",
@@ -704,7 +704,7 @@
     "annee": "2006"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amer",
     "id": "PLcupyD4Gq2T80ygksZHfGLUT3v2Wc1cVY",
@@ -712,7 +712,7 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amer",
     "id": "PLcupyD4Gq2T-Mof-XCx4BSlmIUSqVu_wA",
@@ -728,7 +728,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amer",
     "id": "PL93ZplvOw_8GK6NR7LvH4VY5ZDFnfOanf",
@@ -736,7 +736,7 @@
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.amis",
     "id": "PLfEuyy3Ro4pp9og-FzOS7v2VgLcJ9n67W",
@@ -744,7 +744,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.amis",
     "id": "PLfEuyy3Ro4pp4FEa6qkUYT_sL4tEHB6BM",
@@ -752,7 +752,7 @@
     "annee": "2016"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amis",
     "id": "PLfEuyy3Ro4pq47utLFwyX_0P8u6j8BoSm",
@@ -760,7 +760,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.amis",
     "id": "PLfEuyy3Ro4poH-nOqfyaIsOcZnrm-O528",
@@ -776,7 +776,7 @@
     "annee": "2001"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.asie",
     "id": "PLqkgFQr1NwGz3TT54Igp3KsfLspJgA7e5",
@@ -784,7 +784,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.asie",
     "id": "PLqkgFQr1NwGyAetBRedKk6Bezo-lsZY9E",
@@ -792,7 +792,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.asie",
     "id": "PLcupyD4Gq2T_Arnr1_JifwTStgQdaakWm",
@@ -800,7 +800,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.asie",
     "id": "PLcupyD4Gq2T_bfOBN-A7VkbzcEXpHP75c",
@@ -808,7 +808,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGwPiNGpAqvkzE6LzsFMyRCK",
@@ -816,7 +816,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGxWhnO8ORftXuGc0mjxrY5R",
@@ -824,7 +824,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGzZG0C0ZqvHW0faRMp9S46M",
@@ -832,7 +832,7 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGzA0USzlnokjyrjxmHO2PL3",
@@ -840,7 +840,7 @@
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGw6eLwyz9rHK7IDBl4XA7WU",
@@ -848,7 +848,7 @@
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGw3O6ToKmVlOjJTiUtzCFtl",
@@ -856,7 +856,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.euro",
     "id": "PLqkgFQr1NwGwaTGY5fFkwCGIZ2rrsOmV4",
@@ -864,7 +864,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T_I2K5NC3sOt9VNEhZDp-xS",
@@ -872,7 +872,7 @@
     "annee": "2006"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T_19jf1weeI-e1oJAcT9uRS",
@@ -880,7 +880,7 @@
     "annee": "2008"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T8NFTWb4GKONcRvGDWa48rd",
@@ -888,7 +888,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T8zI7FQ-BCsYfHBpYUfvGj7",
@@ -896,7 +896,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T_73gC6lod1fyWR1A8yXSZr",
@@ -904,7 +904,7 @@
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T_e6L1wAeMUGtApkocsdSwN",
@@ -912,7 +912,7 @@
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.euro",
     "id": "PLcupyD4Gq2T_5a-RaEUWPy-SGPsJXxPmq",
@@ -928,7 +928,7 @@
     "annee": "1917"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.fami",
     "id": "PL93ZplvOw_8FhDhDbnOgp0P1F1uGhEca-",
@@ -944,7 +944,7 @@
     "annee": "1968"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".pll.fami",
     "id": "PLcupyD4Gq2T9wpdhJL4cK0613RxQufK_l",
@@ -952,7 +952,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.fami",
     "id": "PLcupyD4Gq2T9iGb5yis4705_rK43zAPir",
@@ -960,7 +960,7 @@
     "annee": "1918"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.fami",
     "id": "PL93ZplvOw_8HVEl6-HooDruTjx5-_dD4Q",
@@ -976,7 +976,7 @@
     "annee": "1970"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.fami",
     "id": "PLcupyD4Gq2T_JNTswdMaWxWgerJG7_pcq",
@@ -992,7 +992,7 @@
     "annee": "2026"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.muse",
     "id": "PLnduLHFIVpxBQ4j1xGP8P1gjYXWVd-L2E",
@@ -1000,7 +1000,7 @@
     "annee": "2024"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".pll.muse",
     "id": "PLnduLHFIVpxBnJ1daVVQwwZM5HHcGSsWq",
@@ -1008,7 +1008,7 @@
     "annee": "2024"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.chi",
     "id": "-GDMBk47-2E",
@@ -1032,7 +1032,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.chi",
     "id": "-FR_E2Vsyac",
@@ -1048,7 +1048,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.chi",
     "id": "DRLaOeqx3bA",
@@ -1056,7 +1056,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.chi",
     "id": "Vq0-cpVBOWU",
@@ -1064,7 +1064,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.chi",
     "id": "H-YBpSaw32s",
@@ -1080,7 +1080,7 @@
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.fra",
     "id": "PtGlOd8ZGFQ",
@@ -1184,7 +1184,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "Fc-d_t1DQv0",
@@ -1192,7 +1192,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "xbwl9Dzw-2A",
@@ -1200,7 +1200,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "IpRITyXYluw",
@@ -1232,7 +1232,7 @@
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frn",
     "id": "Sc0x6ANw_sc",
@@ -1240,7 +1240,7 @@
     "annee": "2024"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "ypl7aUt1Ft0",
@@ -1248,7 +1248,7 @@
     "annee": "2012"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "NVhAO0xCgoU",
@@ -1256,7 +1256,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "BgOo8L6XbL0",
@@ -1264,7 +1264,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "V6rz77sOsiM",
@@ -1272,7 +1272,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "FSvLNqZ0D7I",
@@ -1280,7 +1280,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frn",
     "id": "nPulCDT3HCo",
@@ -1312,7 +1312,7 @@
     "annee": "2021"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "Yw7vC26IF4c",
@@ -1328,7 +1328,7 @@
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "kMVnLV5KeC8",
@@ -1336,7 +1336,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "PlniBj9tmOA",
@@ -1344,7 +1344,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "l5rDbHZG-W4",
@@ -1352,7 +1352,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "2EzlYv7YhdU",
@@ -1360,7 +1360,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.frs",
     "id": "3dYlc5ZmCYE",
@@ -1368,7 +1368,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "GEt3a00EIhs",
@@ -1376,7 +1376,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "4zmG9hG7mWs",
@@ -1384,7 +1384,7 @@
     "annee": "2015"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "usnEVS7b6eY",
@@ -1392,7 +1392,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "rYI6OdFDAtI",
@@ -1400,7 +1400,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "0EwQz97hofU",
@@ -1408,7 +1408,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.frs",
     "id": "neWHriH-5zo",
@@ -1416,7 +1416,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "G4hx5pjOY4I",
@@ -1456,7 +1456,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.imd",
     "id": "NxN3_foNkss",
@@ -1464,7 +1464,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.imd",
     "id": "n2kx5SnfY3s",
@@ -1488,7 +1488,7 @@
     "annee": "2013"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.imd",
     "id": "OL2RZWGEn8g",
@@ -1496,7 +1496,7 @@
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.imd",
     "id": "ICFKCfx6_EE",
@@ -1536,7 +1536,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.irl",
     "id": "A1ZWxjDK5iI",
@@ -1544,7 +1544,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.irl",
     "id": "oVH_1nnRqSU",
@@ -1552,7 +1552,7 @@
     "annee": "2009"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.irl",
     "id": "0CkljqZWTuI",
@@ -1560,7 +1560,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.med",
     "id": "zYrjzAtFqD0",
@@ -1624,7 +1624,7 @@
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.med",
     "id": "xnAd0oNpdsQ",
@@ -1640,7 +1640,7 @@
     "annee": "2014"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.med",
     "id": "tbENwo9ODrM",
@@ -1656,7 +1656,7 @@
     "annee": "2016"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.mex",
     "id": "XiuPBTCKDFo",
@@ -1664,7 +1664,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.mex",
     "id": "kiovzHi1llE",
@@ -1672,7 +1672,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.mex",
     "id": "Lpm4qeIQklA",
@@ -1680,7 +1680,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.mex",
     "id": "_g9DG_E8VlU",
@@ -1688,7 +1688,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "S3syBurqDLA",
@@ -1712,7 +1712,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "FfsS45ZCjRA",
@@ -1720,7 +1720,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "m0pluKHkr7Q",
@@ -1728,7 +1728,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.mex",
     "id": "kfcoLj1gl0w",
@@ -1752,7 +1752,7 @@
     "annee": "2018"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "HljeQEZ4pM4",
@@ -1760,7 +1760,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "T_8EIrp7xE0",
@@ -1768,7 +1768,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "Z5hBQ8bUQgU",
@@ -1776,7 +1776,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "_v-nee83WTE",
@@ -1784,7 +1784,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.sca",
     "id": "N2bOP8Q4RPg",
@@ -1808,7 +1808,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "zJy-bOLUEcc",
@@ -1816,7 +1816,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "F7Pm8YzkET0",
@@ -1824,7 +1824,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "RTXJXj7xGTI",
@@ -1832,7 +1832,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.sca",
     "id": "rngYWGcrSRQ",
@@ -1856,7 +1856,7 @@
     "annee": "2023"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "rfSAP-gLv4o",
@@ -1864,7 +1864,7 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "T0WP0UCz6Dk",
@@ -1920,7 +1920,7 @@
     "annee": "2019"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "vBr65eKAjAE",
@@ -1928,7 +1928,7 @@
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "90XWCvTVPc0",
@@ -1936,7 +1936,7 @@
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.usa",
     "id": "QmFJduD48k0",
@@ -1944,7 +1944,7 @@
     "annee": "2025"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.usa",
     "id": "5a0qwFTGa9k",
@@ -1952,7 +1952,7 @@
     "annee": "2010"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.usa",
     "id": "duOgkyEg1iI",
@@ -1960,7 +1960,7 @@
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.usa",
     "id": "opQ9hkhRjXQ",
@@ -1968,7 +1968,7 @@
     "annee": "2011"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "MtxyZHmmKNY",
@@ -1976,7 +1976,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "ODCOEVIV3AU",
@@ -1984,7 +1984,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "uNCDhLCS9Gw",
@@ -1992,7 +1992,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "Or6MvwbcOFY",
@@ -2000,7 +2000,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "31GMVL-xFrM",
@@ -2008,7 +2008,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "vid",
     "clas": ".voy.vie",
     "id": "oDCH5itsdFU",
@@ -2016,7 +2016,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "tTpn4peQNt4",
@@ -2024,7 +2024,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "PZjzUa9cKU8",
@@ -2032,7 +2032,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "4VFbEVhzLX0",
@@ -2040,7 +2040,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "mJbqiQrDfNQ",
@@ -2048,7 +2048,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "HCnvEudV50Y",
@@ -2056,7 +2056,7 @@
     "annee": "2017"
   },
   {
-    "ec": "16",
+    "ec": "",
     "typVid": "dia",
     "clas": ".voy.vie",
     "id": "1-jB5BaIOgU",
