@@ -32,9 +32,10 @@ Exemple : `.vid.voy.asie.vie` = vidéo voyage en Asie
 
 ### Données JSON Structurées
 
-- **`indexVid.json`** : `{ec, id, clas, annee, text}` - ec="43" pour format 4:3
-- **`menusVideos.json`** : `{clas, menu, groupe, src, detail}` - raccorde classes aux menus
+- **`indexVid.json`** : `{ec, typVid, clas, id, text, annee}` - ec="43" pour format 4:3, typVid="vid" ou "dia"
+- **`menusVideos.json`** : `{clas, groupe, src, detail}` - raccorde classes aux menus
 - **`photoImg.json`** : `{class, src, an}` - photos organisées par années
+- **`box.json`** : `{menu, ph, href, src, spText, divText}` - menu="ph" pour photos, sinon blog
 
 ## Patterns de Développement Essentiels
 
@@ -52,11 +53,15 @@ const tempId = mob().mob ? "ytFrame" : "ytThumb";
 ### Architecture Modulaire par Responsabilité
 
 - **`affvid_refact.js`** : Classe `Affvid` pour affichage et filtrage des vidéos
-- **`menuVid.js`** : Classe `MenuVid` pour navigation menus
+- **`affimg.js`** : Classe `Affimg` pour injection images/dates photos (classes internes `BaseItem`, `AffItem`, `DateItem`)
+- **`menuVid.js`** : Classe `MenuVid` pour navigation menus vidéos
+- **`menubox.js`** : Classe `Menubox` pour menus boîtes photos/blogs (classes internes `BoxItem`, `Lien_menu_item`)
 - **`managers.js`** : Bundle d'exports des managers — `AudioManager`, `NavigationManager`, `DiaporamaManager`, `UIManager`, `ZoomManager`, `EventManager`
 - **`components/video-items.js`** : Composants réutilisables — `VidItem` (miniature/iframe), `BarItem` (barre de nav), `AnnItem` (élément année)
 - **`utils/dimension-calculator.js`** : Classe `DimensionCalculator` — calcul dimensions optimales vidéo selon ratio et conteneur
-- **`dom.js`** : Fonction utilitaire `cloneTemplate(id)` — clone un `<template>` HTML par son ID (avec garde `null` → `Error` explicite si template introuvable)
+- **`dom.js`** : Fonctions utilitaires `cloneTemplate(id)` et `createElement` — clone un `<template>` HTML par son ID (avec garde `null` → `Error` explicite si template introuvable)
+- **`fullScreen.js`** : Fonctions `toggle_fullScreen(elem)` et `stop_fullScreen()` — gestion plein écran
+- **`nav_os.js`** : Exports `mob`, `ordi_OS`, `navig` — détection mobile/OS/navigateur (iPad M1+ détecté via `maxTouchPoints`)
 
 ### Configuration Centralisée
 
@@ -189,9 +194,13 @@ Les boutons `.ret_fl` sont identifiés par `data-action` (jamais par index DOM) 
 ```
 
 ```javascript
-switch (e.currentTarget.dataset.action) {
+switch (actionEl.dataset.action) {
   case "hamburger": ...
+  case "ratio": ...
   case "arrow-left": ...
+  case "arrow-right": ...
+  case "return": ...
+  case "invert": ...
 }
 ```
 
