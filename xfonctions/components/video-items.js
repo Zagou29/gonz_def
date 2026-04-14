@@ -141,8 +141,19 @@ export class VidItem {
         const data = await response.json();
         if (!this.#video.isConnected) return;
         if (data.thumbnail_url) {
-          // Utiliser le thumbnail fourni par oEmbed
-          this.#video.setAttribute("src", data.thumbnail_url);
+          // Extraire l'ID de la première vidéo depuis l'URL du thumbnail oEmbed
+          // Ex: https://i.ytimg.com/vi/ID/hqdefault.jpg
+          const match = data.thumbnail_url.match(/\/vi\/([\w-]{11})\//);
+          if (match && match[1]) {
+            const firstVideoId = match[1];
+            // Générer l'URL de la miniature en haute résolution
+            const highResUrl = `${VIDEO_CONFIG.YOUTUBE.THUMB_BASE_URL}${firstVideoId}/${VIDEO_CONFIG.YOUTUBE.THUMB_QUALITY}`;
+            this.#video.setAttribute("src", highResUrl);
+            console.log(highResUrl);
+          } else {
+            // Fallback sur le thumbnail oEmbed si extraction échoue
+            this.#video.setAttribute("src", data.thumbnail_url);
+          }
           return;
         }
       }
