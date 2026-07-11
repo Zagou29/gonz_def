@@ -3,4 +3,29 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://img.youtube.com https://i.ytimg.com data:; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' https://www.youtube.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'
+
+/css/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/xfonctions/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/xjson/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/box_img/*
+  Cache-Control: public, max-age=2592000
+
+/audio/*
+  Cache-Control: public, max-age=2592000
+
+/*.js
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/*.css
+  Cache-Control: public, max-age=86400, must-revalidate
