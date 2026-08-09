@@ -149,7 +149,6 @@ export class VidItem {
             // Générer l'URL de la miniature en haute résolution
             const highResUrl = `${VIDEO_CONFIG.YOUTUBE.THUMB_BASE_URL}${firstVideoId}/${VIDEO_CONFIG.YOUTUBE.THUMB_QUALITY}`;
             this.#video.setAttribute("src", highResUrl);
-            console.log(highResUrl);
           } else {
             // Fallback sur le thumbnail oEmbed si extraction échoue
             this.#video.setAttribute("src", data.thumbnail_url);
