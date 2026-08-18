@@ -272,7 +272,7 @@ const setupObserver = () => {
       const nbVideos = afficheLiens("", "", tempId, filtered);
       dom.titre.textContent = nbVideos
         ? `${nbVideos}  « ${dom.searchVid.value.trim()} »`
-        : `Zero « ${dom.searchVid.value.trim()} »`;
+        : `Aucun« ${dom.searchVid.value.trim()} »`;
       if (!nbVideos) {
         dom.ecVideos.replaceChildren();
         dom.barBox.replaceChildren();
