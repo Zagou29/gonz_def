@@ -25,7 +25,7 @@ export const VIDEO_CONFIG = {
     MARGE_HAUTEUR: 27,
   },
   MAX_ID_LENGTH: 12,
-  PLAYLIST_ID_LENGTH: 34,
+  VIDEO_ID_LENGTH: 11,
   YOUTUBE: {
     EMBED_BASE_URL: "https://www.youtube-nocookie.com/embed/",
     THUMB_BASE_URL: "https://img.youtube.com/vi/",

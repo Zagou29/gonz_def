@@ -86,7 +86,7 @@ export class VidItem {
     this.#video.setAttribute("data-id", this.#vidItem.id);
 
     const isPlaylist =
-      this.#vidItem.id.length === VIDEO_CONFIG.PLAYLIST_ID_LENGTH;
+      this.#vidItem.id.length !== VIDEO_CONFIG.VIDEO_ID_LENGTH;
     if (this.#tempId === VIDEO_CONFIG.TEMPLATES.THUMB) {
       // Pour les Thumbnails, on configure l'image
       if (isPlaylist) {

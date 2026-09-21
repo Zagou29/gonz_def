@@ -315,14 +315,6 @@
     "ec": "43",
     "typVid": "vid",
     "clas": ".fam.a60",
-    "id": "vlc7K9ACgjw",
-    "text": "1963-85 Voyages Carious",
-    "annee": "1963"
-  },
-  {
-    "ec": "43",
-    "typVid": "vid",
-    "clas": ".fam.a60",
     "id": "ix9TqCW30j0",
     "text": "1965-85 les Carious à Brest",
     "annee": "1965"
@@ -1011,9 +1003,9 @@
     "ec": "43",
     "typVid": "vid",
     "clas": ".voy.chi",
-    "id": "0CBv89QAUfk",
-    "text": "1983 Les Carious en Chine",
-    "annee": "1983"
+    "id": "a_8F8pt_sGA",
+    "text": "1986 Les Carious en Chine",
+    "annee": "1986"
   },
   {
     "ec": "",
@@ -1571,9 +1563,9 @@
     "ec": "43",
     "typVid": "vid",
     "clas": ".voy.med",
-    "id": "noNs3Od78Wg",
+    "id": "zvut2_-SC_I",
     "text": "1963_73 Carious Grece Espagne",
-    "annee": "1972"
+    "annee": "1963"
   },
   {
     "ec": "",
