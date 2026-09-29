@@ -11,8 +11,12 @@ Ce projet est une **galerie familiale multimédia** (photos et vidéos YouTube) 
 ### Structure Modulaire
 
 - **`xfonctions/`** : Modules ES6 organisés par responsabilité
-- **`css/`** : CSS modulaire avec variables CSS et responsive design (`admin.css`, `blog.css`, `dropdown.css`, `layout.css`, `menu.css`, `responsive.css`, `variables.css`, `video.css`)
+- **`css/`** : CSS modulaire pour l’interface vidéo et l’administration (`admin.css`, `blog.css`, `dropdown.css`, `layout.css`, `menu.css`, `responsive.css`, `variables.css`, `video.css`)
 - **`xjson/`** : Données JSON pour vidéos, menus et photos
+- **`photos.css`** : Styles dédiés à la galerie photo
+- **`scripts/resize-images.js`** : Redimensionnement d’images avec `sharp`
+
+Le projet est un site statique en modules ES6. Il n’utilise pas de framework ni de bundler. La commande disponible est `npm run resize` et nécessite Node.js `>=20.3.0`.
 
 ## Convention de Classes CSS
 
@@ -78,7 +82,7 @@ export const VIDEO_CONFIG = {
   },
   DIMENSIONS: { MARGE_LARGEUR: 5, MARGE_HAUTEUR: 27 },
   MAX_ID_LENGTH: 12,
-  PLAYLIST_ID_LENGTH: 34,
+  VIDEO_ID_LENGTH: 11,
   YOUTUBE: {
     EMBED_BASE_URL: "https://www.youtube-nocookie.com/embed/",
     THUMB_BASE_URL: "https://img.youtube.com/vi/",
@@ -131,11 +135,8 @@ Utilisé pour créer dynamiquement vidéos, barres de navigation, etc.
 ### Extraction Données (pour mise à jour JSON)
 
 ```javascript
-// Scripts utilitaires dans xfonctions/
-// recupIndex.js - extrait vidéos HTML vers JSON
-// recupPhotos.js - extrait données photos
-// recupBox.js - extrait configuration menus
-// recupVideos.js - extrait données vidéos
+// Script actuellement présent dans xfonctions/
+// recupPhotos.js - prépare des données photo à partir du DOM
 ```
 
 ### Scripts Utilitaires Racine
@@ -145,6 +146,8 @@ Utilisé pour créer dynamiquement vidéos, barres de navigation, etc.
 - **`photos.css`** : CSS spécifique galerie photos (racine)
 - **`admin.js`** : Script interface d'administration — gestion CRUD des JSON, export/clipboard
 - **`scripts/resize-images.js`** : Utilitaire de redimensionnement d'images (Node.js + sharp)
+
+Les pages chargent leurs scripts avec `type="module"` : `vidScript.js` pour `index.html` et `photos.js` pour `photos.html`.
 
 ### Structure Fichiers Médias
 
@@ -206,9 +209,9 @@ switch (actionEl.dataset.action) {
 
 ### Initialisation lazy de `AudioManager` (`audio.js`)
 
-`new Audio()` n'est créé qu'au premier appel de `playPause()` via `#ensureAudio()`.  
-`clearMusic()` est safe même si l'audio n'a jamais été initialisé (`if (!this.audio) return`).  
-Ne jamais accéder à `audioManager.audio` directement — toujours passer par `playPause()` ou `clearMusic()`.
+`new Audio()` n'est créé qu'au premier appel de `playPause()` via `#ensureAudio()`, avec un fichier aléatoire `./audio/audio_N.mp3`.  
+`clearMusic()` est sûr avant toute initialisation et arrête l'audio lorsqu'il existe.  
+Ne pas modifier directement l'état audio depuis les composants : utiliser les méthodes de `AudioManager`.
 
 ### Gardes `isConnected` pour les promesses fire-and-forget (`video-items.js`)
 
