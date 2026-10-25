@@ -49,8 +49,10 @@ export class NavigationManager {
 
   /* positionner l'image à la position récupérée */
   positImage(pos) {
+    const position = Number(pos);
+    this.stats.imageLoader?.renderForVerticalPosition(position);
     window.scrollTo({
-      top: pos,
+      top: position,
       behavior: "instant",
     });
   }
@@ -96,12 +98,16 @@ export class NavigationManager {
 
   /*  fonction pour placer l'image verticalement selon l'année*/
   scrollImg(e) {
-    const num = e.target.dataset.num;
-    if (num == null) return;
+    const dateLink = e.target.closest(".liens[data-num]");
+    if (!dateLink) return;
+    const num = Number(dateLink.dataset.num);
+    this.stats.imageLoader?.renderUntil(num);
+    const image = this.stats.list_img[num];
+    if (!image) return;
     window.scrollTo({
-      top: this.stats.list_img[num].offsetTop,
+      top: image.offsetTop,
       behavior: "instant",
     });
-    this.domElements.aff_an.textContent = this.stats.list_img[num].dataset.an;
+    this.domElements.aff_an.textContent = image.dataset.an;
   }
 }

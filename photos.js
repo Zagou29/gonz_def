@@ -29,6 +29,7 @@ const stats = {
   k: 1,
   audio: null,
   skip_img: null,
+  imageLoader: null,
 };
 
 /* Selecteurs DOM */
@@ -113,11 +114,23 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
         ? listImages.filter((obj) => obj.class === stats.val_trans)
         : listImages;
 
+    /* Observer pour afficher les dates dans la timeline verticale */
+    const options = {
+      root: null,
+      rootMargin: "0% -2% -100% -98%",
+      threshold: 0,
+    };
+    const guette = new IntersectionObserver(
+      (entries) => navigationManager.afficheDate(entries),
+      options,
+    );
+
     /** charger dans la classe, créer les liens img et les liens dates */
     const images = new Affimg(listchoisie, stats.val_trans, stats.asp);
-    images.creeimages(domElements.boiteImg);
+    images.creeimages(domElements.boiteImg, (img) => guette.observe(img));
     images.creedates(domElements.cont);
     stats.list_img = images.elements;
+    stats.imageLoader = images;
     /** ne faire apparaitre qu'une date sur 4 pour "photo" et sur 3 pour les autres */
     stats.lien_an = [...domElements.cont.querySelectorAll(".liens")];
     stats.val_trans === "photo" ? (stats.skip_img = 3) : (stats.skip_img = 2);
@@ -133,18 +146,6 @@ if (navig().safari && ordi_OS().ios && !navig().chromeIos) {
     domElements.mute.classList.add("eff_fl");
     domElements.son.classList.remove("eff_fl");
     domElements.aff_an.textContent = stats.list_img[0].dataset.an;
-
-    /* un observer pour afficher les dates dans la timeline verticale */
-    const options = {
-      root: null,
-      rootMargin: "0% -2% -100% -98%",
-      threshold: 0,
-    };
-    const guette = new IntersectionObserver(
-      (entries) => navigationManager.afficheDate(entries),
-      options,
-    );
-    stats.list_img.forEach((img) => guette.observe(img));
 
     /* positionner à l'année choisie sur le coté droit */
     domElements.menu

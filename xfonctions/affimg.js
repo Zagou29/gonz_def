@@ -8,11 +8,15 @@ export class Affimg {
   #imageList; // Liste des objets img venant de JSON
   #val_trans; // Option d'affichage ('photo' ou autre)
   #aspectClass; // show ou show_mod (aspect)
-  #imagesFragment; // Fragment où charger les img
   #datesFragment; // Fragment où charger les liensdates
   #imagesContainer; // Boite où charger les images
   #datesContainer; // Boite où charger les Li dates
   #imageElements = []; // Éléments img collectés pendant la préparation
+  #nextImageIndex = 0;
+  #onImageAdded;
+  #batchSize = 80;
+  #loadMargin = 1200;
+  #scrollHandler = () => this.#maybeLoadMore();
 
   /**
    * Crée une nouvelle instance d'Affimg
@@ -33,7 +37,6 @@ export class Affimg {
    * @private
    */
   #preparerElements() {
-    this.#imagesFragment = new DocumentFragment();
     this.#datesFragment = new DocumentFragment();
     let vseuil = "";
     let photoIndex = 0; // Index spécifique pour l'option 'photo'
@@ -54,11 +57,6 @@ export class Affimg {
       // Assigne le numéro basé sur l'option
       imgData.num = this.#val_trans === "photo" ? photoIndex : index;
 
-      // Crée et ajoute l'élément image
-      const imageItem = new AffItem(imgData, this.#aspectClass);
-      this.#imageElements.push(imageItem.element);
-      this.#imagesFragment.append(imageItem.element);
-
       // Crée et ajoute l'élément date (conditionnellement pour 'photo')
       if (this.#val_trans !== "photo" || imgData.seuil !== "") {
         //si "pas photos"=> un lien un lien pour chaque nouvelle date
@@ -72,17 +70,127 @@ export class Affimg {
   /**
    * Injecte les images dans l'élément d'ancrage
    * @param {HTMLElement} imagesContainer - L'élément DOM où injecter les images
+   * @param {(image: HTMLImageElement) => void} [onImageAdded] - Callback exécuté après l'ajout d'une image
    * @returns {this}
    */
-  creeimages(imagesContainer) {
+  creeimages(imagesContainer, onImageAdded) {
     this.#imagesContainer = imagesContainer;
-    // Vider le conteneur avant d'ajouter (optionnel, mais souvent utile)
-    this.#imagesContainer.append(this.#imagesFragment);
+    this.#onImageAdded = onImageAdded;
+    this.#imageElements.length = this.#imageList.length;
+    this.#renderMore();
+    window.addEventListener("scroll", this.#scrollHandler, { passive: true });
+    this.#imagesContainer.addEventListener("scroll", this.#scrollHandler, {
+      passive: true,
+    });
+    window.addEventListener("resize", this.#scrollHandler, { passive: true });
+    this.#scheduleLoadCheck();
     return this;
   }
 
   /**
-   * Retourne les éléments img collectés pendant #preparerElements()
+   * Rend les images jusqu'à l'index demandé, pour la navigation par date.
+   * @param {number} index
+   */
+  renderUntil(index) {
+    if (
+      !Number.isInteger(index) ||
+      index < 0 ||
+      index >= this.#imageList.length
+    ) {
+      return;
+    }
+    while (this.#nextImageIndex <= index) {
+      this.#renderMore(
+        Math.max(this.#batchSize, index - this.#nextImageIndex + 1),
+        false,
+      );
+    }
+    this.#scheduleLoadCheck();
+  }
+
+  /**
+   * Charge assez de lots pour restaurer une position verticale mémorisée.
+   * @param {number} position
+   */
+  renderForVerticalPosition(position) {
+    if (!Number.isFinite(position) || position < 0) return;
+    while (
+      this.#nextImageIndex < this.#imageList.length &&
+      document.documentElement.scrollHeight <
+        position + window.innerHeight + this.#loadMargin
+    ) {
+      this.#renderMore(this.#batchSize, false);
+    }
+    this.#scheduleLoadCheck();
+  }
+
+  /**
+   * Ajoute un lot d'images au DOM.
+   * @param {number} [count]
+   * @param {boolean} [schedule]
+   * @private
+   */
+  #renderMore(count = this.#batchSize, schedule = true) {
+    const fragment = new DocumentFragment();
+    const start = this.#nextImageIndex;
+    const end = Math.min(start + count, this.#imageList.length);
+
+    while (this.#nextImageIndex < end) {
+      const index = this.#nextImageIndex;
+      const imageItem = new AffItem(
+        this.#imageList[index],
+        this.#aspectClass,
+      );
+      const image = imageItem.element;
+      this.#imageElements[index] = image;
+      fragment.append(image);
+      this.#nextImageIndex += 1;
+    }
+
+    this.#imagesContainer.append(fragment);
+    for (let index = start; index < end; index += 1) {
+      this.#onImageAdded?.(this.#imageElements[index]);
+    }
+    if (schedule) this.#scheduleLoadCheck();
+  }
+
+  /**
+   * Charge le lot suivant lorsque la fin du contenu approche.
+   * @private
+   */
+  #maybeLoadMore() {
+    if (this.#nextImageIndex >= this.#imageList.length) return;
+    const lastImage = this.#imageElements[this.#nextImageIndex - 1];
+    if (!lastImage) return;
+
+    let isNearEnd;
+    if (this.#imagesContainer.classList.contains("image_mod")) {
+      const remaining =
+        this.#imagesContainer.scrollWidth -
+        this.#imagesContainer.scrollLeft -
+        this.#imagesContainer.clientWidth;
+      isNearEnd = remaining <= this.#loadMargin;
+    } else {
+      isNearEnd =
+        lastImage.getBoundingClientRect().bottom <=
+        window.innerHeight + this.#loadMargin;
+    }
+
+    if (isNearEnd) this.#renderMore();
+  }
+
+  /**
+   * Réévalue après la mise à jour du layout.
+   * @private
+   */
+  #scheduleLoadCheck() {
+    if (this.#nextImageIndex < this.#imageList.length) {
+      requestAnimationFrame(this.#scrollHandler);
+    }
+  }
+
+  /**
+   * Retourne les éléments img rendus, indexés comme la liste source
    * @return {HTMLImageElement[]}
    */
   get elements() {
