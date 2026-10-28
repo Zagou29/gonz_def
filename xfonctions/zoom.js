@@ -32,7 +32,19 @@ export class ZoomManager {
       this.stats.yimg = e.target.getBoundingClientRect().top;
       clearInterval(this.stats.nId);
       this.stats.nId = null;
+    } else {
+      this.syncZoomedTarget();
     }
+  }
+
+  /* retrouve l'image affichee en mode agrandi (avance par diaporama ou balayage) */
+  syncZoomedTarget() {
+    const box = this.domElements.boiteImg;
+    const first = this.stats.list_img[0];
+    if (!first || !first.offsetWidth) return;
+    const index = Math.round(box.scrollLeft / first.offsetWidth);
+    const last = this.stats.list_img.length - 1;
+    this._zoomedTarget = this.stats.list_img[Math.max(0, Math.min(index, last))];
   }
 
   updateZoomUI(e) {
