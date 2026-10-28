@@ -7,7 +7,8 @@ import { DimensionCalculator } from "./utils/dimension-calculator.js";
  */
 
 /**
- * Gère l'affichage des vidéos et des miniatures YouTube
+ * Filtre les donnees video puis cree les miniatures, iframes, annees et barre
+ * de navigation en reutilisant les templates HTML et VIDEO_CONFIG.
  */
 export class Affvid {
   /** @type {VideoItem[]} - Liste complète des vidéos */

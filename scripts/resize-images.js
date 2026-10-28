@@ -1,5 +1,6 @@
 /**
- * Script de génération des variantes redimensionnées des photos
+ * Genere, pour chaque WebP original de images/, des variantes de 400 et 800 px.
+ * Les fichiers deja presents sont conserves ; les originaux restent inchanges.
  * Usage : node scripts/resize-images.js
  * Prérequis : npm install sharp
  */

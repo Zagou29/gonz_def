@@ -1,4 +1,5 @@
-/* OS? */
+/* Detecte le systeme, le navigateur et les appareils mobiles pour adapter
+   les interactions (notamment le traitement particulier des iPad). */
 
 /* Win Mac Linux Android like Mac */
 const ua = navigator.userAgent;

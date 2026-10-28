@@ -1,3 +1,5 @@
+// Assemble la page video : charge les donnees JSON, construit menus et listes,
+// puis gere la recherche, la lecture YouTube et l'observation du defilement.
 import { mob, ordi_OS } from "./xfonctions/nav_os.js";
 import { createElement } from "./xfonctions/dom.js";
 import boxJson from "./xjson/box.json" with { type: "json" };

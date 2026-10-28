@@ -1,5 +1,5 @@
 /**
- *
+ * Cree un element HTML et lui applique les attributs fournis.
  * @param {string} tagName
  * @param {object} attributes
  * @return {HTMLelement}
@@ -14,7 +14,7 @@ const createElement = (tagName, attributes = {}) => {
   return element;
 };
 /**
- *
+ * Clone le contenu d'un template HTML ; signale explicitement un template absent.
  * @param {string} id
  * @returns {documentFragment} clone du template
  */

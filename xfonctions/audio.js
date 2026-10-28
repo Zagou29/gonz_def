@@ -1,4 +1,5 @@
-/* Module pour la gestion de l'audio */
+/* Gere la musique du diaporama. L'objet Audio est cree au premier lancement,
+   puis les methodes du manager pilotent lecture, pause et remise a zero. */
 
 export class AudioManager {
   constructor(domElements) {

@@ -1,4 +1,5 @@
-/* Module pour la gestion du diaporama */
+/* Gere le lancement/arret du diaporama, son intervalle, sa vitesse et les
+   commandes audio associees, en deleguant le deplacement aux managers. */
 
 export class DiaporamaManager {
   constructor(domElements, stats, audioManager, navigationManager) {

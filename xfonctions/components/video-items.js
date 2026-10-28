@@ -1,5 +1,8 @@
 import { cloneTemplate } from "../dom.js";
 import { VIDEO_CONFIG } from "../config/video-config.js";
+
+/* Fabrique les elements DOM reutilises par Affvid : vignettes ou iframes
+   YouTube, entrees de barre de navigation et liens d'annees. */
 /**
  * @typedef {import("./config/video-config.js").VideoItem} VideoItem
  */

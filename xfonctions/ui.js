@@ -1,4 +1,5 @@
-/* Module pour les utilitaires UI et zoom */
+/* Gere les preferences et petits comportements d'interface de la galerie :
+   tri des dates, temporisation du scroll, fleches et stockage local. */
 import { stop_fullScreen, toggle_fullScreen } from "./fullScreen.js";
 
 export class UIManager {

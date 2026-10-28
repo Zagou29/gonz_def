@@ -1,4 +1,5 @@
-/* Module pour la gestion des événements */
+/* Centralise les evenements de la galerie photo (clics, clavier et defilement)
+   et transmet chaque action au manager responsable de son comportement. */
 import { toggle_fullScreen } from "./fullScreen.js";
 
 export class EventManager {
