@@ -1,4 +1,5 @@
-/* Module pour la gestion du zoom */
+/* Bascule la galerie entre affichage normal et image agrandie, synchronise
+   les commandes visibles et restaure la position de défilement à la sortie. */
 import { stop_fullScreen } from "./fullScreen.js";
 
 export class ZoomManager {

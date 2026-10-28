@@ -1,7 +1,8 @@
 import { VIDEO_CONFIG } from "../config/video-config.js";
 
 /**
- * Utilitaires pour le calcul des dimensions des vidéos
+ * Calcule les dimensions d'une vidéo selon son conteneur et son format
+ * 4:3 ou 16:9, en gardant le ratio et les marges définis dans la config.
  */
 export class DimensionCalculator {
   /**

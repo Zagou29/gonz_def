@@ -1,4 +1,5 @@
-/* Bundle des modules pour les performances - Version optimisée */
+/* Point d'entrée commun pour importer les managers de la galerie photo depuis
+   un seul module ; chaque manager reste implémenté dans son propre fichier. */
 export { AudioManager } from "./audio.js";
 export { NavigationManager } from "./navigation.js";
 export { DiaporamaManager } from "./diaporama.js";

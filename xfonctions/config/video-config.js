@@ -1,5 +1,6 @@
 /**
- * Configuration des vidéos YouTube
+ * Regroupe les templates, classes, formats, dimensions et URL YouTube utilisés
+ * par les composants vidéo afin d'éviter de dupliquer ces valeurs.
  */
 export const VIDEO_CONFIG = {
   TEMPLATES: {

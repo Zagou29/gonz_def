@@ -1,3 +1,5 @@
+// Administration des vidéos, menus, albums photo et blogs : les données sont
+// chargées depuis xjson/, modifiées en mémoire, puis exportées en fichiers JSON.
 // ── Helpers ──────────────────────────────────────────────────────────────────
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
@@ -90,6 +92,8 @@ const state = {
 
 // ── Chargement ────────────────────────────────────────────────────────────────
 async function loadAll() {
+  // Charge les sources en parallèle, puis sépare les entrées de box.json
+  // entre albums photo et blogs pour alimenter leurs sections respectives.
   try {
     const [vidRes, menRes, boxRes] = await Promise.all([
       fetch("./xjson/indexVid.json"),
@@ -137,6 +141,7 @@ function markClean(section) {
 }
 
 function syncBox() {
+  // Photos et blogs partagent le fichier box.json lors de l'export.
   state.box = [...state.photos, ...state.blogs];
 }
 

@@ -1,5 +1,6 @@
 /**
- * Module de gestion du mode plein écran
+ * Encapsule l'API Fullscreen du navigateur pour entrer en plein écran ou en
+ * sortir, en propageant les erreurs de l'API.
  */
 
 const fsAPI = {

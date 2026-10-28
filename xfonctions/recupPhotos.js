@@ -1,3 +1,5 @@
+// Extrait les champs utiles du JSON photo (classe, chemin de l'image, année)
+// pour produire une liste simplifiée.
 import { fetchJSON } from "./api.js";
 const listImages = await fetchJSON("./xjson/photoImg.json");
 const jsonObj = {};

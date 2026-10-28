@@ -1,5 +1,7 @@
 import { cloneTemplate } from "./dom.js";
 
+/* Regroupe les vidéos par catégorie puis par classe pour construire les
+   menus famille, voyages et playlists à partir des templates HTML. */
 /**
  * @typedef {Object} VideoItem
  * @property {string} clas - Classe CSS
