@@ -1,5 +1,5 @@
-/* Gere la musique du diaporama. L'objet Audio est cree au premier lancement,
-   puis les methodes du manager pilotent lecture, pause et remise a zero. */
+/* Gère la musique du diaporama. L'objet Audio est créé au premier lancement,
+   puis les méthodes du manager pilotent lecture, pause et remise à zéro. */
 
 export class AudioManager {
   constructor(domElements) {

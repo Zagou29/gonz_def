@@ -1,5 +1,5 @@
-/* Gere le lancement/arret du diaporama, son intervalle, sa vitesse et les
-   commandes audio associees, en deleguant le deplacement aux managers. */
+/* Gère le lancement/arrêt du diaporama, son intervalle, sa vitesse et les
+   commandes audio associées, en déléguant le déplacement aux managers. */
 
 export class DiaporamaManager {
   constructor(domElements, stats, audioManager, navigationManager) {

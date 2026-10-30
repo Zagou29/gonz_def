@@ -1,5 +1,5 @@
-/* Point d'entree commun pour importer les managers de la galerie photo depuis
-   un seul module ; chaque manager reste implemente dans son propre fichier. */
+/* Point d'entrée commun pour importer les managers de la galerie photo depuis
+   un seul module ; chaque manager reste implémenté dans son propre fichier. */
 export { AudioManager } from "./audio.js";
 export { NavigationManager } from "./navigation.js";
 export { DiaporamaManager } from "./diaporama.js";

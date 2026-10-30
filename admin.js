@@ -1,5 +1,5 @@
-// Administration des videos, menus, albums photo et blogs : les donnees sont
-// chargees depuis xjson/, modifiees en memoire, puis exportees en fichiers JSON.
+// Administration des vidéos, menus, albums photo et blogs : les données sont
+// chargées depuis xjson/, modifiées en mémoire, puis exportées en fichiers JSON.
 // ── Helpers ──────────────────────────────────────────────────────────────────
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
@@ -92,7 +92,7 @@ const state = {
 
 // ── Chargement ────────────────────────────────────────────────────────────────
 async function loadAll() {
-  // Charge les trois sources en parallele, puis separe les entrees de box.json
+  // Charge les sources en parallèle, puis sépare les entrées de box.json
   // entre albums photo et blogs pour alimenter leurs sections respectives.
   try {
     const [vidRes, menRes, boxRes] = await Promise.all([

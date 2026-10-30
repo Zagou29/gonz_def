@@ -7,8 +7,8 @@ import { DimensionCalculator } from "./utils/dimension-calculator.js";
  */
 
 /**
- * Filtre les donnees video puis cree les miniatures, iframes, annees et barre
- * de navigation en reutilisant les templates HTML et VIDEO_CONFIG.
+ * Filtre les données vidéo puis crée les miniatures, iframes, années et barre
+ * de navigation en réutilisant les templates HTML et VIDEO_CONFIG.
  */
 export class Affvid {
   /** @type {VideoItem[]} - Liste complète des vidéos */

@@ -1,4 +1,4 @@
-// Initialise la galerie photo : lit les preferences, construit les menus et
+// Initialise la galerie photo : lit les préférences, construit les menus et
 // les dates, puis relie les gestionnaires aux interactions de navigation.
 import { Affimg } from "./xfonctions/affimg.js";
 import { createElement } from "./xfonctions/dom.js";

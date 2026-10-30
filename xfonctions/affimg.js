@@ -1,9 +1,9 @@
 import { cloneTemplate } from "./dom.js";
 
 /**
- * Construit les images et reperes de date de la galerie photo.
- * Les images sont ajoutees progressivement par lots, sauf si la navigation
- * demande de rendre une image precise ou de restaurer une position memorisee.
+ * Construit les images et repères de date de la galerie photo.
+ * Les images sont ajoutées progressivement par lots, sauf si la navigation
+ * demande de rendre une image précise ou de restaurer une position mémorisée.
  * @class Affimg
  */
 export class Affimg {

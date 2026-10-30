@@ -1,5 +1,5 @@
 /**
- * Cree un element HTML et lui applique les attributs fournis.
+ * Crée un élément HTML et lui applique les attributs fournis.
  * @param {string} tagName
  * @param {object} attributes
  * @return {HTMLelement}

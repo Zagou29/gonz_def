@@ -1,5 +1,5 @@
 /**
- * Encapsule l'API Fullscreen du navigateur pour entrer en plein ecran ou en
+ * Encapsule l'API Fullscreen du navigateur pour entrer en plein écran ou en
  * sortir, en propageant les erreurs de l'API.
  */
 

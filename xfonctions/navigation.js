@@ -1,4 +1,4 @@
-/* Regroupe les deplacements horizontal/vertical, la restauration de position,
+/* Regroupe les déplacements horizontal/vertical, la restauration de position,
    la navigation par date et l'affichage de la date visible. */
 
 export class NavigationManager {

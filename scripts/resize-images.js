@@ -1,6 +1,6 @@
 /**
- * Genere, pour chaque WebP original de images/, des variantes de 400 et 800 px.
- * Les fichiers deja presents sont conserves ; les originaux restent inchanges.
+ * Génère, pour chaque WebP original de images/, des variantes de 400 et 800 px.
+ * Les fichiers déjà présents sont conservés ; les originaux restent inchangés.
  * Usage : node scripts/resize-images.js
  * Prérequis : npm install sharp
  */

@@ -1,4 +1,4 @@
-/* Centralise les evenements de la galerie photo (clics, clavier et defilement)
+/* Centralise les événements de la galerie photo (clics, clavier et défilement)
    et transmet chaque action au manager responsable de son comportement. */
 import { toggle_fullScreen } from "./fullScreen.js";
 

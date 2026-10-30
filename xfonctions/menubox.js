@@ -1,7 +1,7 @@
 import { cloneTemplate } from "./dom.js";
 
 /* Construit les cartes de photos/blogs et les liens de navigation photo depuis
-   les entrees de box.json, en les inserant via des fragments de document. */
+   les entrées de box.json, en les insérant via des fragments de document. */
 /**
  * @typedef {object} Box
  * @property {string} menu - Type de menu
