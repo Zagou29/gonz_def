@@ -1,7 +1,7 @@
 {
   "name": "Galerie Famille Zagou",
-  "short_name": "Galerie Zagou",
-  "description": "Photos, vidéos et diaporamas de la famille Zagou",
+  "short_name": "Zag Family",
+  "description": "Photos, vidéos et diaporamas de la famille",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
