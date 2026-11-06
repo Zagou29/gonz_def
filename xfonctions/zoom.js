@@ -9,7 +9,15 @@ export class ZoomManager {
     this.diaporamaManager = diaporamaManager;
     this.uiManager = uiManager;
     // Référence stable pour pouvoir retirer l'écouteur wheel correctement
-    this._wheelHandler = () => this.diaporamaManager.clearMusic();
+    this._wheelHandler = (e) => {
+      // Pour les événements wheel, permettre le défilement horizontal naturel
+      // mais arrêter la musique du diaporama
+      this.diaporamaManager.clearMusic();
+    };
+    // Gestionnaire pour le scroll horizontal via trackpad ou gestes tactiles
+    this._scrollHandler = () => {
+      this.diaporamaManager.clearMusic();
+    };
   }
 
   /* Zoom quand on clicke sur une image */
@@ -71,12 +79,19 @@ export class ZoomManager {
     this.domElements.diap.classList.remove("diapo_on");
     this.domElements.full.classList.add("showfl");
     setTimeout(() => this.uiManager.alert(), 4000);
-    this.domElements.boiteImg.addEventListener("wheel", this._wheelHandler);
+    
+    // Ajouter les écouteurs pour permettre le balayage horizontal du trackpad
+    this.domElements.boiteImg.addEventListener("wheel", this._wheelHandler, { passive: true });
+    this.domElements.boiteImg.addEventListener("scroll", this._scrollHandler);
   }
 
   handleZoomOut() {
     this.domElements.full.classList.remove("showfl");
+    
+    // Retirer les écouteurs
     this.domElements.boiteImg.removeEventListener("wheel", this._wheelHandler);
+    this.domElements.boiteImg.removeEventListener("scroll", this._scrollHandler);
+    
     const target = this._zoomedTarget || this.stats.list_img[0];
     window.scrollTo({
       top: target.offsetTop - this.stats.yimg,

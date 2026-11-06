@@ -375,10 +375,21 @@ body {
   background-color: gold;
 }
 
+/* Zoom Mode - Allow horizontal scrolling with trackpad gestures */
+.image_mod {
+  touch-action: pan-x;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 /* Media Queries */
 @media screen and (max-width: 642px) {
   .image {
     cursor: grab;
     pointer-events: none;
+  }
+  /* Override pointer-events for zoom mode to allow touch interactions */
+  .image_mod {
+    pointer-events: auto;
   }
 }
